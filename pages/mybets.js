@@ -13,7 +13,7 @@ class MyBets extends Component {
                 <List  divided relaxed>
                    <List.Item>
                         <List.Content>
-                            <Link route={`/betting/quarter-finals`}>
+                            <Link route={`/betting/betting-form`}>
                                 <a>
                                 <Button floated='right'primary  style={{ marginBottom: 10 }}>
                                     See More
@@ -26,7 +26,7 @@ class MyBets extends Component {
                     </List.Item> 
                     <List.Item>
                         <List.Content>
-                            <Link route={`/betting/quarter-finals`}>
+                            <Link route={`/betting/betting-form`}>
                                 <a>
                                 <Button floated='right'primary  style={{ marginBottom: 10 }}>
                                     See More
@@ -39,7 +39,7 @@ class MyBets extends Component {
                     </List.Item>
                     <List.Item>
                         <List.Content>
-                            <Link route={`/betting/quarter-finals`}>
+                            <Link route={`/betting/betting-form`}>
                                 <a>
                                 <Button floated='right'primary  style={{ marginBottom: 10 }}>
                                     See More

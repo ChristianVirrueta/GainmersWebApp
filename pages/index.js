@@ -4,6 +4,8 @@ import{Link} from '../routes';
 import {Accordion,Header,Button, Embed, Icon, Segment, Divider, Menu} from 'semantic-ui-react';
 
 
+
+
 class MainIndex extends Component{
     
     render() {
