@@ -4,7 +4,7 @@ import{Link} from '../../routes';
 import {Accordion,Header,Button, Embed, Icon, Segment, Divider, Menu} from 'semantic-ui-react';
 
 
-class AccountLocked extends Component{
+class Faqs extends Component{
     state = { activeIndex: 2 }
 
     handleClick = (e, titleProps) => {
@@ -20,27 +20,18 @@ class AccountLocked extends Component{
 
         return (
             <Layout>
-                <h1 >Your Metamask is Locked</h1>
                 <Header
                     
                     color= 'teal'
                     as='h2'
-                    content='Please unlock your Metamask just by typing your password to start playing.'
+                    content="FAQ's"
                     style={{
                         fontSize:  '1.7em',
                         fontWeight: 'normal',
                         marginTop: '1.5em',
                     }}
                 />
-                <Link href='https://chrome.google.com/webstore/detail/metamask/nkbihfbeogaeaoehlefnkodbefgpgknn?hl=en'>
-                <a target='_blank'>
-                <Button primary size='huge'>
-                    Continue
-                <Icon name='right arrow' />
-                </Button>  
-                </a>
-                </Link>
-                <Divider hidden/>
+               
         
                 <Divider hidden/>
 
@@ -139,4 +130,4 @@ class AccountLocked extends Component{
         );
     }       
 }
-export default  AccountLocked;
+export default  Faqs;
