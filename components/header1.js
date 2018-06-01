@@ -1,6 +1,7 @@
 import React from 'react';
 import { Menu, Dropdown, Image, Icon,Button } from 'semantic-ui-react';
 import{ Link} from '../routes';
+
 const trigger = (
     <span>
      More
@@ -31,12 +32,11 @@ const trigger = (
 
 export default ()=> {
     return (
-        <Menu style={{marginTop: '10px'}}  secondary>
-        <Menu.Item>
-        <Image src='https://farm1.staticflickr.com/826/42126573832_d2c8ab7203_m.jpg' size='tiny'/>
-        </Menu.Item>
+        <Menu style={{marginTop: '30px'}}  secondary>
             <Link route="/">
-                <a className="item">GAINMERS</a>
+                <a className="item" >
+                <Image src='http://gainmers.io/DappGainmers/images/logo.png' size='small'/>
+                </a>
             </Link>
             <Menu.Menu position='right'>
                 <Menu.Item>
@@ -47,7 +47,7 @@ export default ()=> {
                     </Dropdown.Menu>
                     </Dropdown>
                 </Menu.Item>
-                <Menu.Item as='a'>View FAQs</Menu.Item>
+                <Menu.Item as='a'>FAQs</Menu.Item>
                 <Menu.Item as='a'>Blog</Menu.Item>
 
 

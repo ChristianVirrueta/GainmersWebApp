@@ -26,7 +26,8 @@ class InstallMetamask extends Component{
                 block
                 color= 'teal'
                 as='h2'
-                content='Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus luctus sit amet massa vel volutpat. Vestibulum nisi massa, consequat ac ante a, laoreet euismod ligula. Donec ante diam, tincidunt ac tellus non, fringilla interdum nulla'   
+                content='To play at GAINMERS You need a way to link your Ethereum wallet with the web. For that purpose you need to install Metamask addon on your Chrome or Firefox browsers. Your Metamask wallet will work as your login in this platform. Then you need to add some ether in your wallet to play.
+'   
                 style={{
                     fontSize:  '1.7em',
                     fontWeight: 'normal',
@@ -34,10 +35,10 @@ class InstallMetamask extends Component{
                 }}
             />
             <Link href='https://chrome.google.com/webstore/detail/metamask/nkbihfbeogaeaoehlefnkodbefgpgknn?hl=en'>
-            <a target='_blank'>
+            <a target='_blank' style={{position: 'relative', top: '-55px', display: 'block'}}>
             <Button primary size='huge'>
                 Install Metamask
-            <Icon name='right arrow' />
+            
             </Button>  
             </a>
             </Link>

@@ -31,42 +31,37 @@ const trigger = (
 
 export default ()=> {
     return (
-        <Menu  style={{marginTop: '40px'}}  compact secondary>
+        <Menu  style={{marginTop: '40px', marginBottom: '40px', height: '62px', width: '100%'}}  compact secondary>
+          <Menu className="CentraFooter">
             <Menu.Item>
                     <Link route="/">
-                     <Image src='https://farm1.staticflickr.com/826/42126573832_d2c8ab7203_m.jpg' size='mini'/>
+                     <Image src='http://gainmers.io/DappGainmers/images/logo-footer.png'/>
                     </Link>
-                        <span className="item" >
-                        <Icon name='copyright' />
-                        2018 Gainmers Dapp
-                        </span>
+                        
             </Menu.Item>           
             <Menu.Menu >
                 
                 <Menu.Item>
-                <a className="item">Social Media |  </a>
+                <a className="item">SHARE: </a>
 
                 <div>
-                    <Button circular icon='facebook' color='facebook' />
-                    <Button circular icon='twitter' color='twitter' />
-                    <Button circular icon='instagram' color='instagram' />
-                    <Button circular icon='wechat' color='green' />
-                    <Button circular icon='youtube' color='youtube' />
+                    <ul className="redes">
+                      <li><a href="#" className= "facebook">facebook</a></li>
+                      <li><a href="#" className= "messenger">messenger</a></li>
+                      <li><a href="#" className= "twitter">twitter</a></li>
+                      <li><a href="#" className= "whatsapp">whatsapp</a></li>
+                    </ul>
 
                 </div>
                 </Menu.Item>
                 <Menu.Item>
-                <a className="item">Contact us:  </a>
+                <a className="item">EMAIL:  </a>
                 <Link route="/">
-                   <a> gainmersofficial@gainmers.io</a>
+                   <a href="mailto:contact@gainmers.com"><span className="contact">contact@gainmers.com</span></a>
                  </Link>
             </Menu.Item>
-            <Menu.Item>
-                <a className="item">Term & conditions </a>
-            </Menu.Item>
-
-             
             </Menu.Menu>
+            </Menu>
        </Menu>
     );
   
