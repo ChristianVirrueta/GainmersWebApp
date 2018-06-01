@@ -31,7 +31,7 @@ class ChangeProvider extends Component{
                         fontWeight: 'normal',
                         marginTop: '1.5em',
                     }}
-                />
+                '/>
                 <Link href='https://chrome.google.com/webstore/detail/metamask/nkbihfbeogaeaoehlefnkodbefgpgknn?hl=en'>
                 <a target='_blank'>
                 <Button primary size='huge'>

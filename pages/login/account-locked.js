@@ -44,6 +44,8 @@ class AccountLocked extends Component{
         
                 <Divider hidden/>
 
+                <h3 style={{textAlign: 'left', padding: '0 1em', marginBottom: '40px' }}>For beginers  - FAQs</h3>
+
                 <Accordion fluid styled>
 
                     <Accordion.Title  active={activeIndex === 0} index={0} onClick={this.handleClick}>

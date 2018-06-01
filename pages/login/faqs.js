@@ -20,11 +20,12 @@ class Faqs extends Component{
 
         return (
             <Layout>
+            <h1>Getting started</h1>
                 <Header
                     
                     color= 'teal'
                     as='h2'
-                    content="FAQ's"
+                    content=""
                     style={{
                         fontSize:  '1.7em',
                         fontWeight: 'normal',
@@ -63,9 +64,9 @@ class Faqs extends Component{
                     </Accordion.Title>
                     <Accordion.Content active={activeIndex === 1}>
                         <p>
-                        To add a pre-existing account to MetaMask, use the Import Account menu item. Afterward, you can configure MetaMask to use the imported account by selecting it with the Switch Accounts menu item.
+                        To play at GAINMERS, you need a way to link your Ethereum wallet with the web. For that purpose you need to install Metamask addon on your Chrome or Firefox browsers. Your Metamask wallet will work as your login in this platform. Then you need to add some ether in your wallet to start playing. </p>
 
-                    Warning: Imported accounts are not protected by the seed phrase that was generated when you created your original MetaMask account and are therefore marked as loose. Therefore, back-up all account information for accounts before you import them to MetaMask.
+<p>Extra advice: By any means, please don’t forget your metamask account password and don’t lose the seed words. Else, you’ll lose the only way to access your wallet.
                             </p>
                             
                             <Embed style={{ marginBottom: 10 } }
