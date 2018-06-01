@@ -54,7 +54,7 @@ var options = [{
 }];
 
 exports.default = function () {
-    return _react2.default.createElement(_semanticUiReact.Menu, { style: { marginTop: '30px' }, secondary: true, __source: {
+    return _react2.default.createElement(_semanticUiReact.Menu, { style: { marginTop: '30px', marginBottom: '60px' }, secondary: true, __source: {
             fileName: _jsxFileName,
             lineNumber: 35
         }
@@ -74,47 +74,91 @@ exports.default = function () {
             fileName: _jsxFileName,
             lineNumber: 41
         }
-    }, _react2.default.createElement(_semanticUiReact.Menu.Item, {
-        __source: {
+    }, _react2.default.createElement('span', { className: 'item', __source: {
             fileName: _jsxFileName,
             lineNumber: 42
         }
-    }, _react2.default.createElement(_semanticUiReact.Dropdown, { item: true, text: 'Language', __source: {
+    }, 'Share : '), _react2.default.createElement('ul', { className: 'redes-top item', __source: {
             fileName: _jsxFileName,
             lineNumber: 43
         }
-    }, _react2.default.createElement(_semanticUiReact.Dropdown.Menu, {
+    }, _react2.default.createElement('li', {
         __source: {
             fileName: _jsxFileName,
             lineNumber: 44
         }
-    }, _react2.default.createElement(_semanticUiReact.Dropdown.Item, {
+    }, _react2.default.createElement('a', { href: '#', className: 'facebook', __source: {
+            fileName: _jsxFileName,
+            lineNumber: 44
+        }
+    }, 'facebook')), _react2.default.createElement('li', {
         __source: {
             fileName: _jsxFileName,
             lineNumber: 45
         }
-    }, 'English'), _react2.default.createElement(_semanticUiReact.Dropdown.Item, {
+    }, _react2.default.createElement('a', { href: '#', className: 'messenger', __source: {
+            fileName: _jsxFileName,
+            lineNumber: 45
+        }
+    }, 'messenger')), _react2.default.createElement('li', {
         __source: {
             fileName: _jsxFileName,
             lineNumber: 46
         }
-    }, 'Spanish')))), _react2.default.createElement(_semanticUiReact.Menu.Item, { as: 'a', __source: {
+    }, _react2.default.createElement('a', { href: '#', className: 'twitter', __source: {
+            fileName: _jsxFileName,
+            lineNumber: 46
+        }
+    }, 'twitter')), _react2.default.createElement('li', {
+        __source: {
+            fileName: _jsxFileName,
+            lineNumber: 47
+        }
+    }, _react2.default.createElement('a', { href: '#', className: 'whatsapp', __source: {
+            fileName: _jsxFileName,
+            lineNumber: 47
+        }
+    }, 'whatsapp'))), _react2.default.createElement(_semanticUiReact.Menu.Item, {
+        __source: {
+            fileName: _jsxFileName,
+            lineNumber: 49
+        }
+    }, _react2.default.createElement(_semanticUiReact.Dropdown, { item: true, text: 'Language', __source: {
             fileName: _jsxFileName,
             lineNumber: 50
         }
-    }, 'FAQs'), _react2.default.createElement(_semanticUiReact.Menu.Item, { as: 'a', __source: {
+    }, _react2.default.createElement(_semanticUiReact.Dropdown.Menu, {
+        __source: {
             fileName: _jsxFileName,
             lineNumber: 51
+        }
+    }, _react2.default.createElement(_semanticUiReact.Dropdown.Item, {
+        __source: {
+            fileName: _jsxFileName,
+            lineNumber: 52
+        }
+    }, 'English'), _react2.default.createElement(_semanticUiReact.Dropdown.Item, {
+        __source: {
+            fileName: _jsxFileName,
+            lineNumber: 53
+        }
+    }, 'Spanish')))), _react2.default.createElement(_semanticUiReact.Menu.Item, { as: 'a', __source: {
+            fileName: _jsxFileName,
+            lineNumber: 57
+        }
+    }, 'FAQs'), _react2.default.createElement(_semanticUiReact.Menu.Item, { as: 'a', __source: {
+            fileName: _jsxFileName,
+            lineNumber: 58
         }
     }, 'Blog'), _react2.default.createElement(_semanticUiReact.Menu.Item, {
         __source: {
             fileName: _jsxFileName,
-            lineNumber: 54
+            lineNumber: 61
         }
     }, _react2.default.createElement(_semanticUiReact.Dropdown, { trigger: trigger, options: options, item: true, __source: {
             fileName: _jsxFileName,
-            lineNumber: 55
+            lineNumber: 62
         }
     }))));
 };
-//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbImNvbXBvbmVudHNcXGhlYWRlcjEuanMiXSwibmFtZXMiOlsiUmVhY3QiLCJNZW51IiwiRHJvcGRvd24iLCJJbWFnZSIsIkljb24iLCJCdXR0b24iLCJMaW5rIiwidHJpZ2dlciIsIm9wdGlvbnMiLCJrZXkiLCJ0ZXh0IiwidmFsdWUiLCJjb250ZW50IiwibWFyZ2luVG9wIl0sIm1hcHBpbmdzIjoiOzs7Ozs7QUFBQSxBQUFPOzs7O0FBQ1AsQUFBUyxBQUFNLEFBQVUsQUFBTyxBQUFLOztBQUNyQyxBQUFRLEFBQVc7Ozs7Ozs7QUFFbkIsSUFBTSwwQkFDRixjQUFBOztrQkFBQTtvQkFBQTtBQUFBO0FBQUEsQ0FBQSxFQURKLEFBQ0k7QUFLRixJQUFNO1NBQ0osQUFDTyxBQUNMO1VBRkYsQUFFUSxBQUNOO1dBSEYsQUFHUyxBQUNQOzZCQUFVLGNBQUE7O3NCQUFBO3dCQUFBLEFBQ0k7QUFESjtBQUFBLEtBQUEsa0JBQ0ksQUFBQyx1Q0FBSyxNQUFOLEFBQVc7c0JBQVg7d0JBREosQUFDSTtBQUFBO1FBTkYsQUFDZCxBQUlZO0FBSlosQUFDRSxDQUZZO1NBVWQsQUFDTyxBQUNMO1VBRkYsQUFFUSxBQUNOO1dBSEYsQUFHUyxBQUNQOzZCQUFVLGNBQUE7O3NCQUFBO3dCQUFBLEFBQ0k7QUFESjtBQUFBLEtBQUEsa0JBQ0ksQUFBQyx1Q0FBSyxNQUFOLEFBQVc7c0JBQVg7d0JBREosQUFDSTtBQUFBO1FBZmxCLEFBQWdCLEFBVWQsQUFJWSxBQVFoQjtBQVpJLEFBQ0U7O2tCQVdTLFlBQUssQUFDaEI7MkJBQ0ksQUFBQyx1Q0FBSyxPQUFPLEVBQUMsV0FBZCxBQUFhLEFBQVksVUFBVSxXQUFuQztzQkFBQTt3QkFBQSxBQUNJO0FBREo7S0FBQSxrQkFDSSxBQUFDLDhCQUFLLE9BQU4sQUFBWTtzQkFBWjt3QkFBQSxBQUNJO0FBREo7dUJBQ0ksY0FBQSxPQUFHLFdBQUgsQUFBYTtzQkFBYjt3QkFBQSxBQUNBO0FBREE7dUJBQ0EsQUFBQyx3Q0FBTSxLQUFQLEFBQVcsbURBQWtELE1BQTdELEFBQWtFO3NCQUFsRTt3QkFIUixBQUNJLEFBQ0ksQUFDQSxBQUdKO0FBSEk7MEJBR0gsY0FBRCxzQkFBQSxBQUFNLFFBQUssVUFBWCxBQUFvQjtzQkFBcEI7d0JBQUEsQUFDSTtBQURKO3VCQUNLLGNBQUQsc0JBQUEsQUFBTTs7c0JBQU47d0JBQUEsQUFDSTtBQURKO0FBQUEsdUJBQ0ksQUFBQywyQ0FBUyxNQUFWLE1BQWdCLE1BQWhCLEFBQXFCO3NCQUFyQjt3QkFBQSxBQUNBO0FBREE7dUJBQ0MsY0FBRCwwQkFBQSxBQUFVOztzQkFBVjt3QkFBQSxBQUNJO0FBREo7QUFBQSx1QkFDSyxjQUFELDBCQUFBLEFBQVU7O3NCQUFWO3dCQUFBO0FBQUE7QUFBQSxPQURKLEFBQ0ksQUFDQSw0QkFBQyxjQUFELDBCQUFBLEFBQVU7O3NCQUFWO3dCQUFBO0FBQUE7QUFBQSxPQUxaLEFBQ0ksQUFDSSxBQUNBLEFBRUksQUFJUiwrQkFBQyxjQUFELHNCQUFBLEFBQU0sUUFBSyxJQUFYLEFBQWM7c0JBQWQ7d0JBQUE7QUFBQTtPQVRKLEFBU0ksQUFDQSx5QkFBQyxjQUFELHNCQUFBLEFBQU0sUUFBSyxJQUFYLEFBQWM7c0JBQWQ7d0JBQUE7QUFBQTtPQVZKLEFBVUksQUFHQSx5QkFBQyxjQUFELHNCQUFBLEFBQU07O3NCQUFOO3dCQUFBLEFBQ0k7QUFESjtBQUFBLHVCQUNJLEFBQUMsMkNBQVMsU0FBVixBQUFtQixTQUFVLFNBQTdCLEFBQXNDLFNBQVMsTUFBL0M7c0JBQUE7d0JBckJoQixBQUNJLEFBTUksQUFhSSxBQUNJLEFBT25CO0FBUG1COztBQXRCcEIiLCJmaWxlIjoiaGVhZGVyMS5qcyIsInNvdXJjZVJvb3QiOiJDOi9Vc2Vycy9NU0kvRGFwcEdhaW5tZXJzIn0=
+//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbImNvbXBvbmVudHNcXGhlYWRlcjEuanMiXSwibmFtZXMiOlsiUmVhY3QiLCJNZW51IiwiRHJvcGRvd24iLCJJbWFnZSIsIkljb24iLCJCdXR0b24iLCJMaW5rIiwidHJpZ2dlciIsIm9wdGlvbnMiLCJrZXkiLCJ0ZXh0IiwidmFsdWUiLCJjb250ZW50IiwibWFyZ2luVG9wIiwibWFyZ2luQm90dG9tIl0sIm1hcHBpbmdzIjoiOzs7Ozs7QUFBQSxBQUFPOzs7O0FBQ1AsQUFBUyxBQUFNLEFBQVUsQUFBTyxBQUFLOztBQUNyQyxBQUFRLEFBQVc7Ozs7Ozs7QUFFbkIsSUFBTSwwQkFDRixjQUFBOztrQkFBQTtvQkFBQTtBQUFBO0FBQUEsQ0FBQSxFQURKLEFBQ0k7QUFLRixJQUFNO1NBQ0osQUFDTyxBQUNMO1VBRkYsQUFFUSxBQUNOO1dBSEYsQUFHUyxBQUNQOzZCQUFVLGNBQUE7O3NCQUFBO3dCQUFBLEFBQ0k7QUFESjtBQUFBLEtBQUEsa0JBQ0ksQUFBQyx1Q0FBSyxNQUFOLEFBQVc7c0JBQVg7d0JBREosQUFDSTtBQUFBO1FBTkYsQUFDZCxBQUlZO0FBSlosQUFDRSxDQUZZO1NBVWQsQUFDTyxBQUNMO1VBRkYsQUFFUSxBQUNOO1dBSEYsQUFHUyxBQUNQOzZCQUFVLGNBQUE7O3NCQUFBO3dCQUFBLEFBQ0k7QUFESjtBQUFBLEtBQUEsa0JBQ0ksQUFBQyx1Q0FBSyxNQUFOLEFBQVc7c0JBQVg7d0JBREosQUFDSTtBQUFBO1FBZmxCLEFBQWdCLEFBVWQsQUFJWSxBQVFoQjtBQVpJLEFBQ0U7O2tCQVdTLFlBQUssQUFDaEI7MkJBQ0ksQUFBQyx1Q0FBSyxPQUFPLEVBQUMsV0FBRCxBQUFZLFFBQVEsY0FBakMsQUFBYSxBQUFrQyxVQUFVLFdBQXpEO3NCQUFBO3dCQUFBLEFBQ0k7QUFESjtLQUFBLGtCQUNJLEFBQUMsOEJBQUssT0FBTixBQUFZO3NCQUFaO3dCQUFBLEFBQ0k7QUFESjt1QkFDSSxjQUFBLE9BQUcsV0FBSCxBQUFhO3NCQUFiO3dCQUFBLEFBQ0E7QUFEQTt1QkFDQSxBQUFDLHdDQUFNLEtBQVAsQUFBVyxtREFBa0QsTUFBN0QsQUFBa0U7c0JBQWxFO3dCQUhSLEFBQ0ksQUFDSSxBQUNBLEFBR0o7QUFISTswQkFHSCxjQUFELHNCQUFBLEFBQU0sUUFBSyxVQUFYLEFBQW9CO3NCQUFwQjt3QkFBQSxBQUNBO0FBREE7dUJBQ0EsY0FBQSxVQUFNLFdBQU4sQUFBZ0I7c0JBQWhCO3dCQUFBO0FBQUE7T0FEQSxBQUNBLEFBQ0EsNkJBQUEsY0FBQSxRQUFJLFdBQUosQUFBYztzQkFBZDt3QkFBQSxBQUNJO0FBREo7dUJBQ0ksY0FBQTs7c0JBQUE7d0JBQUEsQUFBSTtBQUFKO0FBQUEsdUJBQUksY0FBQSxPQUFHLE1BQUgsQUFBUSxLQUFJLFdBQVosQUFBc0I7c0JBQXRCO3dCQUFBO0FBQUE7T0FEUixBQUNJLEFBQUksQUFDSiw4QkFBQSxjQUFBOztzQkFBQTt3QkFBQSxBQUFJO0FBQUo7QUFBQSx1QkFBSSxjQUFBLE9BQUcsTUFBSCxBQUFRLEtBQUksV0FBWixBQUFzQjtzQkFBdEI7d0JBQUE7QUFBQTtPQUZSLEFBRUksQUFBSSxBQUNKLCtCQUFBLGNBQUE7O3NCQUFBO3dCQUFBLEFBQUk7QUFBSjtBQUFBLHVCQUFJLGNBQUEsT0FBRyxNQUFILEFBQVEsS0FBSSxXQUFaLEFBQXNCO3NCQUF0Qjt3QkFBQTtBQUFBO09BSFIsQUFHSSxBQUFJLEFBQ0osNkJBQUEsY0FBQTs7c0JBQUE7d0JBQUEsQUFBSTtBQUFKO0FBQUEsdUJBQUksY0FBQSxPQUFHLE1BQUgsQUFBUSxLQUFJLFdBQVosQUFBc0I7c0JBQXRCO3dCQUFBO0FBQUE7T0FOUixBQUVBLEFBSUksQUFBSSxBQUVKLCtCQUFDLGNBQUQsc0JBQUEsQUFBTTs7c0JBQU47d0JBQUEsQUFDSTtBQURKO0FBQUEsdUJBQ0ksQUFBQywyQ0FBUyxNQUFWLE1BQWdCLE1BQWhCLEFBQXFCO3NCQUFyQjt3QkFBQSxBQUNBO0FBREE7dUJBQ0MsY0FBRCwwQkFBQSxBQUFVOztzQkFBVjt3QkFBQSxBQUNJO0FBREo7QUFBQSx1QkFDSyxjQUFELDBCQUFBLEFBQVU7O3NCQUFWO3dCQUFBO0FBQUE7QUFBQSxPQURKLEFBQ0ksQUFDQSw0QkFBQyxjQUFELDBCQUFBLEFBQVU7O3NCQUFWO3dCQUFBO0FBQUE7QUFBQSxPQVpaLEFBUUksQUFDSSxBQUNBLEFBRUksQUFJUiwrQkFBQyxjQUFELHNCQUFBLEFBQU0sUUFBSyxJQUFYLEFBQWM7c0JBQWQ7d0JBQUE7QUFBQTtPQWhCSixBQWdCSSxBQUNBLHlCQUFDLGNBQUQsc0JBQUEsQUFBTSxRQUFLLElBQVgsQUFBYztzQkFBZDt3QkFBQTtBQUFBO09BakJKLEFBaUJJLEFBR0EseUJBQUMsY0FBRCxzQkFBQSxBQUFNOztzQkFBTjt3QkFBQSxBQUNJO0FBREo7QUFBQSx1QkFDSSxBQUFDLDJDQUFTLFNBQVYsQUFBbUIsU0FBVSxTQUE3QixBQUFzQyxTQUFTLE1BQS9DO3NCQUFBO3dCQTVCaEIsQUFDSSxBQU1JLEFBb0JJLEFBQ0ksQUFPbkI7QUFQbUI7O0FBN0JwQiIsImZpbGUiOiJoZWFkZXIxLmpzIiwic291cmNlUm9vdCI6IkM6L1VzZXJzL01TSS9EYXBwR2Fpbm1lcnMifQ==

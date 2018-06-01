@@ -25,7 +25,7 @@ class ChangeProvider extends Component{
                     
                     color= 'teal'
                     as='h2'
-                    content='Please change your Metamask current provider'
+                    content='Please unlock your Metamask just by typing your password to start playing.'
                     style={{
                         fontSize:  '1.7em',
                         fontWeight: 'normal',
