@@ -16,6 +16,7 @@ class MyBets extends Component {
         //return {campaigns}
     }
     state = { 
+        conditionsAccepted: false,
         checked1: false,
         checked2: false,
         checked3: false,
@@ -546,34 +547,7 @@ renderBets(){
          
        ) : null }
  
- <List.Content>
-                    <Dimmer active={this.state.loading} >
-                        <Loader  indeterminate>Procesando Transaccion</Loader>
-                    </Dimmer>
-                    <Form onSubmit= {this.onSubmit} 
-                    error={!!this.state.errorMessage}>
-                    <Form.Field>
-                    <label>Minimo aporte </label>
-                    </Form.Field>
-
-                    <Input 
-                            action={{
-                                    color: 'teal',
-                                    labelPosition: 'left',
-                                    icon: 'thumb tack',
-                                    content: 'Crear' }
-                                }
-                            
-                            actionPosition='left'
-                            placeholder='Value in Wei'
-                            value={this.state.tryValue}
-                            onChange={ event=> this.setState({
-                            tryValue : event.target.value})}
-                    />  
-                    <Message error header="Opps!" 
-                    content={this.state.errorMessage}/>
-                     </Form>
-    </List.Content>
+ 
     </List>
     <Segment>
             <Header
@@ -606,9 +580,9 @@ renderBets(){
             <Checkbox 
                 style={{float:'right'}}
                  onChange={()=> {
-                            this.setState({ checked10: !this.state.checked10 });
+                            this.setState({ conditionsAccepted: !this.state.conditionsAccepted });
                                 }}  
-                checked={this.state.checked10}
+                checked={this.state.conditionsAccepted}
                 label='Accept terms and conditions'
                 />
 
@@ -616,13 +590,42 @@ renderBets(){
             <a target='_blank'>
             <Button
                 primary 
-                disabled={!this.state.checked10}
+                disabled={!this.state.conditionsAccepted}
 
                 size='large'>
                 Place bet NOW!
             </Button>  
             </a>
             </Link>  
+    </Segment>
+
+    <Segment>
+                    <Dimmer active={this.state.loading} >
+                        <Loader  indeterminate>Procesando Transaccion</Loader>
+                    </Dimmer>
+                    <Form onSubmit= {this.onSubmit} 
+                    error={!!this.state.errorMessage}>
+                    <Form.Field>
+                    <label>Minimo aporte </label>
+                    </Form.Field>
+
+                    <Input 
+                            action={{
+                                    color: 'teal',
+                                    labelPosition: 'left',
+                                    icon: 'thumb tack',
+                                    content: 'Crear' }
+                                }
+                            
+                            actionPosition='left'
+                            placeholder='Value in Wei'
+                            value={this.state.tryValue}
+                            onChange={ event=> this.setState({
+                            tryValue : event.target.value})}
+                    />  
+                    <Message error header="Opps!" 
+                    content={this.state.errorMessage}/>
+                     </Form>
     </Segment>  
 </div>
     );
