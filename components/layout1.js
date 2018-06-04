@@ -6,7 +6,7 @@ import Footer from './footer';
 
 export default (props)=> {
     return (
-        <div>
+        
             <Container textAlign='center'>
        
             <Head>
@@ -23,7 +23,7 @@ export default (props)=> {
            <Footer/>
   
        </Container>
-</div>
+
 
     );
 

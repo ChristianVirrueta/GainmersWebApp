@@ -22,13 +22,13 @@ class SignUp extends Component{
       body > div,
       body > div > div,
       body > div > div > div.login-form {
-        height: 100%;
+        height: 'auto';
       }
     `}</style>
     <Grid
       textAlign='center'
       style={{ height: '100%', 
-                padding:'80px' }}
+                padding:'60px' }}
       verticalAlign='middle'
     >
     
