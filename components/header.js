@@ -47,12 +47,9 @@ export default ()=> {
    
 
     return (
-        <Menu style={{marginTop: '10px'}}  secondary>
-        <Menu.Item>
-        <Image src='https://farm1.staticflickr.com/826/42126573832_d2c8ab7203_m.jpg' size='tiny'/>
-        </Menu.Item>
+        <Menu style={{marginTop: '40px', marginBottom: '60px'}}  secondary>
             <Link route="/betting">
-                <a className="item">GAINMERS</a>
+                <a className="item"><Image src='http://gainmers.io/DappGainmers/images/logo.png' size='small'/></a>
             </Link>
             <Menu.Menu position='right'>
                 <Menu.Item>
@@ -65,8 +62,9 @@ export default ()=> {
                 </Menu.Item>
 
                 <Menu.Item>
-                    <span className="item">Wallet |</span>
-                    <Button className='account'  primary/>
+                    <span className="item">Wallet : </span>
+                    <div className="wallet">0038320294820384</div>
+                    <div className="copy">Copy</div>
                 </Menu.Item>
 
                 <Menu.Item>
