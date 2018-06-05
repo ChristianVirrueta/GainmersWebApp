@@ -25,11 +25,10 @@ class ChangeProvider extends Component{
                     
                     color= 'teal'
                     as='h2'
-                    content='Please change your Metamask current provider'
+                    content='Please unlock your Metamask just by typing your password to start playing.'
                     style={{
                         fontSize:  '1.7em',
                         fontWeight: 'normal',
-                        marginTop: '1.5em',
                     }}
                 />
                 <Link href='https://chrome.google.com/webstore/detail/metamask/nkbihfbeogaeaoehlefnkodbefgpgknn?hl=en'>

@@ -22,19 +22,19 @@ class SignUp extends Component{
       body > div,
       body > div > div,
       body > div > div > div.login-form {
-        height: 100%;
+        height: 'auto';
       }
     `}</style>
     <Grid
       textAlign='center'
       style={{ height: '100%', 
-                padding:'80px' }}
+                padding:'60px' }}
       verticalAlign='middle'
     >
     
-      <Grid.Column style={{ maxWidth: 450 }}>
+      <Grid.Column style={{ maxWidth: 700 }}>
         <Header as='h2' color='teal' textAlign='center'>
-        You are almost done
+        <h1>You’re almost done</h1>
         </Header>
         <Form size='large'>
           <Segment stacked>
@@ -45,13 +45,13 @@ class SignUp extends Component{
               fluid
               icon='user'
               iconPosition='left'
-              placeholder='E-mail address'
+              placeholder='Email'
             />
             <Form.Input
               fluid
               icon='lock'
               iconPosition='left'
-              placeholder='Password'
+              placeholder='User name'
               type='password'
             />
 

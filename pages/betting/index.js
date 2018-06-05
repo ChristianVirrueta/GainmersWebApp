@@ -17,11 +17,17 @@ render() {
         <Grid container stackable verticalAlign='middle' textAlign='center'>
         
 
-        <Row  >
-            <h2>01 LIVE THE WORLD CUP RUSSIA 2018:</h2>
-             </Row>            
+        <div  >
+            <div className="titulo-01">
+                    <div className="titulo-number">
+                        <div className="mask-number">01</div>
+                    </div>
+                    <div className="titulo-content">Live  the  World  Cup  Russia   2018:</div>
+                </div>
+            
+             </div>            
         <Row >
-            <Image src='https://farm1.staticflickr.com/974/41451717544_0bca810ab0_m.jpg' size='large'/>
+            <Image src='http://gainmers.io/DappGainmers/images/banner-rusia.jpg' size='large'/>
         </Row>
         <Row>
             <Choices/>

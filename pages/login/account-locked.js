@@ -25,7 +25,7 @@ class AccountLocked extends Component{
                     
                     color= 'teal'
                     as='h2'
-                    content='Please unlock yout Metamask account to continue'
+                    content='Please unlock your Metamask just by typing your password to start playing.'
                     style={{
                         fontSize:  '1.7em',
                         fontWeight: 'normal',
@@ -43,6 +43,8 @@ class AccountLocked extends Component{
                 <Divider hidden/>
         
                 <Divider hidden/>
+
+                <h3 style={{textAlign: 'left', padding: '0 1em', marginBottom: '40px' }}>For beginers  - FAQs</h3>
 
                 <Accordion fluid styled>
 
