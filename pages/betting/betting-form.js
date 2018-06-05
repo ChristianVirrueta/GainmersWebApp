@@ -3,18 +3,26 @@ import Layout from '../../components/layout';
 import {Input,Dimmer,Loader,Form,Message,Card,Grid,List,Tab,Header,Flag,Icon,Container,Checkbox,Button,Segment} from 'semantic-ui-react';
 import {Link,Router} from '../../routes';
 import Choices from '../../components/choices';
-import factory from '../../ethereum/factory.js';
 import web3 from '../../ethereum/web3';
+import generator from '../../ethereum/generator.js';
+import SportEvent from '../../ethereum/sportevent.js';
 
 
 class MyBets extends Component {
     
-    static async getInitialProps(){
-        const campaigns =  await factory.methods.getDeployedCampaigns().call();
+    static async getInitialProps(props){
+        const sportevent = SportEvent('0xfDa63B5daD31B7e38Bf22371B95d3D3A43eDB827');
+        const bet = await generator.methods.getDeployedEvents().call();
 
-        return {campaigns: campaigns};// e devuelve como props
-        //return {campaigns}
-    }
+        const summary = await sportevent.methods.getDetails().call();
+    
+        return {
+          //address: props.query.address,
+          name: summary[0],
+          balance: summary[1],
+          bet: bet
+        };
+      }
     state = { 
         conditionsAccepted: false,
         checked1: false,
@@ -42,27 +50,56 @@ class MyBets extends Component {
         checked11Contribution:'',
         checked12Contribution:'',
         errorMessage:'',
-        loading: false,
-        tryValue:''
-
-
+        loading: false
     }
 
 onSubmit = async (event) =>{
 
         event.preventDefault();
+        const sportevent = SportEvent('0xfDa63B5daD31B7e38Bf22371B95d3D3A43eDB827');
 
         this.setState({loading : true,
              errorMessage:''});
 
         try{
             const accounts = await web3.eth.getAccounts();
-            await factory.methods
-                  .createCampaing(this.state.tryValue)
+            const actualbet = [
+                (this.state.checked1Contribution == '') ? (+this.state.checked1Contribution) : web3.utils.toWei(this.state.checked1Contribution,"ether"),
+                (this.state.checked2Contribution == '') ? (+this.state.checked2Contribution) : web3.utils.toWei(this.state.checked2Contribution,"ether"),
+                (this.state.checked3Contribution == '') ? (+this.state.checked3Contribution) : web3.utils.toWei(this.state.checked3Contribution,"ether"),
+                (this.state.checked4Contribution == '') ? (+this.state.checked4Contribution) : web3.utils.toWei(this.state.checked4Contribution,"ether"),
+                (this.state.checked5Contribution == '') ? (+this.state.checked5Contribution) : web3.utils.toWei(this.state.checked5Contribution,"ether"),
+                (this.state.checked6Contribution == '') ? (+this.state.checked6Contribution) : web3.utils.toWei(this.state.checked6Contribution,"ether"),
+                (this.state.checked7Contribution == '') ? (+this.state.checked7Contribution) : web3.utils.toWei(this.state.checked7Contribution,"ether"),
+                (this.state.checked8Contribution == '') ? (+this.state.checked8Contribution) : web3.utils.toWei(this.state.checked8Contribution,"ether"),
+                (this.state.checked9Contribution == '') ? (+this.state.checked9Contribution) : web3.utils.toWei(this.state.checked9Contribution,"ether"),
+                (this.state.checked10Contribution == '') ? (+this.state.checked10Contribution) : web3.utils.toWei(this.state.checked10Contribution,"ether"),
+                (this.state.checked11Contribution == '') ? (+this.state.checked11Contribution) : web3.utils.toWei(this.state.checked11Contribution,"ether"),
+                (this.state.checked12Contribution == '') ? (+this.state.checked12Contribution) : web3.utils.toWei(this.state.checked12Contribution,"ether")
+            ];
+                
+            const TotalBet = 
+            (+actualbet[0]) +
+            (+actualbet[1]) +
+            (+actualbet[2]) +
+            (+actualbet[3]) +
+            (+actualbet[4]) +
+            (+actualbet[5]) +
+            (+actualbet[6]) +
+            (+actualbet[7]) +
+            (+actualbet[8]) +
+            (+actualbet[9]) +
+            (+actualbet[10]) +
+            (+actualbet[11]) 
+            ;
+            console.log(actualbet);
+            await sportevent.methods
+                  .enterEvent(actualbet)
                   .send({
-                        from: accounts[0]
+                        from: accounts[0],
+                        value: TotalBet
                   })
-                  Router.pushRoute('/');
+                  //Router.pushRoute('/');
 
         }catch(err){
             this.setState({errorMessage: err.message.split("\n")[0]});
@@ -74,13 +111,13 @@ onSubmit = async (event) =>{
      
 renderCampaigns(){
 
-        const items = this.props.campaigns.map( address => {
+        const items = this.props.bet.map( address => {
             
             return {
                 header: address,
                 description: (
                 <Link route={`/campaigns/${address}`}>
-                <a> Detalles de Campaña</a>
+                <a> Detalles del Evento</a>
                 </Link>
                 ),
                 fluid: true //para que se alargue
@@ -591,7 +628,7 @@ renderBets(){
             <Button
                 primary 
                 disabled={!this.state.conditionsAccepted}
-
+                onClick= {this.onSubmit}               
                 size='large'>
                 Place bet NOW!
             </Button>  
@@ -627,11 +664,9 @@ renderBets(){
                     content={this.state.errorMessage}/>
                      </Form>
     </Segment>  
-</div>
-    );
-
-  
+</div>);  
 }
+
 toggle = () => this.setState({
         checked1: false,
         checked2: false,
@@ -649,6 +684,8 @@ toggle = () => this.setState({
 
 
     render(){
+        const sportevent = SportEvent('0xfDa63B5daD31B7e38Bf22371B95d3D3A43eDB827');
+
         const panes = [
             { menuItem: 'Bet', render: () =>
              <Tab.Pane >
@@ -690,7 +727,7 @@ toggle = () => this.setState({
                              
                             <Grid.Column >
                                 <Container>
-                                TOTAL POOL 9 ETH
+                                    { web3.utils.fromWei(this.props.balance, 'ether')}
                                 </Container>
                             </Grid.Column>
 

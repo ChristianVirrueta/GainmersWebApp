@@ -1,9 +1,6 @@
 import React, {Component} from 'react';
 import {Form,Message,Segment,Header,Grid,Button,Card} from 'semantic-ui-react';
 import Layout from '../components/layout';
-import factory from '../ethereum/factory.js';
-
-import Choices from '../components/choices';
 import web3 from '../ethereum/web3';
 
 let firstAcc = " ";
@@ -17,28 +14,8 @@ class userConfig extends Component {
            
         });
     }
-   
-    static async getInitialProps(){
-        const campaigns =  await factory.methods.getDeployedCampaigns().call();
-        return {campaigns: campaigns};// e devuelve como props
-        //return {campaigns}
-    }  
-    renderCampaigns(){
 
-        const items = this.props.campaigns.map( address => {
-            return {
-                header: address,
-                description: (
-                
-                <a> Detalles de Campaña</a>
-          
-                ),
-                fluid: true //para que se alargue
-            };
-        });
 
-        return <Card.Group items={items}/>;
-    } 
     
 render() {
 
@@ -47,12 +24,8 @@ render() {
 
 return (
     <Layout>
-    <div className='login-form'>
-{/*
-Heads up! The styles below are necessary for the correct render of this example.
-You can do same with CSS, the main idea is that all the elements up to the `Grid`
-below must have a height of 100%.
-*/}
+
+
 
 <Grid
 textAlign='center'
@@ -95,8 +68,8 @@ verticalAlign='middle'
   
 </Grid.Column>
 </Grid>
-{this.renderCampaigns()}
-</div>
+
+
 
        </Layout>
   );
