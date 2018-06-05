@@ -9,7 +9,7 @@ const { Header, Row, HeaderCell, Body, Cell } = Table;
             <div>
 <Table  color={'black'}  textAlign='center' inverted  >
 <Header >
-    <Row style={{background : '#5B5A5E'}}>
+    <Row className="bg-header">
     <HeaderCell  width={3}   />
     <HeaderCell>MP</HeaderCell>
     <HeaderCell>W</HeaderCell>
@@ -33,7 +33,7 @@ const { Header, Row, HeaderCell, Body, Cell } = Table;
     <Cell>0</Cell>
     <Cell>0</Cell>
     <Cell>0</Cell>
-    <Cell style={{background : '#5B5A5E'}} >0</Cell>
+    <Cell style={{background : '#18191a'}} >0</Cell>
 
     </Row>
 
@@ -46,7 +46,7 @@ const { Header, Row, HeaderCell, Body, Cell } = Table;
     <Cell>0</Cell>
     <Cell>0</Cell>
     <Cell>0</Cell>
-    <Cell style={{background : '#5B5A5E'}}>0</Cell>
+    <Cell style={{background : '#18191a'}}>0</Cell>
 
     </Row>
 
@@ -59,7 +59,7 @@ const { Header, Row, HeaderCell, Body, Cell } = Table;
     <Cell>0 </Cell>
     <Cell>0</Cell>
     <Cell>0</Cell>
-    <Cell style={{background : '#5B5A5E'}}>0</Cell>
+    <Cell style={{background : '#18191a'}}>0</Cell>
     </Row>
 
         <Row>
@@ -71,21 +71,21 @@ const { Header, Row, HeaderCell, Body, Cell } = Table;
     <Cell>0</Cell>
     <Cell>0</Cell>
     <Cell>0</Cell>
-    <Cell style={{background : '#5B5A5E'}}>0</Cell>
+    <Cell style={{background : '#18191a'}}>0</Cell>
 
     </Row>
 </Body>
 
 </Table>
 
-<h3 style={{textAlign : 'left'}}>Group Matches</h3>
+<h3 className="titulo-match">Group Matches</h3>
 
 <Table  color={'black'}  textAlign='center' inverted  >
 
 <Body>
     <Row>
         <Cell textAlign='center'> <Flag name={'ru'} />Rusia -<Flag style={{padding: '1px'}} name={'sa'} />Saudi Arabia</Cell>
-        <Cell style={{background : '#5B5A5E'}} >
+        <Cell>
             <Icon  name='calendar' />14 Jun 2018         
             <Icon style={{padding: '0 10px'}}name='clock' />18:00 GTM-5
         </Cell>
@@ -100,7 +100,7 @@ const { Header, Row, HeaderCell, Body, Cell } = Table;
         <Cell textAlign='center'>
             <Flag name={'uy'} />Uruguay -                            
             <Flag  style={{padding: '1px'}} name={'eg'} />Egypt</Cell>
-        <Cell style={{background : '#5B5A5E'}} >
+        <Cell>
             <Icon  name='calendar' />14 Jun 2018         
             <Icon style={{padding: '0 10px'}}name='clock' />18:00 GTM-5
         </Cell>
@@ -114,7 +114,7 @@ const { Header, Row, HeaderCell, Body, Cell } = Table;
     <Row>
         <Cell textAlign='center'> <Flag name={'ru'} />Rusia -
         <Flag style={{padding: '1px'}}name={'uy'} />Uruguay</Cell>
-        <Cell style={{background : '#5B5A5E'}} >
+        <Cell>
             <Icon  name='calendar' />14 Jun 2018         
             <Icon style={{padding: '0 10px'}}name='clock' />18:00 GTM-5
         </Cell>
@@ -127,7 +127,7 @@ const { Header, Row, HeaderCell, Body, Cell } = Table;
     </Row>
     <Row>
         <Cell textAlign='center'> <Flag name={'eg'} />Egypt -<Flag style={{padding: '1px'}} name={'sa'} />Saudi Arabia</Cell>
-        <Cell style={{background : '#5B5A5E'}} >
+        <Cell>
             <Icon  name='calendar' />14 Jun 2018         
             <Icon style={{padding: '0 10px'}}name='clock' />18:00 GTM-5
         </Cell>
