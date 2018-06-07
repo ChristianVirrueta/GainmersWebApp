@@ -63,7 +63,9 @@ export default ()=> {
 
                 <Menu.Item>
                     <span className="item">Wallet : </span>
-                    <div className="wallet account"></div>
+
+                    <div className="wallet account"/>
+  
                     <div className="copy">Copy</div>
                 </Menu.Item>
 
