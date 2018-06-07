@@ -24,8 +24,7 @@ const panes = [
 ]
 const { Column, Row } = Grid;
 
-class GroupStage extends Component {
-    
+class GroupStage extends Component { 
        
 render() {
 
@@ -36,7 +35,8 @@ render() {
                 <Choices/>
             </Row>
             <Row centered>
-                <Tab menu={{ secondary: true, pointing: true }} panes={panes} />
+
+                <Tab menu={{ secondary: true, pointing: true}} panes={panes}  />
             </Row>
    </Grid>
    
