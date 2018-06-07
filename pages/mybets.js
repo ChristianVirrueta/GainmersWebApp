@@ -1,13 +1,17 @@
 import React,{Component} from 'react';
 import Layout from '../components/layout';
-import {List,Button,Segment,Container} from 'semantic-ui-react';
+import {List,Button,Segment,Container,Card} from 'semantic-ui-react';
+
 import {Link} from '../routes'
 
 class MyBets extends Component {
 
+      
     render(){
-        return(
+                return(
             <Layout>
+                
+                <div>
                 <Segment compact style={{ margin: 'auto' }} >
                 <Container text >
                 <List  divided relaxed>
@@ -52,7 +56,9 @@ class MyBets extends Component {
                     </List.Item>                    
                 </List>
                 </Container>
-                </Segment>           
+                </Segment>
+            
+            </div>
             </Layout>
         );
     }

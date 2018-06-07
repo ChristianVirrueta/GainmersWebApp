@@ -11,8 +11,9 @@ import SportEvent from '../../ethereum/sportevent.js';
 class MyBets extends Component {
     
     static async getInitialProps(props){
-        const sportevent = SportEvent('0xfDa63B5daD31B7e38Bf22371B95d3D3A43eDB827');
         const bet = await generator.methods.getDeployedEvents().call();
+
+        const sportevent = SportEvent('0xfDa63B5daD31B7e38Bf22371B95d3D3A43eDB827');
 
         const summary = await sportevent.methods.getDetails().call();
     
@@ -587,6 +588,10 @@ renderBets(){
  
     </List>
     <Segment>
+
+            <Dimmer active={this.state.loading} >
+                <Loader  indeterminate>Metamask is procesing the transaction</Loader>
+            </Dimmer>
             <Header
                 block
                 color= 'teal'
@@ -623,47 +628,17 @@ renderBets(){
                 label='Accept terms and conditions'
                 />
 
-            <Link href='https://chrome.google.com/webstore/detail/metamask/nkbihfbeogaeaoehlefnkodbefgpgknn?hl=en'>
-            <a target='_blank'>
             <Button
                 primary 
                 disabled={!this.state.conditionsAccepted}
                 onClick= {this.onSubmit}               
                 size='large'>
                 Place bet NOW!
-            </Button>  
-            </a>
-            </Link>  
+            </Button>
+
     </Segment>
 
-    <Segment>
-                    <Dimmer active={this.state.loading} >
-                        <Loader  indeterminate>Procesando Transaccion</Loader>
-                    </Dimmer>
-                    <Form onSubmit= {this.onSubmit} 
-                    error={!!this.state.errorMessage}>
-                    <Form.Field>
-                    <label>Minimo aporte </label>
-                    </Form.Field>
-
-                    <Input 
-                            action={{
-                                    color: 'teal',
-                                    labelPosition: 'left',
-                                    icon: 'thumb tack',
-                                    content: 'Crear' }
-                                }
-                            
-                            actionPosition='left'
-                            placeholder='Value in Wei'
-                            value={this.state.tryValue}
-                            onChange={ event=> this.setState({
-                            tryValue : event.target.value})}
-                    />  
-                    <Message error header="Opps!" 
-                    content={this.state.errorMessage}/>
-                     </Form>
-    </Segment>  
+ 
 </div>);  
 }
 
@@ -684,7 +659,6 @@ toggle = () => this.setState({
 
 
     render(){
-        const sportevent = SportEvent('0xfDa63B5daD31B7e38Bf22371B95d3D3A43eDB827');
 
         const panes = [
             { menuItem: 'Bet', render: () =>
@@ -1036,6 +1010,7 @@ toggle = () => this.setState({
                         
                         <Grid.Column>
                             <Tab
+                            defaultActiveIndex={1}
                              menu={{
                                  inverted: true,
                                  compact:true,
