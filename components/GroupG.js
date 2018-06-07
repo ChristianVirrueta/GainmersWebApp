@@ -1,22 +1,84 @@
 import React, {Component} from 'react';
-import {Button, Grid,Tab,Table,Flag,Icon} from 'semantic-ui-react';
-import Layout from '../../components/layout';
-import Choices from '../../components/choices';
-
+import {Button,Table,Flag, Icon} from 'semantic-ui-react';
 const { Header, Row, HeaderCell, Body, Cell } = Table;
 
-class QuarterFinals extends Component {
-       
-render() {
+const GroupG = ()=>{
 
-   return (
-    <Layout>
-        <Grid container stackable verticalAlign='middle' >       
-            <Grid.Row centered >
-                <Choices/>
-            </Grid.Row>
-            <Grid.Row centered>
-                
+        return(
+            <div>
+<Table  color={'black'}  textAlign='center' inverted  >
+<Header >
+    <Row className="bg-header">
+    <HeaderCell  width={3}   />
+    <HeaderCell>MP</HeaderCell>
+    <HeaderCell>W</HeaderCell>
+    <HeaderCell>D</HeaderCell>
+    <HeaderCell>L </HeaderCell>
+    <HeaderCell>GF</HeaderCell>
+    <HeaderCell>GA</HeaderCell>
+    <HeaderCell>+/-</HeaderCell>
+    <HeaderCell >Points</HeaderCell>
+
+
+    </Row>
+</Header>
+<Body>
+<Row >
+    <Cell textAlign='left'> <Flag name={'ru'} />Rusia</Cell>
+    <Cell >50</Cell>
+    <Cell>0</Cell>
+    <Cell>0</Cell>
+    <Cell>0 </Cell>
+    <Cell>0</Cell>
+    <Cell>0</Cell>
+    <Cell>0</Cell>
+    <Cell style={{background : '#18191a'}} >0</Cell>
+
+    </Row>
+
+    <Row>
+    <Cell textAlign='left'> <Flag name={'sa'} />Saudi Arabia</Cell>
+    <Cell>0</Cell>
+    <Cell>0</Cell>
+    <Cell>0</Cell>
+    <Cell>0 </Cell>
+    <Cell>0</Cell>
+    <Cell>0</Cell>
+    <Cell>0</Cell>
+    <Cell style={{background : '#18191a'}}>0</Cell>
+
+    </Row>
+
+    <Row>
+    <Cell textAlign='left'> <Flag name={'eg'} />Egypt</Cell>
+    <Cell>0</Cell>
+    <Cell>0</Cell>
+    <Cell>0</Cell>
+    <Cell>0</Cell>
+    <Cell>0 </Cell>
+    <Cell>0</Cell>
+    <Cell>0</Cell>
+    <Cell style={{background : '#18191a'}}>0</Cell>
+    </Row>
+
+        <Row>
+    <Cell textAlign='left'> <Flag name={'uy'} />Uruguay</Cell>
+    <Cell>0</Cell>
+    <Cell>0</Cell>
+    <Cell>0</Cell>
+    <Cell>0 </Cell>
+    <Cell>0</Cell>
+    <Cell>0</Cell>
+    <Cell>0</Cell>
+    <Cell style={{background : '#18191a'}}>0</Cell>
+
+    </Row>
+</Body>
+
+</Table>
+
+<h3 className="titulo-match">Group Matches</h3>
+
 <Table  color={'black'}  textAlign='center' inverted  >
 
 <Body>
@@ -106,19 +168,15 @@ render() {
             Room</Button>
         </Cell>
     </Row>
-
     
 </Body>
 
-</Table>     
-    </Grid.Row>
-   </Grid>
-   
-  </Layout> 
-  ); 
+</Table>
+</div>
+       
+);
 
 }
 
-}
 
-export default QuarterFinals;
+export default GroupG;

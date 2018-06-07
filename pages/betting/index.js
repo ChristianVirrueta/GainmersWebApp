@@ -29,7 +29,7 @@ render() {
         <Row >
             <Image src='http://gainmers.io/DappGainmers/images/banner-rusia.jpg' size='large'/>
         </Row>
-        <Row>
+        <Row style={{width: '550px !important'}} >
             <Choices/>
         </Row>
     

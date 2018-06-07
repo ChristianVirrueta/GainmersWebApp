@@ -12,7 +12,7 @@ render() {
 
    return (
 
-       <div className="box-layout">
+       <div>
             <Link route={`/betting/group-stage`}>
             <a>
             <Button primary active  style={{ marginBottom: 10 }}>
