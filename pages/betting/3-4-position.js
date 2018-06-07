@@ -48,6 +48,13 @@ class NotWinners extends Component {
      </Table>     
          </Grid.Row>
         </Grid>
+
+        <style>{`
+      .places {
+        background:#000000  !important;
+        color:#ffffff !important;
+      }
+    `}</style>
         
        </Layout> 
        ); 

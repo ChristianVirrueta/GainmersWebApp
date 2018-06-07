@@ -196,8 +196,17 @@ render() {
 </Table>     
     </Grid.Row>
    </Grid>
+
+   <style>{`
+      .octaves {
+        background:#000000  !important;
+        color:#ffffff !important;
+      }
+    `}</style>
    
   </Layout> 
+
+
   ); 
 
 }

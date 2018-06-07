@@ -69,6 +69,13 @@ render() {
 </Table>     
     </Grid.Row>
    </Grid>
+
+   <style>{`
+      .semi {
+        background:#000000  !important;
+        color:#ffffff !important;
+      }
+    `}</style>
    
   </Layout> 
   ); 

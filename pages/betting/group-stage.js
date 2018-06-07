@@ -30,6 +30,7 @@ render() {
 
    return (
     <Layout>
+
         <Grid container stackable verticalAlign='middle' >       
             <Row centered >
                 <Choices/>
@@ -39,8 +40,17 @@ render() {
                 <Tab menu={{ secondary: true, pointing: true}} panes={panes}  />
             </Row>
    </Grid>
+
+   <style>{`
+      .group-stage {
+        background:#000000  !important;
+        color:#ffffff !important;
+      }
+    `}</style>
    
   </Layout> 
+
+
   ); 
 
 }

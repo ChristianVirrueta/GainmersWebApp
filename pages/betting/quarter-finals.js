@@ -113,6 +113,13 @@ render() {
 </Table>     
     </Grid.Row>
    </Grid>
+
+   <style>{`
+      .quarter {
+        background:#000000  !important;
+        color:#ffffff !important;
+      }
+    `}</style>
    
   </Layout> 
   ); 

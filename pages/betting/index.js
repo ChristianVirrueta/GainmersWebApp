@@ -17,7 +17,7 @@ render() {
         <Grid container stackable verticalAlign='middle' textAlign='center'>
         
 
-        <div  >
+        <div>
             <div className="titulo-01">
                     <div className="titulo-number">
                         <div className="mask-number">01</div>

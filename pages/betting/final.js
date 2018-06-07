@@ -54,6 +54,13 @@ render() {
 </Table>     
     </Grid.Row>
    </Grid>
+
+   <style>{`
+      .grandfinal{
+        background:#000000  !important;
+        color:#ffffff !important;
+      }
+    `}</style>
    
   </Layout> 
   ); 

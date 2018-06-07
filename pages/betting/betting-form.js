@@ -161,6 +161,7 @@ renderBets(){
                         </span>-
                         <span style={{
                          color:'red',
+                         fontSize:'20px',
                         marginLeft:'5px'}}>
                         0
                         </span>
@@ -635,35 +636,6 @@ renderBets(){
             </a>
             </Link>  
     </Segment>
-
-    <Segment>
-                    <Dimmer active={this.state.loading} >
-                        <Loader  indeterminate>Procesando Transaccion</Loader>
-                    </Dimmer>
-                    <Form onSubmit= {this.onSubmit} 
-                    error={!!this.state.errorMessage}>
-                    <Form.Field>
-                    <label>Minimo aporte </label>
-                    </Form.Field>
-
-                    <Input 
-                            action={{
-                                    color: 'teal',
-                                    labelPosition: 'left',
-                                    icon: 'thumb tack',
-                                    content: 'Crear' }
-                                }
-                            
-                            actionPosition='left'
-                            placeholder='Value in Wei'
-                            value={this.state.tryValue}
-                            onChange={ event=> this.setState({
-                            tryValue : event.target.value})}
-                    />  
-                    <Message error header="Opps!" 
-                    content={this.state.errorMessage}/>
-                     </Form>
-    </Segment>  
 </div>);  
 }
 
@@ -702,7 +674,7 @@ toggle = () => this.setState({
                         <div className="mask-number">02</div>
                     </div>
                     <div className="titulo-content">SELECT YOUR POSSIBLE RESULT AND BET:</div>
-                    <span>Select one or more options from the table</span>
+                    <span className="subtitulo">Select one or more options from the table</span>
                 </div>
                     </Grid.Row>
 
@@ -710,10 +682,11 @@ toggle = () => this.setState({
                         <Choices/>
                     </Grid.Row>
 
-                    <Grid.Row>
+                    <Grid.Row className="box-room">
                         <Header as='h3' color='teal' >
-                            RUSSIA 2018 - GROUP STAGE
-                            <p style={{ fontSize:'15px'}}> ROOM N°15</p>
+                        <p className="room-name"> ROOM N° 15</p>
+                        <span className="name-group">RUSSIA 2018 - GROUP STAGE</span>
+                            
 
                         </Header>
                     </Grid.Row>
@@ -721,11 +694,15 @@ toggle = () => this.setState({
                     <Grid.Row columns='2' divided>
                             <Grid.Column>
                             <Container text>    
-                                <Flag name={'eg'} />Egypt 
-                                <span>   VS</span>
-                                <Flag style={{padding: '10px'}} name={'sa'} />   Saudi Arabia<br/>
+                                <div className="fecha-d">
                                 <Icon  name='calendar' />14 Jun 2018         
                                 <Icon style={{padding: '0 10px'}}name='clock' />18:00 GTM-5
+                                </div>
+                                <div className="flag-d">
+                                 <Flag name={'eg'} />Egypt 
+                                <span>   VS</span>
+                                <Flag style={{padding: '10px'}} name={'sa'} />   Saudi Arabia
+                                </div>
                             </Container>
                             </Grid.Column >
                              
@@ -744,7 +721,7 @@ toggle = () => this.setState({
                             
                             <Grid.Row>
                                 <Grid.Column>
-                                    <Segment>    
+                                    <Segment className="box-layout">    
                                         <Checkbox 
                                         style={{float:'right'}}
                                         onChange={()=> {
@@ -755,11 +732,13 @@ toggle = () => this.setState({
                                         <Header as='h3'>
                                             <span 
                                                 style={{color:'blue',
+                                                fontSize:'20px',
                                                 marginRight:'5px'}}>
                                                 0
                                             </span>-
                                             <span style={{
                                                 color:'red',
+                                                fontSize:'20px',
                                                 marginLeft:'5px'}}>
                                                 0
                                             </span>
@@ -768,7 +747,7 @@ toggle = () => this.setState({
                                 </Grid.Column>
 
                                 <Grid.Column>
-                                    <Segment>    
+                                    <Segment className="box-layout">    
                                         <Checkbox
                                         style={{float:'right'}}
                                         onChange={()=> {
@@ -779,11 +758,13 @@ toggle = () => this.setState({
                                         <Header as='h3'>
                                             <span 
                                                 style={{color:'blue',
+                                                fontSize:'20px',
                                                 marginRight:'5px'}}>
                                                 0
                                             </span>-
                                             <span style={{
                                                 color:'red',
+                                                fontSize:'20px',
                                                 marginLeft:'5px'}}>
                                                 1
                                             </span>
@@ -792,7 +773,7 @@ toggle = () => this.setState({
                                 </Grid.Column>    
 
                                 <Grid.Column>
-                                    <Segment>    
+                                    <Segment className="box-layout">    
                                         <Checkbox
                                         style={{float:'right'}} 
                                         onChange={()=> {
@@ -803,11 +784,13 @@ toggle = () => this.setState({
                                         <Header as='h3'>
                                             <span 
                                                 style={{color:'blue',
+                                                fontSize:'20px',
                                                 marginRight:'5px'}}>
                                                 0
                                             </span>-
                                             <span style={{
                                                 color:'red',
+                                                fontSize:'20px',
                                                 marginLeft:'5px'}}>
                                                 2
                                             </span>
@@ -818,7 +801,7 @@ toggle = () => this.setState({
 
                             <Grid.Row>
                                 <Grid.Column>
-                                <Segment>    
+                                <Segment className="box-layout">    
                                     <Checkbox 
                                     style={{float:'right'}}
                                     onChange={()=> {
@@ -829,11 +812,13 @@ toggle = () => this.setState({
                                     <Header as='h3'>
                                         <span 
                                             style={{color:'blue',
+                                            fontSize:'20px',
                                             marginRight:'5px'}}>
                                             1
                                         </span>-
                                         <span style={{
                                             color:'red',
+                                            fontSize:'20px',
                                             marginLeft:'5px'}}>
                                             0
                                         </span>
@@ -842,7 +827,7 @@ toggle = () => this.setState({
                                 </Grid.Column>
 
                                 <Grid.Column>
-                                <Segment>    
+                                <Segment className="box-layout">    
                                     <Checkbox
                                     style={{float:'right'}}
                                     onChange={()=> {
@@ -853,11 +838,13 @@ toggle = () => this.setState({
                                     <Header as='h3'>
                                         <span 
                                             style={{color:'blue',
+                                            fontSize:'20px',
                                             marginRight:'5px'}}>
                                             1
                                         </span>-
                                         <span style={{
                                             color:'red',
+                                            fontSize:'20px',
                                             marginLeft:'5px'}}>
                                             1
                                         </span>
@@ -866,7 +853,7 @@ toggle = () => this.setState({
                                 </Grid.Column>    
 
                                 <Grid.Column>
-                                <Segment>    
+                                <Segment className="box-layout">    
                                     <Checkbox
                                     style={{float:'right'}} 
                                     onChange={()=> {
@@ -877,11 +864,13 @@ toggle = () => this.setState({
                                     <Header as='h3'>
                                         <span 
                                             style={{color:'blue',
+                                            fontSize:'20px',
                                             marginRight:'5px'}}>
                                             1
                                         </span>-
                                         <span style={{
                                             color:'red',
+                                            fontSize:'20px',
                                             marginLeft:'5px'}}>
                                             2
                                         </span>
@@ -892,7 +881,7 @@ toggle = () => this.setState({
 
                             <Grid.Row>
                                 <Grid.Column>
-                                <Segment>    
+                                <Segment className="box-layout">    
                                     <Checkbox 
                                     style={{float:'right'}}
                                     onChange={()=> {
@@ -903,11 +892,13 @@ toggle = () => this.setState({
                                     <Header as='h3'>
                                         <span 
                                             style={{color:'blue',
+                                            fontSize:'20px',
                                             marginRight:'5px'}}>
                                             2
                                         </span>-
                                         <span style={{
                                             color:'red',
+                                            fontSize:'20px',
                                             marginLeft:'5px'}}>
                                             0
                                         </span>
@@ -916,7 +907,7 @@ toggle = () => this.setState({
                                 </Grid.Column>
 
                                 <Grid.Column>
-                                <Segment>    
+                                <Segment className="box-layout">    
                                     <Checkbox
                                     style={{float:'right'}}
                                     onChange={()=> {
@@ -927,11 +918,13 @@ toggle = () => this.setState({
                                     <Header as='h3'>
                                         <span 
                                             style={{color:'blue',
+                                            fontSize:'20px',
                                             marginRight:'5px'}}>
                                             2
                                         </span>-
                                         <span style={{
                                             color:'red',
+                                            fontSize:'20px',
                                             marginLeft:'5px'}}>
                                             1
                                         </span>
@@ -940,7 +933,7 @@ toggle = () => this.setState({
                                 </Grid.Column>    
 
                                 <Grid.Column>
-                                <Segment>    
+                                <Segment className="box-layout">    
                                     <Checkbox
                                     style={{float:'right'}} 
                                     onChange={()=> {
@@ -951,11 +944,13 @@ toggle = () => this.setState({
                                     <Header as='h3'>
                                         <span 
                                             style={{color:'blue',
+                                            fontSize:'20px',
                                             marginRight:'5px'}}>
                                             2
                                         </span>-
                                         <span style={{
                                             color:'red',
+                                            fontSize:'20px',
                                             marginLeft:'5px'}}>
                                             2
                                         </span>
@@ -966,7 +961,7 @@ toggle = () => this.setState({
 
                             <Grid.Row>
                                 <Grid.Column>
-                                <Segment>    
+                                <Segment className="box-layout">    
                                     <Checkbox 
                                     style={{float:'right'}}
                                     onChange={()=> {
@@ -974,13 +969,21 @@ toggle = () => this.setState({
                                         }
                                     }  
                                     checked={this.state.checked10} />
-                                    <Header as='h3'>
+                                    <Header as='h3' style={{textAlign:'left', display:'table', height:'100%'}}>
                                         <span 
                                             style={{
                                                 fontSize:12,
-                                                color:'blue',
+                                                color:'#bfbfbf',
+                                                fontSize:'15px',
+                                                lineHeight:'22px',
+                                                display:'table-cell',
+                                            verticalAlign:'middle',
+                                            paddingLeft:'25px',
                                             marginRight:'5px'}}>
-                                            Wins Left Team
+                                            Another<br/> 
+                                            result<br/> 
+                                            wins EGYP.
+
                                         </span>
                                        
                                     </Header>
@@ -988,7 +991,7 @@ toggle = () => this.setState({
                                 </Grid.Column>
 
                                 <Grid.Column>
-                                <Segment>    
+                                <Segment className="box-layout">    
                                     <Checkbox
                                     style={{float:'right'}}
                                     onChange={()=> {
@@ -996,11 +999,18 @@ toggle = () => this.setState({
                                         }
                                     } 
                                     checked={this.state.checked11} />
-                                    <Header as='h3'>
+                                    <Header as='h3' style={{textAlign:'left', display:'table', height:'100%'}}>
                                         <span 
-                                            style={{color:'gray',
+                                            style={{color:'#034bf8',
+                                            fontSize:'15px',
+                                            lineHeight:'22px',
+                                            display:'table-cell',
+                                            verticalAlign:'middle',
+                                            paddingLeft:'25px',
                                             marginRight:'5px'}}>
-                                            TIED 
+                                            Another<br/> 
+                                            result<br/>
+                                            tied
                                         </span>
                                      
                                     </Header>
@@ -1008,7 +1018,7 @@ toggle = () => this.setState({
                                 </Grid.Column>    
 
                                 <Grid.Column>
-                                <Segment>    
+                                <Segment className="box-layout">    
                                     <Checkbox
                                     style={{float:'right'}} 
                                     onChange={()=> {
@@ -1016,13 +1026,19 @@ toggle = () => this.setState({
                                         }
                                     } 
                                     checked={this.state.checked12} />
-                                    <Header as='h3'>
+                                    <Header as='h3' style={{textAlign:'left', display:'table', height:'100%'}}>
                                        
                                         <span style={{
-                                            fontSize:12,
-                                            color:'red',
+                                            fontSize:'15px',
+                                            color:'#1b1b1b',
+                                            lineHeight:'22px',
+                                            display:'table-cell',
+                                            verticalAlign:'middle',
+                                            paddingLeft:'25px',
                                             marginLeft:'5px'}}>
-                                            Wins Right Team
+                                            Another<br/>
+                                            result<br/>
+                                            wins URU.
                                         </span>
                                     </Header>
                                 </Segment>
@@ -1053,6 +1069,13 @@ toggle = () => this.setState({
                     </Grid.Row>
                     
                 </Grid>
+
+                <style>{`
+      .group-stage{
+        background:#000000  !important;
+        color:#ffffff !important;
+      }
+    `}</style>
                
             </Layout>
         );
