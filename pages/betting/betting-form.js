@@ -697,9 +697,13 @@ toggle = () => this.setState({
             <Layout>
                 <Grid>
                     <Grid.Row>
-                        <Header as='h2' color='teal' textAlign='center'>
-                            02 SELECT YOUR POSSIBLE RESULT AND BET:
-                        </Header>
+                        <div className="titulo-02">
+                    <div className="titulo-number">
+                        <div className="mask-number">02</div>
+                    </div>
+                    <div className="titulo-content">SELECT YOUR POSSIBLE RESULT AND BET:</div>
+                    <span>Select one or more options from the table</span>
+                </div>
                     </Grid.Row>
 
                     <Grid.Row>

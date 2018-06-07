@@ -36,8 +36,12 @@ render() {
             <Icon style={{padding: '0 10px'}}name='clock' />18:00 GTM-5
         </Cell>
         <Cell>
+        <Link route={`/betting/betting-form`}>
+        <a>
             <Button primary className="pool">
             Pool</Button>
+        </a>
+        </Link>
             <Button className="room">
             Room</Button>
         </Cell>
