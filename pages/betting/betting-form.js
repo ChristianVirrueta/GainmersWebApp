@@ -13,7 +13,7 @@ class MyBets extends Component {
     static async getInitialProps(props){
         const bet = await generator.methods.getDeployedEvents().call();
 
-        const sportevent = SportEvent(props.query.address);
+        const sportevent = SportEvent('0xfDa63B5daD31B7e38Bf22371B95d3D3A43eDB827');
 
         const summary = await sportevent.methods.getDetails().call();
 
@@ -706,7 +706,7 @@ toggle = () => this.setState({
                                 <Icon  name='calendar' />14 Jun 2018         
                                 <Icon style={{padding: '0 10px'}}name='clock' />18:00 GTM-5
                                 </div>
-                                <div className="flag-d">
+                                <div >
                                  <Flag name={'eg'} />{this.props.country1} 
                                 <span>   VS</span>
                                 <Flag style={{padding: '10px'}} name={'sa'} />{this.props.country2}
