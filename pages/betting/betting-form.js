@@ -135,13 +135,13 @@ renderBets(){
         {this.state.checked1 ? (
               <List.Item >
                 <List.Content floated='right'>
-                    <Input                               
+                    <Input className="miInput"                               
                             placeholder='Value in Ether'
                             value={this.state.checked1Contribution}
                             onChange={ event=> this.setState({
                             checked1Contribution: event.target.value})}
                         />
-                    <Button
+                    <Button className="miButton"
                      onClick={()=>{
                          this.setState((prevState , props)=>({
                             checked1: !this.state.checked1,
@@ -156,13 +156,12 @@ renderBets(){
                 <List.Content >
                     <Header as='h3'>
                         <span 
-                        style={{color:'blue',
+                        style={{color:'#bfbfbf',
                         marginRight:'5px'}}>
                          0
                         </span>-
                         <span style={{
-                         color:'red',
-                         fontSize:'20px',
+                         color:'black',
                         marginLeft:'5px'}}>
                         0
                         </span>
@@ -175,13 +174,13 @@ renderBets(){
        {this.state.checked2 ? (
               <List.Item >
                 <List.Content floated='right'>
-                    <Input                               
+                    <Input className="miInput"                               
                             placeholder='Value in Ether'
                             value={this.state.checked2Contribution}
                             onChange={ event=> this.setState({
                             checked2Contribution: event.target.value})}
                         />
-                    <Button
+                    <Button className="miButton"
                      onClick={()=>{
                          this.setState((prevState , props)=>({
                             checked2: !this.state.checked2,
@@ -196,12 +195,12 @@ renderBets(){
                 <List.Content >
                     <Header as='h3'>
                         <span 
-                        style={{color:'blue',
+                        style={{color:'#bfbfbf',
                         marginRight:'5px'}}>
                          0
                         </span>-
                         <span style={{
-                         color:'red',
+                         color:'black',
                         marginLeft:'5px'}}>
                         1
                         </span>
@@ -214,13 +213,13 @@ renderBets(){
        {this.state.checked3 ? (
               <List.Item >
                 <List.Content floated='right'>
-                    <Input                               
+                    <Input className="miInput"                               
                             placeholder='Value in Ether'
                             value={this.state.checked3Contribution}
                             onChange={ event=> this.setState({
                             checked3Contribution: event.target.value})}
                         />
-                    <Button
+                    <Button className="miButton"
                      onClick={()=>{
                          this.setState((prevState , props)=>({
                             checked3: !this.state.checked3,
@@ -235,12 +234,12 @@ renderBets(){
                 <List.Content >
                     <Header as='h3'>
                         <span 
-                        style={{color:'blue',
+                        style={{color:'#bfbfbf',
                         marginRight:'5px'}}>
                          0
                         </span>-
                         <span style={{
-                         color:'red',
+                         color:'black',
                         marginLeft:'5px'}}>
                         2
                         </span>
@@ -253,13 +252,13 @@ renderBets(){
        {this.state.checked4 ? (
               <List.Item >
                 <List.Content floated='right'>
-                    <Input                               
+                    <Input className="miInput"                               
                             placeholder='Value in Ether'
                             value={this.state.checked4Contribution}
                             onChange={ event=> this.setState({
                             checked4Contribution: event.target.value})}
                         />
-                    <Button
+                    <Button className="miButton"
                      onClick={()=>{
                          this.setState((prevState , props)=>({
                             checked4: !this.state.checked4,
@@ -274,12 +273,12 @@ renderBets(){
                 <List.Content >
                     <Header as='h3'>
                         <span 
-                        style={{color:'blue',
+                        style={{color:'#bfbfbf',
                         marginRight:'5px'}}>
                         1
                         </span>-
                         <span style={{
-                         color:'red',
+                         color:'black',
                         marginLeft:'5px'}}>
                         0
                         </span>
@@ -292,13 +291,13 @@ renderBets(){
        {this.state.checked5 ? (
               <List.Item >
                 <List.Content floated='right'>
-                    <Input                               
+                    <Input className="miInput"                               
                             placeholder='Value in Ether'
                             value={this.state.checked5Contribution}
                             onChange={ event=> this.setState({
                             checked5Contribution: event.target.value})}
                         />
-                    <Button
+                    <Button className="miButton"
                      onClick={()=>{
                          this.setState((prevState , props)=>({
                             checked5: !this.state.checked5,
@@ -313,12 +312,12 @@ renderBets(){
                 <List.Content >
                     <Header as='h3'>
                         <span 
-                        style={{color:'blue',
+                        style={{color:'#bfbfbf',
                         marginRight:'5px'}}>
                         1
                         </span>-
                         <span style={{
-                         color:'red',
+                         color:'black',
                         marginLeft:'5px'}}>
                         1
                         </span>
@@ -331,13 +330,13 @@ renderBets(){
        {this.state.checked6 ? (
               <List.Item >
                 <List.Content floated='right'>
-                    <Input                               
+                    <Input className="miInput"                             
                             placeholder='Value in Ether'
                             value={this.state.checked6Contribution}
                             onChange={ event=> this.setState({
                             checked6Contribution: event.target.value})}
                         />
-                    <Button
+                    <Button className="miButton"
                      onClick={()=>{
                          this.setState((prevState , props)=>({
                             checked6: !this.state.checked6,
@@ -352,12 +351,12 @@ renderBets(){
                 <List.Content >
                     <Header as='h3'>
                         <span 
-                        style={{color:'blue',
+                        style={{color:'#bfbfbf',
                         marginRight:'5px'}}>
                         1
                         </span>-
                         <span style={{
-                         color:'red',
+                         color:'black',
                         marginLeft:'5px'}}>
                         2
                         </span>
@@ -370,13 +369,13 @@ renderBets(){
        {this.state.checked7 ? (
               <List.Item >
                 <List.Content floated='right'>
-                    <Input                               
+                    <Input className="miInput"                              
                             placeholder='Value in Ether'
                             value={this.state.checked7Contribution}
                             onChange={ event=> this.setState({
                             checked7Contribution: event.target.value})}
                         />
-                    <Button
+                    <Button className="miButton"
                      onClick={()=>{
                          this.setState((prevState , props)=>({
                             checked7: !this.state.checked7,
@@ -391,12 +390,12 @@ renderBets(){
                 <List.Content >
                     <Header as='h3'>
                         <span 
-                        style={{color:'blue',
+                        style={{color:'#bfbfbf',
                         marginRight:'5px'}}>
                         2
                         </span>-
                         <span style={{
-                         color:'red',
+                         color:'black',
                         marginLeft:'5px'}}>
                         0
                         </span>
@@ -409,13 +408,13 @@ renderBets(){
        {this.state.checked8 ? (
               <List.Item >
                 <List.Content floated='right'>
-                    <Input                               
+                    <Input className="miInput"                              
                             placeholder='Value in Ether'
                             value={this.state.checked8Contribution}
                             onChange={ event=> this.setState({
                             checked8Contribution: event.target.value})}
                         />
-                    <Button
+                    <Button className="miButton"
                      onClick={()=>{
                          this.setState((prevState , props)=>({
                             checked8: !this.state.checked8,
@@ -430,12 +429,12 @@ renderBets(){
                 <List.Content >
                     <Header as='h3'>
                         <span 
-                        style={{color:'blue',
+                        style={{color:'#bfbfbf',
                         marginRight:'5px'}}>
                         2
                         </span>-
                         <span style={{
-                         color:'red',
+                         color:'black',
                         marginLeft:'5px'}}>
                         1
                         </span>
@@ -448,13 +447,13 @@ renderBets(){
        {this.state.checked9 ? (
               <List.Item >
                 <List.Content floated='right'>
-                    <Input                               
+                    <Input className="miInput"                              
                             placeholder='Value in Ether'
                             value={this.state.checked9Contribution}
                             onChange={ event=> this.setState({
                             checked9Contribution: event.target.value})}
                         />
-                    <Button
+                    <Button className="miButton"
                      onClick={()=>{
                          this.setState((prevState , props)=>({
                             checked9: !this.state.checked9,
@@ -469,12 +468,12 @@ renderBets(){
                 <List.Content >
                     <Header as='h3'>
                         <span 
-                        style={{color:'blue',
+                        style={{color:'#bfbfbf',
                         marginRight:'5px'}}>
                         2
                         </span>-
                         <span style={{
-                         color:'red',
+                         color:'black',
                         marginLeft:'5px'}}>
                         2
                         </span>
@@ -487,13 +486,13 @@ renderBets(){
        {this.state.checked10 ? (
               <List.Item >
                 <List.Content floated='right'>
-                    <Input                               
+                    <Input className="miInput"                               
                             placeholder='Value in Ether'
                             value={this.state.checked10Contribution}
                             onChange={ event=> this.setState({
                             checked10Contribution: event.target.value})}
                         />
-                    <Button
+                    <Button className="miButton"
                      onClick={()=>{
                          this.setState((prevState , props)=>({
                             checked10: !this.state.checked10,
@@ -506,11 +505,13 @@ renderBets(){
                 
 
                 <List.Content >
-                    <Header as='h3'>
+                    <Header as='h3' className="miHeight">
                         <span 
-                        style={{color:'blue',
+                        style={{color:'#bfbfbf',
                         marginRight:'5px'}}>
-                        Wins Left Team  
+                        Another<br/>
+                        result<br/>
+                        wins EGYP.  
                         </span>
                     </Header>
                </List.Content>               
@@ -521,13 +522,13 @@ renderBets(){
        {this.state.checked11 ? (
               <List.Item >
                 <List.Content floated='right'>
-                    <Input                               
+                    <Input className="miInput"                               
                             placeholder='Value in Ether'
                             value={this.state.checked11Contribution}
                             onChange={ event=> this.setState({
                             checked11Contribution: event.target.value})}
                         />
-                    <Button
+                    <Button className="miButton"
                      onClick={()=>{
                          this.setState((prevState , props)=>({
                             checked11: !this.state.checked11,
@@ -540,11 +541,13 @@ renderBets(){
                 
 
                 <List.Content >
-                    <Header as='h3'>
+                    <Header as='h3' className="miHeight">
                         <span 
-                        style={{color:'gray',
+                        style={{color:'#034bf8',
                         marginRight:'5px'}}>
-                        TIED
+                        Another<br/> 
+                        result<br/>
+                        tied
                         </span>
                     </Header>
                </List.Content>               
@@ -555,13 +558,13 @@ renderBets(){
        {this.state.checked12 ? (
               <List.Item >
                 <List.Content floated='right'>
-                    <Input                               
+                    <Input className="miInput"                               
                             placeholder='Value in Ether'
                             value={this.state.checked12Contribution}
                             onChange={ event=> this.setState({
                             checked12Contribution: event.target.value})}
                         />
-                    <Button
+                    <Button className="miButton"
                      onClick={()=>{
                          this.setState((prevState , props)=>({
                             checked12: !this.state.checked12,
@@ -574,11 +577,13 @@ renderBets(){
                 
 
                 <List.Content >
-                    <Header as='h3'>
+                    <Header as='h3' className="miHeight">
                         <span style={{
-                         color:'red',
-                        marginLeft:'5px'}}>
-                        Wins Right Team
+                         color:'black'}}>
+                        Another<br/>
+                        result <br/>
+                        wins URU.
+
                         </span>
                     </Header>
                </List.Content>               
@@ -603,8 +608,8 @@ renderBets(){
                     fontWeight: 'normal',
                     marginTop: '1.5em',
                 }}>
-                Total bet:
-                <span > {
+                <span className="total">Total bet:</span>
+                <span className="total-eter"> {
                 (+this.state.checked1Contribution) +
                 (+this.state.checked2Contribution) +
                 (+this.state.checked3Contribution) +
@@ -617,25 +622,23 @@ renderBets(){
                 (+this.state.checked10Contribution) +
                 (+this.state.checked11Contribution) +
                 (+this.state.checked12Contribution) 
-                }
+                } Ether.
                 </span> 
-            </Header>
-            <Checkbox 
-                style={{float:'right'}}
+                  <br/>
+                 <Checkbox
                  onChange={()=> {
                             this.setState({ conditionsAccepted: !this.state.conditionsAccepted });
                                 }}  
                 checked={this.state.conditionsAccepted}
-                label='Accept terms and conditions'
-                />
-
-            <Button
+                label='Accept terms and conditions' className="label-align"/>
+                <Button className="place-bet"
                 primary 
                 disabled={!this.state.conditionsAccepted}
                 onClick= {this.onSubmit}               
                 size='large'>
-                Place bet NOW!
+                Place bet!
             </Button>
+            </Header>
 
     </Segment>
 </div>);  
@@ -687,7 +690,7 @@ toggle = () => this.setState({
                         <Header as='h3' color='teal' >
                         <p className="room-name"> ROOM N° 15</p>
                         <span className="name-group">RUSSIA 2018 - GROUP STAGE</span>
-                            
+                         <span className="user-room">38  users  in  the  room</span>   
 
                         </Header>
                     </Grid.Row>
@@ -709,7 +712,11 @@ toggle = () => this.setState({
                              
                             <Grid.Column >
                                 <Container>
-                                    { web3.utils.fromWei(this.props.balance, 'ether')}
+                                  <div className="mieter">
+                                    <span className="text-eter">Accumulated<br/> 
+                                  total of betting (ETH):</span>
+                                   <span className="valor-eter">{ web3.utils.fromWei(this.props.balance, 'ether')}</span>
+                                  </div> 
                                 </Container>
                             </Grid.Column>
 
@@ -975,12 +982,11 @@ toggle = () => this.setState({
                                             style={{
                                                 fontSize:12,
                                                 color:'#bfbfbf',
-                                                fontSize:'15px',
+                                                fontSize:'15px !important',
                                                 lineHeight:'22px',
                                                 display:'table-cell',
                                             verticalAlign:'middle',
-                                            paddingLeft:'25px',
-                                            marginRight:'5px'}}>
+                                            paddingLeft:'25px'}}>
                                             Another<br/> 
                                             result<br/> 
                                             wins EGYP.
@@ -1003,12 +1009,11 @@ toggle = () => this.setState({
                                     <Header as='h3' style={{textAlign:'left', display:'table', height:'100%'}}>
                                         <span 
                                             style={{color:'#034bf8',
-                                            fontSize:'15px',
+                                            fontSize:'15px !important',
                                             lineHeight:'22px',
                                             display:'table-cell',
                                             verticalAlign:'middle',
-                                            paddingLeft:'25px',
-                                            marginRight:'5px'}}>
+                                            paddingLeft:'25px'}}>
                                             Another<br/> 
                                             result<br/>
                                             tied
@@ -1030,13 +1035,12 @@ toggle = () => this.setState({
                                     <Header as='h3' style={{textAlign:'left', display:'table', height:'100%'}}>
                                        
                                         <span style={{
-                                            fontSize:'15px',
+                                            fontSize:'15px !important',
                                             color:'#1b1b1b',
                                             lineHeight:'22px',
                                             display:'table-cell',
                                             verticalAlign:'middle',
-                                            paddingLeft:'25px',
-                                            marginLeft:'5px'}}>
+                                            paddingLeft:'25px'}}>
                                             Another<br/>
                                             result<br/>
                                             wins URU.
@@ -1077,6 +1081,56 @@ toggle = () => this.setState({
         background:#000000  !important;
         color:#ffffff !important;
       }
+
+      .miHeight {
+        line-height:22px !important;
+        padding-top: 30px !important;
+        
+      }
+
+.ui.header.miHeight>span  {
+        font-size:16px !important;
+      }
+
+.ui.teal.header {
+  color:#000 !important;
+}
+
+.ui.block.header {
+  padding:30px !important;
+  width:490px;
+  height:200px;
+  position:relative;
+}
+
+.place-bet {
+    width: 265px;
+    height: 65px;
+    border-radius: 60px !important;
+    background:rgba(6,44,238, 1) !important;
+    position:absolute;
+    bottom: -45px;
+    left: 20%;
+    z-index:99999 !important;
+    color:#ffffff !important;
+    font-family: 'pluto-sans-regular' !important;
+    font-size: 22px !important;
+    text-transform:capitalize !important;
+}
+
+.ui.disabled.button {
+  opacity:1 !important;
+  color:#ffffff !important;
+  font-family: 'pluto-sans-regular' !important;
+    font-size: 22px !important;
+    text-transform:capitalize !important;
+    background:#005fff !important;
+}
+
+label {
+  color:#0156fc !important;
+}
+
     `}</style>
                
             </Layout>

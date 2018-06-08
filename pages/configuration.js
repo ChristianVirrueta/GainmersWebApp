@@ -34,10 +34,10 @@ style={{ height: '100%',
 verticalAlign='middle'
 >
 
-<Grid.Column style={{ maxWidth: 450 }}>
-  <Header as='h2' color='orange' textAlign='center'>
+<Grid.Column style={{ maxWidth: 900 }}>
+  <Header as='h2' textAlign='center' style={{ fontSize:'30px !important', fontWeight: 'bold'}}>
   Your Gainmers Account
-  <p style={{ fontSize:'15px'}}> Edit your account details here</p>
+  <p style={{ fontSize:'20px'}}> Edit your account details here</p>
 
   </Header>
 
@@ -46,7 +46,7 @@ verticalAlign='middle'
       <Message >
       ETH Account: <a className='cuenta' >{firstAcc}</a>
       </Message>
-      <h4 style={{textAlign:'left'}}> E-mail</h4>
+      <h4 style={{textAlign:'left', paddingLeft:'20px'}}> E-mail</h4>
 
       <Form.Input
         fluid
@@ -54,7 +54,7 @@ verticalAlign='middle'
         iconPosition='left'
         placeholder='meetliquid@hotmail.com'
       />
-      <h4 style={{textAlign:'left'}}> Username</h4>
+      <h4 style={{textAlign:'left' , paddingLeft:'20px'}}> Username</h4>
       <Form.Input
         fluid
         icon='user'
