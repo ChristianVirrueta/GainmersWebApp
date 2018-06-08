@@ -694,9 +694,8 @@ toggle = () => this.setState({
                     <Grid.Row className="box-room">
                         <Header as='h3' color='teal' >
                         <p className="room-name"> ROOM N° 15</p>
-                        <span className="name-group">RUSSIA 2018 - GROUP STAGE</span>
-                         <span className="user-room">38  users  in  the  room</span>   
                         <span className="name-group">RUSSIA 2018 - {this.props.eventName}</span>
+                         <span className="user-room">38  users  in  the  room</span>   
                         </Header>
                     </Grid.Row>
 
