@@ -22,11 +22,11 @@ class NotWinners extends Component {
          <Row>
         <Cell textAlign='center'>
         <div className="block-flags">
-            <Flag name={'uy'} />Uruguay
+            <Flag name={'uru'} />Uruguay
             <div className="divider"></div>
             </div>
             <div className="block-flags">                          
-            <Flag name={'eg'} />Egypt
+            <Flag name={'egy'} />Egypt
             </div>
             </Cell>
         <Cell className="txt">

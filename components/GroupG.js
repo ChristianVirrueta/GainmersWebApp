@@ -24,8 +24,8 @@ const GroupG = ()=>{
 </Header>
 <Body>
 <Row >
-    <Cell textAlign='left'> <Flag name={'ru'} />Rusia</Cell>
-    <Cell >50</Cell>
+    <Cell textAlign='left'> <Flag name={'rus'} />Rusia</Cell>
+    <Cell >0</Cell>
     <Cell>0</Cell>
     <Cell>0</Cell>
     <Cell>0 </Cell>
@@ -37,7 +37,7 @@ const GroupG = ()=>{
     </Row>
 
     <Row>
-    <Cell textAlign='left'> <Flag name={'sa'} />Saudi Arabia</Cell>
+    <Cell textAlign='left'> <Flag name={'ksa'} />Saudi Arabia</Cell>
     <Cell>0</Cell>
     <Cell>0</Cell>
     <Cell>0</Cell>
@@ -50,7 +50,7 @@ const GroupG = ()=>{
     </Row>
 
     <Row>
-    <Cell textAlign='left'> <Flag name={'eg'} />Egypt</Cell>
+    <Cell textAlign='left'> <Flag name={'egy'} />Egypt</Cell>
     <Cell>0</Cell>
     <Cell>0</Cell>
     <Cell>0</Cell>
@@ -62,7 +62,7 @@ const GroupG = ()=>{
     </Row>
 
         <Row>
-    <Cell textAlign='left'> <Flag name={'uy'} />Uruguay</Cell>
+    <Cell textAlign='left'> <Flag name={'uru'} />Uruguay</Cell>
     <Cell>0</Cell>
     <Cell>0</Cell>
     <Cell>0</Cell>
@@ -85,11 +85,11 @@ const GroupG = ()=>{
     <Row>
         <Cell textAlign='center'>
         <div className="block-flags">
-        <Flag name={'ru'} />Rusia
+        <Flag name={'rus'} />Rusia
         <div className="divider"></div>
         </div>
         <div className="block-flags">
-        <Flag name={'sa'} />Saudi Arabia
+        <Flag name={'ksa'} />Saudi Arabia
         </div>
         </Cell>
         <Cell className="txt">
@@ -106,11 +106,11 @@ const GroupG = ()=>{
     <Row>
         <Cell textAlign='center'>
         <div className="block-flags">
-            <Flag name={'uy'} />Uruguay
+            <Flag name={'uru'} />Uruguay
             <div className="divider"></div>
             </div>
             <div className="block-flags">                          
-            <Flag name={'eg'} />Egypt
+            <Flag name={'egy'} />Egypt
             </div>
             </Cell>
         <Cell className="txt">
@@ -127,11 +127,11 @@ const GroupG = ()=>{
     <Row>
         <Cell textAlign='center'> 
         <div className="block-flags">
-        <Flag name={'ru'} />Rusia
+        <Flag name={'rus'} />Rusia
         <div className="divider"></div>
         </div>
         <div className="block-flags">
-        <Flag name={'uy'} />Uruguay
+        <Flag name={'uru'} />Uruguay
         </div>
         </Cell>
         <Cell className="txt">
@@ -148,12 +148,12 @@ const GroupG = ()=>{
     <Row>
         <Cell textAlign='center'> 
         <div className="block-flags">
-        <Flag name={'eg'} />Egypt
+        <Flag name={'egy'} />Egypt
         <div className="divider"></div>
         </div>
 
         <div className="block-flags">
-        <Flag name={'sa'} />
+        <Flag name={'ksa'} />
         Saudi Arabia
         </div>
         </Cell>

@@ -31,7 +31,7 @@ const trigger = (
 
 export default ()=> {
     return (
-        <Menu  style={{marginTop: '40px', marginBottom: '40px', height: '62px', width: '100%', borderTop: '1px solid #000'}}  compact secondary>
+        <Menu className="padding-top"  style={{marginTop: '40px', marginBottom: '40px', height: '62px', width: '100%', borderTop: '1px solid #000'}}  compact secondary>
           <Menu className="CentraFooter">
             <Menu.Item>
                     <Link route="/">
