@@ -13,13 +13,18 @@ class MyBets extends Component {
     static async getInitialProps(props){
         const bet = await generator.methods.getDeployedEvents().call();
 
-        const sportevent = SportEvent('0xfDa63B5daD31B7e38Bf22371B95d3D3A43eDB827');
+        const sportevent = SportEvent(props.query.address);
 
         const summary = await sportevent.methods.getDetails().call();
+
+        var splittedName = summary[0].split(" ")
     
         return {
           //address: props.query.address,
-          name: summary[0],
+          eventName: splittedName[0],
+          country1: splittedName[1],
+          country2: splittedName[2],
+          name: splittedName,
           balance: summary[1],
           bet: bet
         };
@@ -686,7 +691,7 @@ toggle = () => this.setState({
                     <Grid.Row className="box-room">
                         <Header as='h3' color='teal' >
                         <p className="room-name"> ROOM N° 15</p>
-                        <span className="name-group">RUSSIA 2018 - GROUP STAGE</span>
+                        <span className="name-group">RUSSIA 2018 - {this.props.eventName}</span>
                             
 
                         </Header>
@@ -700,9 +705,9 @@ toggle = () => this.setState({
                                 <Icon style={{padding: '0 10px'}}name='clock' />18:00 GTM-5
                                 </div>
                                 <div className="flag-d">
-                                 <Flag name={'eg'} />Egypt 
+                                 <Flag name={'eg'} />{this.props.country1} 
                                 <span>   VS</span>
-                                <Flag style={{padding: '10px'}} name={'sa'} />   Saudi Arabia
+                                <Flag style={{padding: '10px'}} name={'sa'} />{this.props.country2}
                                 </div>
                             </Container>
                             </Grid.Column >
