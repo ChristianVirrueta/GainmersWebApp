@@ -23,11 +23,11 @@ render() {
     <Row>
         <Cell textAlign='center'>
         <div className="block-flags">
-        <Flag name={'ru'} />Rusia
+        <Flag name={'rus'} />Rusia
         <div className="divider"></div>
         </div>
         <div className="block-flags">
-        <Flag name={'sa'} />Saudi Arabia
+        <Flag name={'ksa'} />Saudi Arabia
         </div>
         </Cell>
         <Cell className="txt">
@@ -44,11 +44,11 @@ render() {
     <Row>
         <Cell textAlign='center'>
         <div className="block-flags">
-            <Flag name={'uy'} />Uruguay
+            <Flag name={'uru'} />Uruguay
             <div className="divider"></div>
             </div>
             <div className="block-flags">                          
-            <Flag name={'eg'} />Egypt
+            <Flag name={'egy'} />Egypt
             </div>
             </Cell>
         <Cell className="txt">
