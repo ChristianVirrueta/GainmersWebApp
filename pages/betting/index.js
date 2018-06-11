@@ -26,15 +26,24 @@ render() {
                 </div>
             
              </div>            
-        <Row >
+        <Row>
             <Image src='http://gainmers.io/DappGainmers/images/banner-rusia.jpg' size='large'/>
         </Row>
-        <Row style={{width: '550px !important'}} >
+          <div style={{width: '560px !important'}} >
+            <Row className="ancho-fijo">
             <Choices/>
         </Row>
+          </div>
     
 
    </Grid>
+
+   <style>{`
+      .ancho-fijo {
+    width: 550px !important;
+    margin-top:20px !important;
+}
+    `}</style>
 
   </Layout> 
   ); 

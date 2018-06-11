@@ -1,0 +1,60 @@
+Arguments: 
+  C:\Program Files\nodejs\node.exe C:\Users\MSI\AppData\Roaming\npm\node_modules\yarn\bin\yarn.js add webpack --dev
+
+PATH: 
+  C:\Users\MSI\bin;C:\Program Files\Git\mingw64\bin;C:\Program Files\Git\usr\local\bin;C:\Program Files\Git\usr\bin;C:\Program Files\Git\usr\bin;C:\Program Files\Git\mingw64\bin;C:\Program Files\Git\usr\bin;C:\Users\MSI\bin;C:\ProgramData\Oracle\Java\javapath;C:\Program Files (x86)\Intel\iCLS Client;C:\Program Files\Intel\iCLS Client;C:\Windows\System32;C:\Windows;C:\Windows\System32\wbem;C:\Windows\System32\WindowsPowerShell\v1.0;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files\Intel\Intel(R) Management Engine Components\IPT;C:\WINDOWS\system32\config\systemprofile\.dnx\bin;C:\Program Files\Microsoft DNX\Dnvm;C:\Program Files\Microsoft SQL Server\120\Tools\Binn;C:\Program Files\Microsoft SQL Server\130\Tools\Binn;C:\Program Files\Git\cmd;C:\composer;C:\Program Files (x86)\GnuPG\bin;C:\Program Files (x86)\Skype\Phone;C:\Program Files (x86)\PuTTY;C:\xampp\php;C:\Program Files\nodejs;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0;C:\WINDOWS\System32\OpenSSH;C:\Users\MSI\AppData\Local\Microsoft\WindowsApps;C:\Users\MSI\AppData\Roaming\Composer\vendor\bin;C:\Users\MSI\AppData\Roaming\npm;C:\Program Files\Git\usr\bin\vendor_perl;C:\Program Files\Git\usr\bin\core_perl
+
+Yarn version: 
+  1.7.0
+
+Node version: 
+  8.11.2
+
+Platform: 
+  win32 x64
+
+Trace: 
+  Error: EPERM: operation not permitted, unlink 'C:\Users\MSI\DappGainmers\node_modules\.websocket.DELETE\build\Release\validation.node'
+
+npm manifest: 
+  {
+    "name": "dappgainmers",
+    "version": "1.0.0",
+    "description": "",
+    "main": "index.js",
+    "scripts": {
+      "test": "echo \"Error: no test specified\" && exit 1",
+      "dev": "node server.js",
+      "build": "next build "
+    },
+    "author": "",
+    "license": "ISC",
+    "dependencies": {
+      "babel-plugin-transform-react-cache": "^1.1.0",
+      "babel-plugin-transform-react-jsx": "^6.24.1",
+      "fs-extra": "^6.0.1",
+      "ganache-cli": "^6.1.0",
+      "mocha": "^5.1.1",
+      "next": "^4.1.4",
+      "next-routes": "^1.4.1",
+      "react": "^16.3.2",
+      "react-cache": "^1.1.2",
+      "react-dom": "^16.3.2",
+      "react-stylesheet": "^2.2.2",
+      "reactcss": "^1.2.3",
+      "semantic-ui-css": "^2.3.1",
+      "semantic-ui-react": "^0.80.0",
+      "solc": "^0.4.24",
+      "truffle-hdwallet-provider": "0.0.5",
+      "web3": "^1.0.0-beta.26"
+    },
+    "devDependencies": {
+      "css-loader": "^0.28.11"
+    }
+  }
+
+yarn manifest: 
+  No manifest
+
+Lockfile: 
+  No lockfile
