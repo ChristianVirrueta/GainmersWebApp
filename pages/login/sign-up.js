@@ -18,13 +18,7 @@ class SignUp extends Component{
       You can do same with CSS, the main idea is that all the elements up to the `Grid`
       below must have a height of 100%.
     */}
-    <style>{`
-      body > div,
-      body > div > div,
-      body > div > div > div.login-form {
-        height: 'auto';
-      }
-    `}</style>
+    
     <Grid
       textAlign='center'
       style={{ height: '100%', 
@@ -33,7 +27,7 @@ class SignUp extends Component{
     >
     
       <Grid.Column style={{ maxWidth: 700 }}>
-        <Header as='h2' color='teal' textAlign='center'>
+        <Header  color='teal' textAlign='center'>
         <h1>You’re almost done</h1>
         </Header>
         <Form size='large'>

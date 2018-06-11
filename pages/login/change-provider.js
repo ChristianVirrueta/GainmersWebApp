@@ -25,13 +25,13 @@ class ChangeProvider extends Component{
                     
                     color= 'teal'
                     as='h2'
-                    content='Please unlock your Metamask just by typing your password to start playing.'
+                    content='Please change to Main Ethereum Network to start playing'
                     style={{
                         fontSize:  '1.7em',
                         fontWeight: 'normal',
                     }}
                 />
-                <Link href='https://chrome.google.com/webstore/detail/metamask/nkbihfbeogaeaoehlefnkodbefgpgknn?hl=en'>
+                <Link route="/">
                 <a target='_blank'>
                 <Button primary size='huge'>
                     Continue
@@ -39,9 +39,9 @@ class ChangeProvider extends Component{
                 </Button>  
                 </a>
                 </Link>
-                <Divider hidden/>
+                <Divider />
         
-                <Divider hidden/>
+                <Divider />
 
                 <Accordion fluid styled>
 
@@ -77,7 +77,7 @@ class ChangeProvider extends Component{
                             </p>
                             
                             <Embed style={{ marginBottom: 10 } }
-                                icon='hidden'
+                                icon=''
                                 id='6Gf_kRE4MJU'
                                 placeholder='https://farm1.staticflickr.com/830/28305627398_ae4c376da8_z.jpg'
                                 source='youtube'
