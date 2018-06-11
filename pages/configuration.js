@@ -63,7 +63,7 @@ verticalAlign='middle'
         placeholder='Developer10'
       />
 
-      <Button color='teal' fluid size='large' style={{width:'45% !important', fontWeight: 'normal'}}>Save Account Info</Button>
+      <Button color='teal' fluid size='large' style={{width:'45% !important', fontWeight: 'normal', marginTop:'50px'}}>Save Account Info</Button>
     </Segment>
   </Form>
   
