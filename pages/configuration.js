@@ -35,18 +35,19 @@ verticalAlign='middle'
 >
 
 <Grid.Column style={{ maxWidth: 900 }}>
-  <Header as='h2' textAlign='center' style={{ fontSize:'30px !important', fontWeight: 'bold'}}>
-  Your Gainmers Account
+  <Header textAlign='center' style={{ fontSize:'30px !important', fontWeight: 'bold'}}>
+    <h1 style={{backgroundColor: 'transparent !important;', backgroundImage: 'none !important'}}>Your Gainmers Account</h1>
   <p style={{ fontSize:'20px'}}> Edit your account details here</p>
 
   </Header>
 
   <Form size='large'>
     <Segment stacked>
-      <Message >
+      <h4 style={{textAlign:'left', paddingLeft:'40px', fontFamily: 'pluto-sans-regular', fontWeight: 'normal', fontSize:'20px'}}>Wallet address</h4>
+      <Message style={{marginTop:'0px'}}>
       ETH Account: <a className='cuenta' >{firstAcc}</a>
       </Message>
-      <h4 style={{textAlign:'left', paddingLeft:'20px'}}> E-mail</h4>
+      <h4 style={{textAlign:'left', paddingLeft:'40px', fontFamily: 'pluto-sans-regular', fontWeight: 'normal', fontSize:'20px'}}> Email</h4>
 
       <Form.Input
         fluid
@@ -54,7 +55,7 @@ verticalAlign='middle'
         iconPosition='left'
         placeholder='meetliquid@hotmail.com'
       />
-      <h4 style={{textAlign:'left' , paddingLeft:'20px'}}> Username</h4>
+      <h4 style={{textAlign:'left' , paddingLeft:'40px', fontFamily: 'pluto-sans-regular', fontWeight: 'normal', fontSize:'20px'}}> Username</h4>
       <Form.Input
         fluid
         icon='user'
@@ -62,15 +63,29 @@ verticalAlign='middle'
         placeholder='Developer10'
       />
 
-      <Button color='teal' fluid size='large'>Save Account Info</Button>
+      <Button color='teal' fluid size='large' style={{width:'45% !important', fontWeight: 'normal', marginTop:'50px'}}>Save Account Info</Button>
     </Segment>
   </Form>
   
 </Grid.Column>
 </Grid>
+<style>{`
+      h1 {
+        -webkit-text-fill-color:inherit !important;
+        font-size: 50px !important;
+      }
+
+      p {
+        color:#000 !important;
+        font-weight: bold !important;
+      }
+
+      .ui .header {
+        line-height:normal !important;
+      }
 
 
-
+    `}</style>
        </Layout>
   );
 }       

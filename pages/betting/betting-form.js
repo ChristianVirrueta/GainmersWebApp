@@ -170,12 +170,9 @@ class MyBets extends Component {
 
 
 
-                        <
-                        List.Content >
-                        <
-                        Header as = 'h3' >
-                        <
-                        span style = {
+                        <List.Content >
+                        <Header as = 'h3' >
+                        <span style = {
                             {
                                 color: '#bfbfbf',
                                 marginRight: '5px'
