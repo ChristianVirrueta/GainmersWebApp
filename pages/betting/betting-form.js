@@ -20,15 +20,14 @@ class MyBets extends Component {
         var splittedName = summary[0].split(" ")
 
         return {
-<<<<<<< HEAD
+
           address: props.query.address,
           eventName: splittedName[0],
           country1: splittedName[1],
           country2: splittedName[2],
           name: splittedName,
           balance: summary[1],
-          bet: bet
-=======
+          bet: bet,
             //address: props.query.address,
             eventName: splittedName[0],
             country1: splittedName[1],
@@ -36,7 +35,6 @@ class MyBets extends Component {
             name: splittedName,
             balance: summary[1],
             bet: bet
->>>>>>> bd67b047b8b527b85b2d25bb4677df6814f47cae
         };
     }
     state = {
@@ -869,7 +867,6 @@ class MyBets extends Component {
                 Button className = "place-bet"
                 primary disabled = {!this.state.conditionsAccepted } onClick = { this.onSubmit } size = 'large' >
                 Place bet!
-<<<<<<< HEAD
             </Button>
             </Header>
 
@@ -1045,14 +1042,10 @@ toggle = () => this.setState({
                                     <Checkbox 
                                     style={{float:'right'}}
                                     onChange={()=> {
-=======
-                <
-                /Button> <
-                /Header>
+                </Button> 
+                </Header>
 
-                <
-                /Segment> <
-                /div>);  
+                </Segment> </div>);  
             }
 
             toggle = () => this.setState({
@@ -1587,7 +1580,6 @@ toggle = () => this.setState({
                                 Checkbox style = { { float: 'right' } } onChange = {
                                     () => {
                                         this.setState({ checked12: !this.state.checked12 });
-<<<<<<< HEAD
                                         }
                                     } 
                                     checked={this.state.checked12} />
@@ -1636,7 +1628,6 @@ toggle = () => this.setState({
                 </Grid>
 
                 <style>{`
-=======
                                     }
                                 }
                                 checked = { this.state.checked12 }
@@ -1697,7 +1688,6 @@ toggle = () => this.setState({
 
                                 <
                                 style > { `
->>>>>>> bd67b047b8b527b85b2d25bb4677df6814f47cae
       .group-stage{
         background:#000000!important;
         color:#ffffff !important;
