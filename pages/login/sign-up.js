@@ -55,7 +55,7 @@ class SignUp extends Component{
               iconPosition='left'
               placeholder='Developer10'
             />
-            <Link route="/login/sign-up">
+            <Link route="/betting">
                         <a>
                             <Button 
                                 color='teal' 

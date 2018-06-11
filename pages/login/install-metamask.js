@@ -45,7 +45,7 @@ class InstallMetamask extends Component{
             <Container style={{ padding: '40px' }}>
      
             <Embed style={{ marginBottom: 10 }}
-                icon='hidden'
+                icon=''
                 id='6Gf_kRE4MJU'
                 placeholder='https://farm1.staticflickr.com/830/28305627398_ae4c376da8_z.jpg'
                 source='youtube'
