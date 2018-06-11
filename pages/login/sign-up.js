@@ -18,7 +18,7 @@ class SignUp extends Component{
       You can do same with CSS, the main idea is that all the elements up to the `Grid`
       below must have a height of 100%.
     */}
-    <style>{`
+    <style jsx>{`
       body > div,
       body > div > div,
       body > div > div > div.login-form {

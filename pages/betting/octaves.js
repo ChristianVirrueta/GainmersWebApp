@@ -23,11 +23,11 @@ render() {
     <Row>
         <Cell textAlign='center'>
         <div className="block-flags">
-        <Flag name={'rus'} />Rusia
+        <Flag className="Russia" />Rusia
         <div className="divider"></div>
         </div>
         <div className="block-flags">
-        <Flag name={'ksa'} />Saudi Arabia
+        <Flag className="Saudi-arabia" />Saudi Arabia
         </div>
         </Cell>
         <Cell className="txt">
@@ -44,11 +44,11 @@ render() {
     <Row>
         <Cell textAlign='center'>
         <div className="block-flags">
-            <Flag name={'uru'} />Uruguay
+            <Flag className="Uruguay"/>Uruguay
             <div className="divider"></div>
             </div>
             <div className="block-flags">                          
-            <Flag name={'egy'} />Egypt
+            <Flag className="Egypt" />Egypt
             </div>
             </Cell>
         <Cell className="txt">
@@ -65,11 +65,11 @@ render() {
     <Row>
         <Cell textAlign='center'> 
         <div className="block-flags">
-        <Flag name={'rus'} />Rusia
+        <Flag className="Russia" />Rusia
         <div className="divider"></div>
         </div>
         <div className="block-flags">
-        <Flag name={'uru'} />Uruguay
+        <Flag className="Uruguay" />Uruguay
         </div>
         </Cell>
         <Cell className="txt">
@@ -86,12 +86,12 @@ render() {
     <Row>
         <Cell textAlign='center'> 
         <div className="block-flags">
-        <Flag name={'egy'} />Egypt
+        <Flag className="Egypt" />Egypt
         <div className="divider"></div>
         </div>
 
         <div className="block-flags">
-        <Flag name={'ksa'} />
+        <Flag className="Saudi-arabia" />
         Saudi Arabia
         </div>
         </Cell>
@@ -109,11 +109,11 @@ render() {
     <Row>
         <Cell textAlign='center'>
         <div className="block-flags">
-        <Flag name={'rus'} />Rusia
+        <Flag className="Russia" />Rusia
         <div className="divider"></div>
         </div>
         <div className="block-flags">
-        <Flag name={'ksa'} />Saudi Arabia
+        <Flag className="Saudi-arabia" />Saudi Arabia
         </div>
         </Cell>
         <Cell className="txt">
@@ -130,11 +130,11 @@ render() {
     <Row>
         <Cell textAlign='center'>
         <div className="block-flags">
-            <Flag name={'uru'} />Uruguay
+            <Flag className="Uruguay" />Uruguay
             <div className="divider"></div>
             </div>
             <div className="block-flags">                          
-            <Flag name={'egy'} />Egypt
+            <Flag className="Egypt" />Egypt
             </div>
             </Cell>
         <Cell className="txt">
@@ -151,11 +151,11 @@ render() {
     <Row>
         <Cell textAlign='center'> 
         <div className="block-flags">
-        <Flag name={'rus'} />Rusia
+        <Flag className="Russia" />Rusia
         <div className="divider"></div>
         </div>
         <div className="block-flags">
-        <Flag name={'uru'} />Uruguay
+        <Flag className="Uruguay" />Uruguay
         </div>
         </Cell>
         <Cell className="txt">
@@ -172,11 +172,11 @@ render() {
     <Row>
         <Cell textAlign='center'>
         <div className="block-flags">
-        <Flag name={'rus'} />Rusia
+        <Flag className="Russia" />Rusia
         <div className="divider"></div>
         </div>
         <div className="block-flags">
-        <Flag name={'ksa'} />Saudi Arabia
+        <Flag className="Saudi-arabia" />Saudi Arabia
         </div>
         </Cell>
         <Cell className="txt">
