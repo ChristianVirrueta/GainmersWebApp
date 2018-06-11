@@ -20,7 +20,6 @@ class MyBets extends Component {
         var splittedName = summary[0].split(" ")
 
         return {
-<<<<<<< HEAD
           address: props.query.address,
           eventName: splittedName[0],
           country1: splittedName[1],
@@ -28,15 +27,6 @@ class MyBets extends Component {
           name: splittedName,
           balance: summary[1],
           bet: bet
-=======
-            //address: props.query.address,
-            eventName: splittedName[0],
-            country1: splittedName[1],
-            country2: splittedName[2],
-            name: splittedName,
-            balance: summary[1],
-            bet: bet
->>>>>>> bd67b047b8b527b85b2d25bb4677df6814f47cae
         };
     }
     state = {
@@ -872,7 +862,6 @@ class MyBets extends Component {
                 Button className = "place-bet"
                 primary disabled = {!this.state.conditionsAccepted } onClick = { this.onSubmit } size = 'large' >
                 Place bet!
-<<<<<<< HEAD
             </Button>
             </Header>
 
@@ -1048,252 +1037,6 @@ toggle = () => this.setState({
                                     <Checkbox 
                                     style={{float:'right'}}
                                     onChange={()=> {
-=======
-                <
-                /Button> <
-                /Header>
-
-                <
-                /Segment> <
-                /div>);  
-            }
-
-            toggle = () => this.setState({
-                checked1: false,
-                checked2: false,
-                checked3: false,
-                checked4: false,
-                checked5: false,
-                checked6: false,
-                checked7: false,
-                checked8: false,
-                checked9: false,
-                checked10: false,
-                checked11: false,
-                checked12: false
-            })
-
-
-            render() {
-
-                    const panes = [{
-                            menuItem: 'Bet',
-                            render: () =>
-                                <
-                                Tab.Pane > { this.renderBets() } <
-                                /Tab.Pane> }, {
-                                    menuItem: 'My Bets',
-                                    render: () => < Tab.Pane > { this.renderCampaigns() } < /Tab.Pane> }
-                                ]
-                            return ( <
-                                Layout >
-                                <
-                                Grid >
-                                <
-                                Grid.Row >
-                                <
-                                div className = "titulo-02" >
-                                <
-                                div className = "titulo-number" >
-                                <
-                                div className = "mask-number" > 02 < /div> <
-                                /div> <
-                                div className = "titulo-content" > SELECT YOUR POSSIBLE RESULT AND BET: < /div> <
-                                span className = "subtitulo" > Select one or more options from the table < /span> <
-                                /div> <
-                                /Grid.Row>
-
-                                <
-                                Grid.Row >
-                                <
-                                Choices / >
-                                <
-                                /Grid.Row>
-
-                                <
-                                Grid.Row className = "box-room" >
-                                <
-                                Header as = 'h3'
-                                color = 'teal' >
-                                <
-                                p className = "room-name" > ROOM N° 15 < /p> <
-                                span className = "name-group" > RUSSIA 2018 - GROUP STAGE < /span> <
-                                span className = "user-room" > 38 users in the room < /span>    <
-                                span className = "name-group" > RUSSIA 2018 - { this.props.eventName } < /span> <
-                                /Header> <
-                                /Grid.Row>
-
-                                <
-                                Grid.Row columns = '2'
-                                divided >
-                                <
-                                Grid.Column >
-                                <
-                                Container text >
-                                <
-                                div className = "fecha-d" >
-                                <
-                                Icon name = 'calendar' / > 14 Jun 2018 <
-                                Icon style = { { padding: '0 10px' } } name = 'clock' / > 18: 00 GTM - 5 <
-                                /div> <
-                                div className = "flag-d" >
-                                <
-                                Flag className = { this.props.country1 }
-                                />{this.props.country1}  <
-                                span > VS < /span> <
-                                Flag style = { { padding: '10px' } } className = { this.props.country2 }
-                                />{this.props.country2} <
-                                /div> <
-                                /Container> <
-                                /Grid.Column >
-
-                                <
-                                Grid.Column >
-                                <
-                                Container >
-                                <
-                                div className = "mieter" >
-                                <
-                                span className = "text-eter" > Accumulated < br / >
-                                total of betting(ETH): < /span> <
-                                span className = "valor-eter" > { web3.utils.fromWei(this.props.balance, 'ether') } < /span> <
-                                /div>  <
-                                /Container> <
-                                /Grid.Column>
-
-                                <
-                                /Grid.Row>
-
-                                <
-                                Grid.Row columns = '2'
-                                divided >
-                                <
-                                Grid.Column >
-
-                                <
-                                Grid columns = '3' >
-
-                                <
-                                Grid.Row >
-                                <
-                                Grid.Column >
-                                <
-                                Segment className = "box-layout" >
-                                <
-                                Checkbox style = { { float: 'right' } } onChange = {
-                                    () => {
-                                        this.setState({ checked1: !this.state.checked1 });
-                                    }
-                                }
-                                checked = { this.state.checked1 }
-                                /> <
-                                Header as = 'h3' >
-                                <
-                                span style = {
-                                    {
-                                        color: 'blue',
-                                        fontSize: '20px',
-                                        marginRight: '5px'
-                                    }
-                                } >
-                                0 <
-                                /span>- <
-                                span style = {
-                                    {
-                                        color: 'red',
-                                        fontSize: '20px',
-                                        marginLeft: '5px'
-                                    }
-                                } >
-                                0 <
-                                /span> <
-                                /Header> <
-                                /Segment> <
-                                /Grid.Column>
-
-                                <
-                                Grid.Column >
-                                <
-                                Segment className = "box-layout" >
-                                <
-                                Checkbox style = { { float: 'right' } } onChange = {
-                                    () => {
-                                        this.setState({ checked2: !this.state.checked2 });
-                                    }
-                                }
-                                checked = { this.state.checked2 }
-                                /> <
-                                Header as = 'h3' >
-                                <
-                                span style = {
-                                    {
-                                        color: 'blue',
-                                        fontSize: '20px',
-                                        marginRight: '5px'
-                                    }
-                                } >
-                                0 <
-                                /span>- <
-                                span style = {
-                                    {
-                                        color: 'red',
-                                        fontSize: '20px',
-                                        marginLeft: '5px'
-                                    }
-                                } >
-                                1 <
-                                /span> <
-                                /Header> <
-                                /Segment>  <
-                                /Grid.Column>    
-
-                                <
-                                Grid.Column >
-                                <
-                                Segment className = "box-layout" >
-                                <
-                                Checkbox style = { { float: 'right' } } onChange = {
-                                    () => {
-                                        this.setState({ checked3: !this.state.checked3 });
-                                    }
-                                }
-                                checked = { this.state.checked3 }
-                                /> <
-                                Header as = 'h3' >
-                                <
-                                span style = {
-                                    {
-                                        color: 'blue',
-                                        fontSize: '20px',
-                                        marginRight: '5px'
-                                    }
-                                } >
-                                0 <
-                                /span>- <
-                                span style = {
-                                    {
-                                        color: 'red',
-                                        fontSize: '20px',
-                                        marginLeft: '5px'
-                                    }
-                                } >
-                                2 <
-                                /span> <
-                                /Header> <
-                                /Segment> <
-                                /Grid.Column> <
-                                /Grid.Row> 
-
-                                <
-                                Grid.Row >
-                                <
-                                Grid.Column >
-                                <
-                                Segment className = "box-layout" >
-                                <
-                                Checkbox style = { { float: 'right' } } onChange = {
-                                    () => {
->>>>>>> bd67b047b8b527b85b2d25bb4677df6814f47cae
                                         this.setState({ checked4: !this.state.checked4 });
                                     }
                                 }
@@ -1590,7 +1333,6 @@ toggle = () => this.setState({
                                 Checkbox style = { { float: 'right' } } onChange = {
                                     () => {
                                         this.setState({ checked12: !this.state.checked12 });
-<<<<<<< HEAD
                                         }
                                     } 
                                     checked={this.state.checked12} />
@@ -1639,68 +1381,6 @@ toggle = () => this.setState({
                 </Grid>
 
                 <style>{`
-=======
-                                    }
-                                }
-                                checked = { this.state.checked12 }
-                                /> <
-                                Header as = 'h3'
-                                style = { { textAlign: 'left', display: 'table', height: '100%' } } >
-
-                                <
-                                span style = {
-                                    {
-                                        fontSize: '15px !important',
-                                        color: '#1b1b1b',
-                                        lineHeight: '22px',
-                                        display: 'table-cell',
-                                        verticalAlign: 'middle',
-                                        paddingLeft: '25px'
-                                    }
-                                } >
-                                Another < br / >
-                                result < br / >
-                                wins URU. <
-                                /span> <
-                                /Header> <
-                                /Segment> <
-                                /Grid.Column> <
-                                /Grid.Row> <
-                                /Grid>   <
-                                Button style = { { marginTop: '15px' } } floated = 'right'
-                                onClick = { this.toggle } >
-                                Uncheck all <
-                                /Button>                            
-
-                                <
-                                /Grid.Column>
-
-                                <
-                                Grid.Column className = "Grid-bet" >
-                                <
-                                Tab defaultActiveIndex = { 1 } menu = {
-                                    {
-                                        inverted: true,
-                                        compact: true,
-                                    }
-                                }
-                                panes = { panes }
-                                />
-
-                                <
-                                /Grid.Column>
-
-
-
-                                <
-                                /Grid.Row>
-
-                                <
-                                /Grid>
-
-                                <
-                                style > { `
->>>>>>> bd67b047b8b527b85b2d25bb4677df6814f47cae
       .group-stage{
         background:#000000!important;
         color:#ffffff !important;
