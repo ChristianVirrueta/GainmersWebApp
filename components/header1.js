@@ -54,8 +54,21 @@ export default ()=> {
                     </Dropdown.Menu>
                     </Dropdown>
                 </Menu.Item>
-                <Menu.Item as='a'>FAQs</Menu.Item>
-                <Menu.Item as='a'>Blog</Menu.Item>
+ 
+                <Menu.Item >
+                    <Link route="/login/faqs">
+                            <a>
+                                FAQs
+                            </a>
+                </Link>
+                </Menu.Item>
+                <Menu.Item >
+                    <Link route="/login/sign-up">
+                            <a>
+                                Blog
+                            </a>
+                </Link>
+                </Menu.Item>
 
 
                 <Menu.Item>

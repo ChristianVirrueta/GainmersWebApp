@@ -8,9 +8,32 @@ import {Accordion,Header,Button, Embed, Icon, Segment, Divider, Menu} from 'sema
 
 
 class MainIndex extends Component{
+    
     renderNetID(){
         var IDred;
         var el;
+        var accountDetail; 
+        web3.eth.getAccounts(function(err, accounts){
+            if (err != null) {
+                console.error("An error occurred: "+err);
+                accountDetail=0;
+                console.log(accountDetail);
+
+
+            }
+            else if (accounts.length == 0) {
+                console.log("User is not logged in to MetaMask");
+                accountDetail=1;
+                console.log(accountDetail);
+
+                }
+            else {
+                console.log("User is logged in to MetaMask");
+                accountDetail=2;
+                console.log(accountDetail);
+
+            }
+        });
         web3.eth.net.getId().then(netId => {
             switch (netId) {
             case 1:
@@ -38,7 +61,13 @@ class MainIndex extends Component{
                 IDred = "Rinkeby Network Detected";
                 el = document.querySelector(".Identificador-red");
                 el.innerHTML=IDred;
-                Router.pushRoute('/login/sign-up');
+                if(accountDetail == 1){
+                    Router.pushRoute('/login/account-locked');
+
+                }else if(accountDetail==2){
+                    Router.pushRoute('/login/sign-up');
+
+                }
                 console.log(IDred);
                 break;
             case 42:
@@ -54,7 +83,7 @@ class MainIndex extends Component{
             el.innerHTML=IDred;
             Router.pushRoute('/login/change-provider');
             console.log(IDred);            }
-          }).then()
+          });
     return (
     <h1 className= 'Identificador-red' ></h1>
     );

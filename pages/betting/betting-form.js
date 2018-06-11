@@ -20,13 +20,17 @@ class MyBets extends Component {
         var splittedName = summary[0].split(" ")
 
         return {
+<<<<<<< HEAD
 
+=======
+>>>>>>> 8ebc482d51dbb7a2af302d5f111ba0664be5702d
           address: props.query.address,
           eventName: splittedName[0],
           country1: splittedName[1],
           country2: splittedName[2],
           name: splittedName,
           balance: summary[1],
+<<<<<<< HEAD
           bet: bet,
             //address: props.query.address,
             eventName: splittedName[0],
@@ -35,6 +39,9 @@ class MyBets extends Component {
             name: splittedName,
             balance: summary[1],
             bet: bet
+=======
+          bet: bet
+>>>>>>> 8ebc482d51dbb7a2af302d5f111ba0664be5702d
         };
     }
     state = {
@@ -1042,6 +1049,7 @@ toggle = () => this.setState({
                                     <Checkbox 
                                     style={{float:'right'}}
                                     onChange={()=> {
+<<<<<<< HEAD
                 </Button> 
                 </Header>
 
@@ -1284,6 +1292,8 @@ toggle = () => this.setState({
                                 Checkbox style = { { float: 'right' } } onChange = {
                                     () => {
 >>>>>>> bd67b047b8b527b85b2d25bb4677df6814f47cae
+=======
+>>>>>>> 8ebc482d51dbb7a2af302d5f111ba0664be5702d
                                         this.setState({ checked4: !this.state.checked4 });
                                     }
                                 }
@@ -1628,6 +1638,7 @@ toggle = () => this.setState({
                 </Grid>
 
                 <style>{`
+<<<<<<< HEAD
                                     }
                                 }
                                 checked = { this.state.checked12 }
@@ -1688,6 +1699,8 @@ toggle = () => this.setState({
 
                                 <
                                 style > { `
+=======
+>>>>>>> 8ebc482d51dbb7a2af302d5f111ba0664be5702d
       .group-stage{
         background:#000000!important;
         color:#ffffff !important;
