@@ -1,5 +1,7 @@
 import React,{Component} from 'react';
 import Layout from '../../components/layout1';
+import Encabezado from '../../components/header1';
+import Head from 'next/head';
 import{Link} from '../../routes';
 import {Accordion,Header,Button, Embed, Icon, Segment, Container, Divider, Menu} from 'semantic-ui-react';
 
@@ -20,7 +22,15 @@ class InstallMetamask extends Component{
 
 
         return (
-            <Layout>
+            <Container textAlign='center'>
+            <Head>
+                <link rel="stylesheet" 
+                href="//cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.12/semantic.min.css"></link>
+                <link rel="stylesheet" 
+                href="http://gainmers.io/DappGainmers/style/styles.css"></link>
+            </Head>
+
+            <Encabezado/>
              <h1 >Want to play?</h1>
             <Header
                 block
@@ -38,6 +48,15 @@ class InstallMetamask extends Component{
             <a target='_blank' style={{position: 'relative', top: '-55px', display: 'block'}}>
             <Button primary size='huge'>
                 Install Metamask
+            
+            </Button>  
+            </a>
+            </Link>
+
+            <Link href='//localhost:3000'>
+            <a style={{position: 'relative', top: '-55px', display: 'block'}}>
+            <Button primary size='huge'>
+                Continue
             
             </Button>  
             </a>
@@ -142,8 +161,7 @@ Warning: Imported accounts are not protected by the seed phrase that was generat
 
               
         </Accordion>
-
-        </Layout>
+</Container>
         );
     }       
 }

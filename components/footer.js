@@ -1,4 +1,5 @@
 import React from 'react';
+import NetValidation from './netValidation';
 import { Menu, Dropdown,Input,Icon, Button,Image, Header } from 'semantic-ui-react';
 import{ Link} from '../routes';
 const trigger = (
@@ -31,6 +32,7 @@ const trigger = (
 
 export default ()=> {
     return (
+      <div>
         <Menu className="padding-top"  style={{marginTop: '40px', marginBottom: '40px', height: '62px', width: '100%', borderTop: '1px solid #000'}}  compact secondary>
           <Menu className="CentraFooter">
             <Menu.Item>
@@ -63,6 +65,8 @@ export default ()=> {
             </Menu.Menu>
             </Menu>
        </Menu>
+       <NetValidation/>
+       </div>
     );
   
 }

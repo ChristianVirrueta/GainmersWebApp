@@ -11,6 +11,7 @@ import SportEvent from '../../ethereum/sportevent.js';
 class MyBets extends Component {
     
     static async getInitialProps(props){
+     
         const bet = await generator.methods.getDeployedEvents().call();
 
         const sportevent = SportEvent(props.query.address);
@@ -29,7 +30,8 @@ class MyBets extends Component {
           bet: bet
         };
       }
-    state = { 
+
+      state = { 
         conditionsAccepted: false,
         checked1: false,
         checked2: false,
