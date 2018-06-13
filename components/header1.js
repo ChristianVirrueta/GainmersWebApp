@@ -9,7 +9,7 @@ export default ()=> {
         <Menu style={{marginTop: '30px', marginBottom: '60px'}}  secondary>
             <Link route="/">
                 <a className="item" >
-                <Image src='http://gainmers.io/DappGainmers/images/logo.png' size='small'/>
+                <Image src='http://dapp.gainmers.io/assets/images/logo.png' size='small'/>
                 </a>
             </Link>
             <Menu.Menu position='right'>

@@ -25,21 +25,17 @@ class MainIndex extends Component{
              web3.eth.getAccounts(function(err, accounts){
                 if (err != null) {
                     console.error("An error occurred: "+err);
-                    accountDetail=0;
-                    console.log(accountDetail);
-    
+                    accountDetail=0;    
     
                 }
                 else if (accounts.length == 0) {
                     console.log("User is not logged in to MetaMask");
                     accountDetail=1;
-                    console.log(accountDetail);
     
                     }
                 else {
                     console.log("User is logged in to MetaMask");
                     accountDetail=2;
-                    console.log(accountDetail);
     
                 }
             });
@@ -56,7 +52,6 @@ class MainIndex extends Component{
                     Router.pushRoute('/betting');
 
                 }
-                console.log(IDred);
                 break;
                
                 case 2:
@@ -64,35 +59,31 @@ class MainIndex extends Component{
                     el = document.querySelector(".Identificador-red");
                     el.innerHTML=IDred;
                     Router.pushRoute('/login/change-provider');
-                    console.log(IDred);
                     break;
                 case 3:
                     IDred = "Ropsten Network Detected";
                     el = document.querySelector(".Identificador-red");
                     el.innerHTML=IDred;
                     Router.pushRoute('/login/change-provider');
-                    console.log(IDred);
                     break;
                 case 4:
                     IDred = "Rinkeby Network detected";
                     el = document.querySelector(".Identificador-red");
                     el.innerHTML=IDred;
                     Router.pushRoute('/login/change-provider');
-                    console.log(IDred);
                     break
                 case 42:
                     IDred = "Kovan Network Detected";
                     el = document.querySelector(".Identificador-red");
                     el.innerHTML=IDred;
                     Router.pushRoute('/login/change-provider');
-                    console.log(IDred);
                     break;
                 default:
                 IDred = "Kovan Network Detected";
                 el = document.querySelector(".Identificador-red");
                 el.innerHTML=IDred;
                 Router.pushRoute('/login/change-provider');
-                console.log(IDred);            }
+                }
               });
         
         }else{
@@ -113,7 +104,7 @@ class MainIndex extends Component{
                 <link rel="stylesheet" 
                 href="//cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.12/semantic.min.css"></link>
                 <link rel="stylesheet" 
-                href="http://gainmers.io/DappGainmers/style/styles.css"></link>
+                href="http://dapp.gainmers.io/assets/style/styles.css"></link>
             </Head>
             <Encabezado/>
             <h1 >Welcome to Gainmers</h1>

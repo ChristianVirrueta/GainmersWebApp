@@ -15,7 +15,7 @@ export default (props)=> {
                 <link rel="stylesheet" 
                 href="//cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.12/semantic.min.css"></link>
                 <link rel="stylesheet" 
-                href="http://gainmers.io/DappGainmers/style/styles-betting.css"></link>
+                href="http://dapp.gainmers.io/assets/style/styles-betting.css"></link>
             </Head>
              
             <Header/>

@@ -27,7 +27,7 @@ render() {
             
              </div>            
         <Row>
-            <Image src='http://gainmers.io/DappGainmers/images/banner-rusia.jpg' size='large'/>
+            <Image src='http://dapp.gainmers.io/assets/images/banner-rusia.jpg' size='large'/>
         </Row>
           <div style={{width: '560px !important'}} >
             <Row className="ancho-fijo">

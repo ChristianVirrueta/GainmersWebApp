@@ -21,20 +21,17 @@ class netValidation extends Component{
                 if (err != null) {
                     console.error("An error occurred: "+err);
                     accountDetail=0;
-                    console.log(accountDetail);
     
     
                 }
                 else if (accounts.length == 0) {
                     console.log("User is not logged in to MetaMask");
                     accountDetail=1;
-                    console.log(accountDetail);
     
                     }
                 else {
                     console.log("User is logged in to MetaMask");
                     accountDetail=2;
-                    console.log(accountDetail);
     
                 }
             });
@@ -51,7 +48,6 @@ class netValidation extends Component{
                         //Router.pushRoute('/');
     
                     }
-                    console.log(IDred);
                     break;
                  
                 case 2:
@@ -59,14 +55,12 @@ class netValidation extends Component{
                     el = document.querySelector(".Identificador-red");
                     el.innerHTML=IDred;
                     Router.pushRoute('/login/change-provider');
-                    console.log(IDred);
                     break;
                 case 3:
                     IDred = "Ropsten Network Detected";
                     el = document.querySelector(".Identificador-red");
                     el.innerHTML=IDred;
                     Router.pushRoute('/login/change-provider');
-                    console.log(IDred);
                     break;
                 case 4:
                     IDred = "Rinkeby Network Detected";
@@ -74,21 +68,19 @@ class netValidation extends Component{
                     el = document.querySelector(".Identificador-red");
                     el.innerHTML=IDred;
                     Router.pushRoute('/login/change-provider');
-                    console.log(IDred);
                     break
                 case 42:
                     IDred = "Kovan Network Detected";
                     el = document.querySelector(".Identificador-red");
                     el.innerHTML=IDred;
                     Router.pushRoute('/login/change-provider');
-                    console.log(IDred);
                     break;
                 default:
                 IDred = "Kovan Network Detected";
                 el = document.querySelector(".Identificador-red");
                 el.innerHTML=IDred;
                 Router.pushRoute('/login/change-provider');
-                console.log(IDred);            }
+                }
               });
         
         }else{        

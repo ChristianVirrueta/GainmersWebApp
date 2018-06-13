@@ -87,7 +87,6 @@ const { Header, Row, HeaderCell, Body, Cell } = Table;
         <Cell textAlign='center'>
         <div className="block-flags">
         <Flag className="Russia" />Rusia
-        <div className="divider"></div>
         </div>
         <div className="block-flags">
         <Flag className="Saudi-arabia" />Saudi Arabia
@@ -100,57 +99,48 @@ const { Header, Row, HeaderCell, Body, Cell } = Table;
         <Cell>
             <Button primary className="pool">
             Pool</Button>
-            <Button className="room">
-            Room</Button>
         </Cell>
     </Row>
     <Row>
         <Cell textAlign='center'>
         <div className="block-flags">
-            <Flag className="Uruguay" />Uruguay
-            <div className="divider"></div>
+            <Flag className="Egypt" />Egypt
             </div>
             <div className="block-flags">                          
-            <Flag className="Egypt" />Egypt
+            <Flag className="Uruguay" />Uruguay
             </div>
             </Cell>
         <Cell className="txt">
-            <Icon  name='calendar' />14 Jun 2018         
-            <Icon style={{padding: '0 10px'}}name='clock' />18:00 GTM-5
+            <Icon  name='calendar' />15 Jun 2018         
+            <Icon style={{padding: '0 10px'}}name='clock' />07:00 GTM-5
         </Cell>
         <Cell>
             <Button primary className="pool">
             Pool</Button>
-            <Button className="room">
-            Room</Button>
         </Cell>
     </Row>
     <Row>
         <Cell textAlign='center'> 
         <div className="block-flags">
         <Flag className="Russia" />Rusia
-        <div className="divider"></div>
         </div>
         <div className="block-flags">
-        <Flag className="Uruguay" />Uruguay
+        <Flag className="Egypt" />Egypt
         </div>
         </Cell>
         <Cell className="txt">
-            <Icon  name='calendar' />14 Jun 2018         
-            <Icon style={{padding: '0 10px'}}name='clock' />18:00 GTM-5
+            <Icon  name='calendar' />19 Jun 2018         
+            <Icon style={{padding: '0 10px'}}name='clock' />13:00 GTM-5
         </Cell>
         <Cell>
             <Button primary className="pool">
             Pool</Button>
-            <Button className="room">
-            Room</Button>
         </Cell>
     </Row>
     <Row>
         <Cell textAlign='center'> 
         <div className="block-flags">
-        <Flag className="Uruguay" />Egypt
-        <div className="divider"></div>
+        <Flag className="Uruguay" />Uruguay
         </div>
 
         <div className="block-flags">
@@ -159,14 +149,52 @@ const { Header, Row, HeaderCell, Body, Cell } = Table;
         </div>
         </Cell>
         <Cell className="txt">
-            <Icon  name='calendar' />14 Jun 2018         
-            <Icon style={{padding: '0 10px'}}name='clock' />18:00 GTM-5
+            <Icon  name='calendar' />20 Jun 2018         
+            <Icon style={{padding: '0 10px'}}name='clock' />10:00 GTM-5
         </Cell>
         <Cell>
             <Button primary className="pool">
             Pool</Button>
-            <Button className="room">
-            Room</Button>
+        </Cell>
+    </Row>
+    <Row>
+        <Cell textAlign='center'> 
+        <div className="block-flags">
+        <Flag className="Uruguay" />Uruguay
+        </div>
+
+        <div className="block-flags">
+        <Flag className="Russia" />
+        Russia
+        </div>
+        </Cell>
+        <Cell className="txt">
+            <Icon  name='calendar' />25 Jun 2018         
+            <Icon style={{padding: '0 10px'}}name='clock' />09:00 GTM-5
+        </Cell>
+        <Cell>
+            <Button primary className="pool">
+            Pool</Button>
+        </Cell>
+    </Row>
+    <Row>
+        <Cell textAlign='center'> 
+        <div className="block-flags">
+        <Flag className="Saudi-arabia" />Saudi Arabia
+        </div>
+
+        <div className="block-flags">
+        <Flag className="Egypt" />
+        Egypt
+        </div>
+        </Cell>
+        <Cell className="txt">
+            <Icon  name='calendar' />25 Jun 2018         
+            <Icon style={{padding: '0 10px'}}name='clock' />09:00 GTM-5
+        </Cell>
+        <Cell>
+            <Button primary className="pool">
+            Pool</Button>
         </Cell>
     </Row>
     

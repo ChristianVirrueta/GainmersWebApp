@@ -22,22 +22,19 @@ class NotWinners extends Component {
          <Row>
         <Cell textAlign='center'>
         <div className="block-flags">
-            <Flag className="Uruguay" />Uruguay
-            <div className="divider"></div>
+            <Flag className="Default" />TBD
             </div>
             <div className="block-flags">                          
-            <Flag className="Egypt" />Egypt
+            <Flag className="Default" />TBD
             </div>
             </Cell>
         <Cell className="txt">
-            <Icon  name='calendar' />14 Jun 2018         
-            <Icon style={{padding: '0 10px'}}name='clock' />18:00 GTM-5
+            <Icon  name='calendar' />TBA         
+            <Icon style={{padding: '0 10px'}}name='clock' />TBA
         </Cell>
         <Cell>
             <Button primary className="pool">
             Pool</Button>
-            <Button className="room">
-            Room</Button>
         </Cell>
     </Row>
          

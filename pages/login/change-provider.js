@@ -40,9 +40,6 @@ class ChangeProvider extends Component{
                 </a>
                 </Link>
                 <Divider />
-        
-                <Divider />
-
                 <Accordion fluid styled>
 
                     <Accordion.Title  active={activeIndex === 0} index={0} onClick={this.handleClick}>

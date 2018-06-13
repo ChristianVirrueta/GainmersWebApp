@@ -24,7 +24,7 @@ const GroupC = ()=>{
 </Header>
 <Body>
 <Row >
-    <Cell textAlign='left'> <Flag className="Russia" />Rusia</Cell>
+    <Cell textAlign='left'> <Flag className="France" />France</Cell>
     <Cell >0</Cell>
     <Cell>0</Cell>
     <Cell>0</Cell>
@@ -37,7 +37,7 @@ const GroupC = ()=>{
     </Row>
 
     <Row>
-    <Cell textAlign='left'> <Flag className="Saudi-arabia" />Saudi Arabia</Cell>
+    <Cell textAlign='left'> <Flag className="Australia" />Australia</Cell>
     <Cell>0</Cell>
     <Cell>0</Cell>
     <Cell>0</Cell>
@@ -50,7 +50,7 @@ const GroupC = ()=>{
     </Row>
 
     <Row>
-    <Cell textAlign='left'> <Flag className="Egypt" />Egypt</Cell>
+    <Cell textAlign='left'> <Flag className="Peru" />Peru</Cell>
     <Cell>0</Cell>
     <Cell>0</Cell>
     <Cell>0</Cell>
@@ -62,7 +62,7 @@ const GroupC = ()=>{
     </Row>
 
         <Row>
-    <Cell textAlign='left'> <Flag className="Uruguay" />Uruguay</Cell>
+    <Cell textAlign='left'> <Flag className="Denmark" />Denmark</Cell>
     <Cell>0</Cell>
     <Cell>0</Cell>
     <Cell>0</Cell>
@@ -85,87 +85,121 @@ const GroupC = ()=>{
     <Row>
         <Cell textAlign='center'>
         <div className="block-flags">
-        <Flag className="Russia" />Rusia
-        <div className="divider"></div>
+        <Flag className="France" />France
         </div>
         <div className="block-flags">
-        <Flag className="Saudi-arabia" />Saudi Arabia
+        <Flag className="Australia" />Australia
         </div>
         </Cell>
         <Cell className="txt">
-            <Icon  name='calendar' />14 Jun 2018         
-            <Icon style={{padding: '0 10px'}}name='clock' />18:00 GTM-5
+            <Icon  name='calendar' />16 Jun 2018         
+            <Icon style={{padding: '0 10px'}}name='clock' />17:00 GTM-5
         </Cell>
         <Cell>
             <Button primary className="pool">
             Pool</Button>
-            <Button className="room">
-            Room</Button>
+            
         </Cell>
     </Row>
     <Row>
         <Cell textAlign='center'>
         <div className="block-flags">
-            <Flag className="Uruguay" />Uruguay
-            <div className="divider"></div>
+            <Flag className="Peru" />Peru
             </div>
             <div className="block-flags">                          
-            <Flag className="Egypt" />Egypt
+            <Flag className="Denmark" />Denmark
             </div>
             </Cell>
         <Cell className="txt">
-            <Icon  name='calendar' />14 Jun 2018         
-            <Icon style={{padding: '0 10px'}}name='clock' />18:00 GTM-5
+            <Icon  name='calendar' />16 Jun 2018         
+            <Icon style={{padding: '0 10px'}}name='clock' />11:00 GTM-5
         </Cell>
         <Cell>
             <Button primary className="pool">
             Pool</Button>
-            <Button className="room">
-            Room</Button>
+            
         </Cell>
     </Row>
     <Row>
         <Cell textAlign='center'> 
         <div className="block-flags">
-        <Flag className="Russia" />Rusia
-        <div className="divider"></div>
+        <Flag className="Denmark" />Denmark
         </div>
         <div className="block-flags">
-        <Flag className="Uruguay" />Uruguay
+        <Flag className="Australia" />Australia
         </div>
         </Cell>
         <Cell className="txt">
-            <Icon  name='calendar' />14 Jun 2018         
-            <Icon style={{padding: '0 10px'}}name='clock' />18:00 GTM-5
+            <Icon  name='calendar' />21 Jun 2018         
+            <Icon style={{padding: '0 10px'}}name='clock' />19:00 GTM-5
         </Cell>
         <Cell>
             <Button primary className="pool">
             Pool</Button>
-            <Button className="room">
-            Room</Button>
+            
         </Cell>
     </Row>
     <Row>
         <Cell textAlign='center'> 
         <div className="block-flags">
-        <Flag className="Uruguay" />Egypt
-        <div className="divider"></div>
+        <Flag className="France" />France
         </div>
 
         <div className="block-flags">
-        <Flag className="Saudi-arabia" />
-        Saudi Arabia
+        <Flag className="Peru" />
+        Peru
         </div>
         </Cell>
         <Cell className="txt">
-            <Icon  name='calendar' />14 Jun 2018         
-            <Icon style={{padding: '0 10px'}}name='clock' />18:00 GTM-5
+            <Icon  name='calendar' />21 Jun 2018         
+            <Icon style={{padding: '0 10px'}}name='clock' />10:00 GTM-5
         </Cell>
         <Cell>
             <Button primary className="pool">
             Pool</Button>
-            <Button className="room">
-            Room</Button>
+            
+        </Cell>
+    </Row>
+    <Row>
+        <Cell textAlign='center'> 
+        <div className="block-flags">
+        <Flag className="Australia" />Australia
+        </div>
+
+        <div className="block-flags">
+        <Flag className="Peru" />
+        Peru
+        </div>
+        </Cell>
+        <Cell className="txt">
+            <Icon  name='calendar' />26 Jun 2018         
+            <Icon style={{padding: '0 10px'}}name='clock' />09:00 GTM-5
+        </Cell>
+        <Cell>
+            <Button primary className="pool">
+            Pool</Button>
+            
+        </Cell>
+    </Row>
+    <Row>
+        <Cell textAlign='center'> 
+        <div className="block-flags">
+        <Flag className="Denmark" />Denmark
+        </div>
+
+        <div className="block-flags">
+        <Flag className="France" />
+        France
+        </div>
+        </Cell>
+        <Cell className="txt">
+            <Icon  name='calendar' />26 Jun 2018         
+            <Icon style={{padding: '0 10px'}}name='clock' />09:00 GTM-5
+        </Cell>
+        <Cell>
+            <Button primary className="pool">
+            Pool</Button>
+            
         </Cell>
     </Row>
     

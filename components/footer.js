@@ -37,7 +37,7 @@ export default ()=> {
           <Menu className="CentraFooter">
             <Menu.Item>
                     <Link route="/">
-                     <Image src='http://gainmers.io/DappGainmers/images/logo-footer.png'/>
+                     <Image src='http://dapp.gainmers.io/assets/images/logo-footer.png'/>
                     </Link>
                         
             </Menu.Item>           

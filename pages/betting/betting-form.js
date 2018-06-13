@@ -170,12 +170,12 @@ renderBets(){
                     <Header as='h3'>
                         <span 
                         style={{color:'#bfbfbf',
-                        marginRight:'5px'}}>
+                        marginRight:'5px' , fontSize:'16px'}}>
                          0
                         </span>-
                         <span style={{
                          color:'black',
-                        marginLeft:'5px'}}>
+                        marginLeft:'5px', fontSize:'16px'}}>
                         0
                         </span>
                     </Header>
@@ -209,12 +209,12 @@ renderBets(){
                     <Header as='h3'>
                         <span 
                         style={{color:'#bfbfbf',
-                        marginRight:'5px'}}>
+                        marginRight:'5px' , fontSize:'16px'}}>
                          0
                         </span>-
                         <span style={{
                          color:'black',
-                        marginLeft:'5px'}}>
+                        marginLeft:'5px' , fontSize:'16px'}}>
                         1
                         </span>
                     </Header>
@@ -248,12 +248,12 @@ renderBets(){
                     <Header as='h3'>
                         <span 
                         style={{color:'#bfbfbf',
-                        marginRight:'5px'}}>
+                        marginRight:'5px' , fontSize:'16px'}}>
                          0
                         </span>-
                         <span style={{
                          color:'black',
-                        marginLeft:'5px'}}>
+                        marginLeft:'5px' , fontSize:'16px'}}>
                         2
                         </span>
                     </Header>
@@ -287,12 +287,12 @@ renderBets(){
                     <Header as='h3'>
                         <span 
                         style={{color:'#bfbfbf',
-                        marginRight:'5px'}}>
+                        marginRight:'5px' , fontSize:'16px'}}>
                         1
                         </span>-
                         <span style={{
                          color:'black',
-                        marginLeft:'5px'}}>
+                        marginLeft:'5px' , fontSize:'16px'}}>
                         0
                         </span>
                     </Header>
@@ -326,12 +326,12 @@ renderBets(){
                     <Header as='h3'>
                         <span 
                         style={{color:'#bfbfbf',
-                        marginRight:'5px'}}>
+                        marginRight:'5px' , fontSize:'16px'}}>
                         1
                         </span>-
                         <span style={{
                          color:'black',
-                        marginLeft:'5px'}}>
+                        marginLeft:'5px' , fontSize:'16px'}}>
                         1
                         </span>
                     </Header>
@@ -365,12 +365,12 @@ renderBets(){
                     <Header as='h3'>
                         <span 
                         style={{color:'#bfbfbf',
-                        marginRight:'5px'}}>
+                        marginRight:'5px' , fontSize:'16px'}}>
                         1
                         </span>-
                         <span style={{
                          color:'black',
-                        marginLeft:'5px'}}>
+                        marginLeft:'5px' , fontSize:'16px'}}>
                         2
                         </span>
                     </Header>
@@ -404,12 +404,12 @@ renderBets(){
                     <Header as='h3'>
                         <span 
                         style={{color:'#bfbfbf',
-                        marginRight:'5px'}}>
+                        marginRight:'5px' , fontSize:'16px'}}>
                         2
                         </span>-
                         <span style={{
                          color:'black',
-                        marginLeft:'5px'}}>
+                        marginLeft:'5px' , fontSize:'16px'}}>
                         0
                         </span>
                     </Header>
@@ -443,12 +443,12 @@ renderBets(){
                     <Header as='h3'>
                         <span 
                         style={{color:'#bfbfbf',
-                        marginRight:'5px'}}>
+                        marginRight:'5px' , fontSize:'16px'}}>
                         2
                         </span>-
                         <span style={{
                          color:'black',
-                        marginLeft:'5px'}}>
+                        marginLeft:'5px' , fontSize:'16px'}}>
                         1
                         </span>
                     </Header>
@@ -482,12 +482,12 @@ renderBets(){
                     <Header as='h3'>
                         <span 
                         style={{color:'#bfbfbf',
-                        marginRight:'5px'}}>
+                        marginRight:'5px' , fontSize:'16px'}}>
                         2
                         </span>-
                         <span style={{
                          color:'black',
-                        marginLeft:'5px'}}>
+                        marginLeft:'5px' , fontSize:'16px'}}>
                         2
                         </span>
                     </Header>
@@ -521,7 +521,7 @@ renderBets(){
                     <Header as='h3' className="miHeight">
                         <span 
                         style={{color:'#bfbfbf',
-                        marginRight:'5px'}}>
+                        marginRight:'5px' , fontSize:'16px'}}>
                         Another<br/>
                         result<br/>
                         wins EGYP.  
@@ -557,7 +557,7 @@ renderBets(){
                     <Header as='h3' className="miHeight">
                         <span 
                         style={{color:'#034bf8',
-                        marginRight:'5px'}}>
+                        marginRight:'5px' , fontSize:'16px'}}>
                         Another<br/> 
                         result<br/>
                         tied
@@ -699,9 +699,12 @@ toggle = () => this.setState({
 
                     <Grid.Row className="box-room">
                         <Header as='h3' color='teal' >
-                        <p className="room-name"> ROOM N° 15</p>
+
+                        <p className="room-name"></p>
+    
+
                         <span className="name-group">RUSSIA 2018 - {this.props.eventName}</span>
-                         <span className="user-room">38  users  in  the  room</span>   
+                         <span className="user-room"></span>   
                         </Header>
                     </Grid.Row>
 
@@ -712,7 +715,7 @@ toggle = () => this.setState({
                                 <Icon  name='calendar' />{this.props.date}         
                                 <Icon style={{padding: '0 10px'}}name='clock' />{this.props.hour}
                                 </div>
-                                <div >
+                                <div className="titulo-pais" >
                                  <Flag className={this.props.country1}  />{this.props.country1} 
                                 <span>   VS</span>
                                 <Flag style={{padding: '10px'}} className={this.props.country2} />{this.props.country2}
@@ -725,7 +728,7 @@ toggle = () => this.setState({
                                   <div className="mieter">
                                     <span className="text-eter">Accumulated<br/> 
                                   total of betting (ETH):</span>
-                                   <span className="valor-eter">{ web3.utils.fromWei(this.props.balance, 'ether')}</span>
+                                   <span className="valor-eter"><span className="mskh">{ web3.utils.fromWei(this.props.balance, 'ether')}</span></span>
                                   </div> 
                                 </Container>
                             </Grid.Column>
@@ -733,7 +736,7 @@ toggle = () => this.setState({
                     </Grid.Row>
 
                     <Grid.Row columns='2' divided>
-                        <Grid.Column>
+                        <Grid.Column >
 
                             <Grid columns='3'>
                             
@@ -1069,7 +1072,7 @@ toggle = () => this.setState({
 
                         </Grid.Column>
                         
-                        <Grid.Column>
+                        <Grid.Column className="box-padding">
                             <Tab
                             defaultActiveIndex={0}
                              menu={{
