@@ -44,9 +44,16 @@ class netValidation extends Component{
                     IDred = "Main NetWork detected";
                     el = document.querySelector(".Identificador-red");
                     el.innerHTML=IDred;
-                    Router.pushRoute('/login/change-provider');
+                    if(accountDetail == 1){
+                        Router.pushRoute('/login/account-locked');
+    
+                    }else if(accountDetail==2){
+                        //Router.pushRoute('/');
+    
+                    }
                     console.log(IDred);
-                    break
+                    break;
+                 
                 case 2:
                     IDred = "Morden Network Detected";
                     el = document.querySelector(".Identificador-red");
@@ -63,17 +70,12 @@ class netValidation extends Component{
                     break;
                 case 4:
                     IDred = "Rinkeby Network Detected";
+
                     el = document.querySelector(".Identificador-red");
                     el.innerHTML=IDred;
-                    if(accountDetail == 1){
-                        Router.pushRoute('/login/account-locked');
-    
-                    }else if(accountDetail==2){
-                        //Router.pushRoute('/login/sign-up');
-    
-                    }
+                    Router.pushRoute('/login/change-provider');
                     console.log(IDred);
-                    break;
+                    break
                 case 42:
                     IDred = "Kovan Network Detected";
                     el = document.querySelector(".Identificador-red");
@@ -89,19 +91,13 @@ class netValidation extends Component{
                 console.log(IDred);            }
               });
         
-        }else{
-            /*Sin metamask o no estamos en el browser
-            const provider = new Web3.providers.HttpProvider(
-                'https://rinkeby.infura.io/HIW4CRrLPL8Rx0ThCs5u'
-            );
-            web3 = new Web3(provider);*/
-        
+        }else{        
             console.log("YOU SHOULD INSTALL METAMASK");
             Router.pushRoute('/login/install-metamask');
 
         }       
     return (
-    <h1 className= 'Identificador-red' ></h1>
+    <p className= 'Identificador-red' style={{color:'#43eee4'}} ></p>
     );
 }
 }

@@ -2,32 +2,6 @@ import React from 'react';
 import { Menu, Dropdown, Image, Icon,Button } from 'semantic-ui-react';
 import{ Link} from '../routes';
 
-const trigger = (
-    <span>
-     More
-    
-    </span>
-  )
-  const options = [
-    {
-      key: 1,
-      text: '',
-      value: 1,
-      content:  <span>
-                    <Icon name='medium' />
-                    About Gainmers
-                </span>,
-    },
-    {
-      key: 2,
-      text: 'Configuration123',
-      value: 2,
-      content:  <span>
-                    <Icon name='law' />
-                    User Terms
-                 </span>,
-    }
-  ]
 
 
 export default ()=> {
@@ -50,7 +24,6 @@ export default ()=> {
                     <Dropdown item  text='Language'>
                     <Dropdown.Menu>
                         <Dropdown.Item >English</Dropdown.Item>
-                        <Dropdown.Item>Spanish</Dropdown.Item>
                     </Dropdown.Menu>
                     </Dropdown>
                 </Menu.Item>
@@ -63,18 +36,14 @@ export default ()=> {
                 </Link>
                 </Menu.Item>
                 <Menu.Item >
-                    <Link route="/login/sign-up">
-                            <a>
+                    <Link href="https://medium.com/@gainmers1">
+                            <a target='_blank'>
                                 Blog
                             </a>
                 </Link>
                 </Menu.Item>
 
 
-                <Menu.Item>
-                    <Dropdown trigger={trigger}  options={options} item >
-                    </Dropdown>
-                </Menu.Item>
             </Menu.Menu>
        </Menu>
     );

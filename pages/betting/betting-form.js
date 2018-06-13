@@ -18,13 +18,15 @@ class MyBets extends Component {
 
         const summary = await sportevent.methods.getDetails().call();
 
-        var splittedName = summary[0].split(" ")
+        var splittedName = summary[0].split(",")
     
         return {
           address: props.query.address,
           eventName: splittedName[0],
           country1: splittedName[1],
           country2: splittedName[2],
+          date:splittedName[3],
+          hour:splittedName[4],
           name: splittedName,
           balance: summary[1],
           bet: bet
@@ -137,7 +139,11 @@ renderCampaigns(){
 renderBets(){
 
    return( <div>
+         <Dimmer active={this.state.loading} >
+                <Loader  indeterminate>Metamask is procesing the transaction</Loader>
+            </Dimmer>
     <List divided relaxed >
+  
 
         {this.state.checked1 ? (
               <List.Item >
@@ -602,9 +608,7 @@ renderBets(){
     </List>
     <Segment>
 
-            <Dimmer active={this.state.loading} >
-                <Loader  indeterminate>Metamask is procesing the transaction</Loader>
-            </Dimmer>
+            
             <Header
                 block
                 color= 'teal'
@@ -696,9 +700,8 @@ toggle = () => this.setState({
                     <Grid.Row className="box-room">
                         <Header as='h3' color='teal' >
                         <p className="room-name"> ROOM N° 15</p>
-                        <span className="name-group">RUSSIA 2018 - GROUP STAGE</span>
-                         <span className="user-room">38  users  in  the  room</span>   
                         <span className="name-group">RUSSIA 2018 - {this.props.eventName}</span>
+                         <span className="user-room">38  users  in  the  room</span>   
                         </Header>
                     </Grid.Row>
 
@@ -706,8 +709,8 @@ toggle = () => this.setState({
                             <Grid.Column>
                             <Container text>    
                                 <div className="fecha-d">
-                                <Icon  name='calendar' />14 Jun 2018         
-                                <Icon style={{padding: '0 10px'}}name='clock' />18:00 GTM-5
+                                <Icon  name='calendar' />{this.props.date}         
+                                <Icon style={{padding: '0 10px'}}name='clock' />{this.props.hour}
                                 </div>
                                 <div >
                                  <Flag className={this.props.country1}  />{this.props.country1} 

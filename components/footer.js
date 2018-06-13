@@ -62,10 +62,13 @@ export default ()=> {
                    <a href="mailto:contact@gainmers.com"><span className="contact">contact@gainmers.com</span></a>
                  </Link>
             </Menu.Item>
+            <Menu.Item style={{color:'#000000'}}>
+              <NetValidation />
+
+            </Menu.Item>
             </Menu.Menu>
             </Menu>
        </Menu>
-       <NetValidation/>
        </div>
     );
   
