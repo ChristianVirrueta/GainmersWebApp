@@ -93,7 +93,7 @@ const GroupC = ()=>{
         </Cell>
         <Cell className="txt">
             <Icon  name='calendar' />16 Jun 2018         
-            <Icon style={{padding: '0 10px'}}name='clock' />17:00 GMT-5
+            <Icon style={{padding: '0 10px'}}name='clock' />05:00 GMT-5
         </Cell>
         <Cell>
             <Button primary className="pool">
@@ -131,7 +131,7 @@ const GroupC = ()=>{
         </Cell>
         <Cell className="txt">
             <Icon  name='calendar' />21 Jun 2018         
-            <Icon style={{padding: '0 10px'}}name='clock' />19:00 GMT-5
+            <Icon style={{padding: '0 10px'}}name='clock' />07:00 GMT-5
         </Cell>
         <Cell>
             <Button primary className="pool">

@@ -92,8 +92,8 @@ const GroupE = ()=>{
         </div>
         </Cell>
         <Cell className="txt">
-            <Icon  name='calendar' />14 Jun 2018         
-            <Icon style={{padding: '0 10px'}}name='clock' />16:00 GMT-5
+            <Icon  name='calendar' />17 Jun 2018         
+            <Icon style={{padding: '0 10px'}}name='clock' />07:00 GMT-5
         </Cell>
         <Cell>
             <Button primary className="pool">
@@ -112,7 +112,7 @@ const GroupE = ()=>{
             </Cell>
         <Cell className="txt">
             <Icon  name='calendar' />17 Jun 2018         
-            <Icon style={{padding: '0 10px'}}name='clock' />21:00 GMT-5
+            <Icon style={{padding: '0 10px'}}name='clock' />13:00 GMT-5
         </Cell>
         <Cell>
             <Button primary className="pool">
@@ -131,7 +131,7 @@ const GroupE = ()=>{
         </Cell>
         <Cell className="txt">
             <Icon  name='calendar' />22 Jun 2018         
-            <Icon style={{padding: '0 10px'}}name='clock' />19:00 GMT-5
+            <Icon style={{padding: '0 10px'}}name='clock' />07:00 GMT-5
         </Cell>
         <Cell>
             <Button primary className="pool">
@@ -147,7 +147,7 @@ const GroupE = ()=>{
 
         <div className="block-flags">
         <Flag className="Switzerland" />
-        Saudi Arabia
+        Switzerland
         </div>
         </Cell>
         <Cell className="txt">
