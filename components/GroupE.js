@@ -50,7 +50,7 @@ const GroupE = ()=>{
     </Row>
 
     <Row>
-    <Cell textAlign='left'> <Flag className="Costa-rica" />Costa Rica</Cell>
+    <Cell textAlign='left'> <Flag className="Costa-Rica" />Costa Rica</Cell>
     <Cell>0</Cell>
     <Cell>0</Cell>
     <Cell>0</Cell>
@@ -85,7 +85,7 @@ const GroupE = ()=>{
     <Row>
         <Cell textAlign='center'>
         <div className="block-flags">
-        <Flag className="Costa-rica" />Costa Rica
+        <Flag className="Costa-Rica" />Costa Rica
         </div>
         <div className="block-flags">
         <Flag className="Serbia" />Serbia
@@ -126,7 +126,7 @@ const GroupE = ()=>{
         <Flag className="Brazil" />Brazil
         </div>
         <div className="block-flags">
-        <Flag className="Costa-rica" />Costa Rica
+        <Flag className="Costa-Rica" />Costa Rica
         </div>
         </Cell>
         <Cell className="txt">
@@ -188,7 +188,7 @@ const GroupE = ()=>{
         </div>
 
         <div className="block-flags">
-        <Flag className="Costa-rica" />
+        <Flag className="Costa-Rica" />
         Costa Rica
         </div>
         </Cell>
