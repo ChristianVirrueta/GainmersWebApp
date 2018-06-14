@@ -5,11 +5,11 @@ pragma solidity ^0.4.23;
 contract bettingGenerator{
     address[] public deployedSportEvent;
     address _teamAccount = 0x2B3EfdF2be8D60901a4c2df0956442B61C603C3B; //verificar que esto sea seguro en versiones posteriors
-    function createSportEvent(string _nameEvent,uint _feePercentage) public {
-        deployedSportEvent.push(new sportEvent(_nameEvent,_feePercentage,_teamAccount));
-        
+    function createSportEvent(string _nameEvent,uint8 _feePercentage,uint _endTime) public {
+        require(msg.sender == _teamAccount);
+        deployedSportEvent.push(new sportEvent(_nameEvent,_feePercentage,_teamAccount,_endTime));       
     }
-    
+
     function getDeployedEvents() public view returns (address[]){
         return deployedSportEvent;
     }
@@ -18,8 +18,9 @@ contract bettingGenerator{
 
 contract sportEvent{
     bool eventEnded = false;
+    uint256 endTime;
     address public manager ;
-    uint public devPercentage;
+    uint8 public devPercentage;
     string public name;
     mapping(address => uint) public index;
 
@@ -27,74 +28,90 @@ contract sportEvent{
         
         uint[12] betsValue;
         address playerAddress;
+        uint totalPlayerBet;
         
     }
-    Player[] public Bettors;
-    constructor(string nameEvent,uint feePercentage,address teamAccount) public{
+    Player[] private Bettors;
+    constructor(string nameEvent,uint8 feePercentage,address teamAccount,uint eventEndTime) public{
         manager = teamAccount;
         name = nameEvent;
         devPercentage = feePercentage;
         Bettors.push(
-        Player(
-            [uint256 (0),0,0,0,0,0,0,0,0,0,0,0],
-            address(this)
+            Player(
+                [uint256 (0),0,0,0,0,0,0,0,0,0,0,0],
+                address(this),
+                0
         ));
+        endTime = eventEndTime;
 
     }
-    function enterEvent(uint[12] playerValue) external payable{//CORREGIR PROBLEMA  DE INCONGRUENCIA CON LA PAUESTA
-        require(msg.value == getTotalOfArray(playerValue));
+    function enterEvent(uint[12] playerValue) external payable{
+        require(validPurchase());
+        require(
+            msg.value == (playerValue[0] + playerValue[1]+playerValue[2]+playerValue[3]+playerValue[4]+playerValue[5]+playerValue[6]+playerValue[7]+playerValue[8]+playerValue[9]+playerValue[10]+playerValue[11])
+        );
         
-        for(uint a = 0; a < 12; a++){
+        Bettors[0].totalPlayerBet += msg.value;
+        for(uint a = 0;a<12;a++){
             Bettors[0].betsValue[a] += playerValue[a];    
         }
         
         
         if(index[msg.sender] == 0){ 
-            Bettors.push(Player(playerValue,msg.sender));
+            Bettors.push(Player(playerValue,msg.sender,msg.value));
             index[msg.sender] = Bettors.length-1;
         }
         else{ 
             Player storage bettor = Bettors[index[msg.sender]];
-            for(uint b = 0; b < 12; b++){
+            bettor.totalPlayerBet += msg.value;
+            for(uint b = 0;b<12;b++){
                 bettor.betsValue[b] += playerValue[b];    
             }
-            /*
-            Bettors[index[msg.sender]].betsValue=playerValue;
-            Bettors[index[msg.sender]].betsVerification=playerBool;
-            */
+
         }
    
     }
-    function getTotalOfArray(uint256[12] contractEth) pure public returns(uint){
-        return(
-            contractEth[0]+contractEth[1]+contractEth[2]+ 
-            contractEth[3]+contractEth[4]+contractEth[5]+
-            contractEth[6]+contractEth[7]+contractEth[8]+
-            contractEth[9]+contractEth[10]+contractEth[11]
-            );
-    }
-    function getWinners(uint _winnerIndex, uint _totalPool)  public {
-        
-        for(uint l = 1 ; l < Bettors.length ; l++){
-            if(Bettors[l].betsValue[_winnerIndex]>0){
-                address winneraddress = (Bettors[l].playerAddress);
-                winneraddress.transfer(Bettors[l].betsValue[_winnerIndex]*_totalPool/Bettors[0].betsValue[_winnerIndex]);
+
+
+    function splitWinnings(uint winnerIndex) public {
+        require(!eventEnded);
+        require(msg.sender == manager);
+        uint devFee = devPercentage*Bettors[0].totalPlayerBet/100;
+        manager.transfer(devFee);
+        uint newBalance = address(this).balance;
+        uint16 winnersCount;
+        uint share = 0;
+        for(uint l = 1; l<Bettors.length ;l++){
+            if(Bettors[l].betsValue[winnerIndex]>0){
+                share = Bettors[l].betsValue[winnerIndex]*newBalance/Bettors[0].betsValue[winnerIndex];
+                (Bettors[l].playerAddress).transfer(share);
+                winnersCount++;
             }
         }
+        if(winnersCount==0){
+            for(uint g = 1; g<Bettors.length ;g++){
+                
+                share=Bettors[g].totalPlayerBet*newBalance/Bettors[0].totalPlayerBet;
+                (Bettors[g].playerAddress).transfer(share);
+        }
+        }
+        eventEnded = true;
+
     }
-    function splitWinnings(uint winnerIndex) public {
-        //require(!eventEnded && msg.sender==manager);
-        uint devFee = devPercentage*getTotalOfArray(Bettors[0].betsValue)/100;
-        uint newTotalPool = getTotalOfArray(Bettors[0].betsValue)-devFee;
-        manager.transfer(devFee);
-        getWinners(winnerIndex,newTotalPool);
-        //Bettors[0].betsValue=[uint256 (0),0,0,0,0,0,0,0,0,0,0,0];
-        //eventEnded=true;
-    }
-    function getDetails() public view returns(string ,uint){
+    
+    function getDetails() public view returns(string ,uint,uint8){
         return (
                 name,
-                address(this).balance
+                address(this).balance,
+                devPercentage
             );
+    }
+    function validPurchase()  internal  view
+        returns(bool) 
+    {
+        bool withinPeriod = now <= endTime;
+        bool nonZeroPurchase = msg.value != 0;
+        bool nonInvalidAccount = msg.sender != 0;
+        return withinPeriod && nonZeroPurchase && nonInvalidAccount;
     }
 }
