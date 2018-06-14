@@ -720,9 +720,21 @@ toggle = () => this.setState({
                                 <Icon style={{padding: '0 10px'}}name='clock' />{this.props.hour}
                                 </div>
                                 <div className="titulo-pais" >
-                                 <Flag className={this.props.country1}  />{this.props.country1} 
+                                  <div style={{display:'inline-block', verticalAlign:'middle'}}>
+                                 <Flag className={this.props.country1}  />{this.props.country1}
+                                 <span style={{display:'block', fontSize:'16px'}}>(Left side)</span> 
+                                  </div>
+                                 <div style={{display:'inline-block', verticalAlign:'top', margin:'0 20px'}}>
                                 <span>   VS</span>
+                                </div>
+                                <div style={{display:'inline-block', verticalAlign:'middle'}}>
                                 <Flag style={{padding: '10px'}} className={this.props.country2} />{this.props.country2}
+
+                                <span style={{display:'block', fontSize:'16px'}}>(Right side)</span>
+                                </div>
+                                <br/>
+                                
+                                
                                 </div>
                             </Container>
                             </Grid.Column >
@@ -1114,6 +1126,7 @@ toggle = () => this.setState({
   width:490px;
   height:200px;
   position:relative;
+  display:table;
 }
 .place-bet {
     width: 265px;
@@ -1140,6 +1153,26 @@ toggle = () => this.setState({
 label {
   color:#0156fc !important;
 }
+
+i.flag:not(.icon) {
+    width: 41px !important;
+    height: 31px !important;
+    vertical-align: middle;
+    margin: 0 5px !important;
+    margin-top: -10px !important;
+}
+
+.titulo-pais {
+    color: #ffffff;
+    font-family: 'pluto-sans-regular' !important;
+    font-size: 30px !important;
+    vertical-align: middle;
+}
+
+i.icon:first-child {
+  padding-left:5px !important;
+}
+
     `}</style>
                
             </Layout>
