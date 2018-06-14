@@ -93,7 +93,7 @@ const GroupB = ()=>{
         </Cell>
         <Cell className="txt">
             <Icon  name='calendar' />15 Jun 2018         
-            <Icon style={{padding: '0 10px'}}name='clock' />10:00 GTM-5
+            <Icon style={{padding: '0 10px'}}name='clock' />10:00 GMT-5
         </Cell>
         <Cell>
             <Button primary className="pool">
@@ -112,7 +112,7 @@ const GroupB = ()=>{
             </Cell>
         <Cell className="txt">
             <Icon  name='calendar' />15 Jun 2018         
-            <Icon style={{padding: '0 10px'}}name='clock' />13:00 GTM-5
+            <Icon style={{padding: '0 10px'}}name='clock' />13:00 GMT-5
         </Cell>
         <Cell>
             <Button primary className="pool">
@@ -131,7 +131,7 @@ const GroupB = ()=>{
         </Cell>
         <Cell className="txt">
             <Icon  name='calendar' />20 Jun 2018         
-            <Icon style={{padding: '0 10px'}}name='clock' />19:00 GTM-5
+            <Icon style={{padding: '0 10px'}}name='clock' />19:00 GMT-5
         </Cell>
         <Cell>
             <Button primary className="pool">
@@ -152,7 +152,7 @@ const GroupB = ()=>{
         </Cell>
         <Cell className="txt">
             <Icon  name='calendar' />20 Jun 2018         
-            <Icon style={{padding: '0 10px'}}name='clock' />13:00 GTM-5
+            <Icon style={{padding: '0 10px'}}name='clock' />13:00 GMT-5
         </Cell>
         <Cell>
             <Button primary className="pool">
@@ -173,7 +173,7 @@ const GroupB = ()=>{
         </Cell>
         <Cell className="txt">
             <Icon  name='calendar' />25 Jun 2018         
-            <Icon style={{padding: '0 10px'}}name='clock' />13:00 GTM-5
+            <Icon style={{padding: '0 10px'}}name='clock' />13:00 GMT-5
         </Cell>
         <Cell>
             <Button primary className="pool">
@@ -194,7 +194,7 @@ const GroupB = ()=>{
         </Cell>
         <Cell className="txt">
             <Icon  name='calendar' />25 Jun 2018         
-            <Icon style={{padding: '0 10px'}}name='clock' />13:00 GTM-5
+            <Icon style={{padding: '0 10px'}}name='clock' />13:00 GMT-5
         </Cell>
         <Cell>
             <Button primary className="pool">

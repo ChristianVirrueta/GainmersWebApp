@@ -107,7 +107,7 @@ class MainIndex extends Component{
                 href="http://dapp.gainmers.io/assets/style/styles.css"></link>
             </Head>
             <Encabezado/>
-            <h1 >Welcome to Gainmers</h1>
+            <h1 style={{width:'100%',textAlign:'center'}}>Welcome to Gainmers</h1>
             {this.renderValidation()}
 
         </Container>

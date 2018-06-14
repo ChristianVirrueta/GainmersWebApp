@@ -25,7 +25,7 @@ const { Header, Row, HeaderCell, Body, Cell } = Table;
 </Header>
 <Body>
 <Row >
-    <Cell textAlign='left'> <Flag className="Russia" />Rusia</Cell>
+    <Cell textAlign='left'> <Flag className="Russia" />Russia</Cell>
     <Cell>1</Cell>
     <Cell>1</Cell>
     <Cell>0</Cell>
@@ -86,7 +86,7 @@ const { Header, Row, HeaderCell, Body, Cell } = Table;
     <Row>
         <Cell textAlign='center'>
         <div className="block-flags">
-        <Flag className="Russia" />Rusia
+        <Flag className="Russia" />Russia
         </div>
         <div className="block-flags">
         <Flag className="Saudi-arabia" />Saudi Arabia
@@ -110,7 +110,7 @@ const { Header, Row, HeaderCell, Body, Cell } = Table;
             </Cell>
         <Cell className="txt">
             <Icon  name='calendar' />15 Jun 2018         
-            <Icon style={{padding: '0 10px'}}name='clock' />07:00 GTM-5
+            <Icon style={{padding: '0 10px'}}name='clock' />07:00 GMT-5
         </Cell>
         <Cell>
             <Button primary className="pool">
@@ -120,7 +120,7 @@ const { Header, Row, HeaderCell, Body, Cell } = Table;
     <Row>
         <Cell textAlign='center'> 
         <div className="block-flags">
-        <Flag className="Russia" />Rusia
+        <Flag className="Russia" />Russia
         </div>
         <div className="block-flags">
         <Flag className="Egypt" />Egypt
@@ -128,7 +128,7 @@ const { Header, Row, HeaderCell, Body, Cell } = Table;
         </Cell>
         <Cell className="txt">
             <Icon  name='calendar' />19 Jun 2018         
-            <Icon style={{padding: '0 10px'}}name='clock' />13:00 GTM-5
+            <Icon style={{padding: '0 10px'}}name='clock' />13:00 GMT-5
         </Cell>
         <Cell>
             <Button primary className="pool">
@@ -148,7 +148,7 @@ const { Header, Row, HeaderCell, Body, Cell } = Table;
         </Cell>
         <Cell className="txt">
             <Icon  name='calendar' />20 Jun 2018         
-            <Icon style={{padding: '0 10px'}}name='clock' />10:00 GTM-5
+            <Icon style={{padding: '0 10px'}}name='clock' />10:00 GMT-5
         </Cell>
         <Cell>
             <Button primary className="pool">
@@ -168,7 +168,7 @@ const { Header, Row, HeaderCell, Body, Cell } = Table;
         </Cell>
         <Cell className="txt">
             <Icon  name='calendar' />25 Jun 2018         
-            <Icon style={{padding: '0 10px'}}name='clock' />09:00 GTM-5
+            <Icon style={{padding: '0 10px'}}name='clock' />09:00 GMT-5
         </Cell>
         <Cell>
             <Button primary className="pool">
@@ -188,7 +188,7 @@ const { Header, Row, HeaderCell, Body, Cell } = Table;
         </Cell>
         <Cell className="txt">
             <Icon  name='calendar' />25 Jun 2018         
-            <Icon style={{padding: '0 10px'}}name='clock' />09:00 GTM-5
+            <Icon style={{padding: '0 10px'}}name='clock' />09:00 GMT-5
         </Cell>
         <Cell>
             <Button primary className="pool">
