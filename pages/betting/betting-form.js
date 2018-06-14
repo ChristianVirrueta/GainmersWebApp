@@ -1,6 +1,6 @@
 import React,{Component} from 'react';
 import Layout from '../../components/layout';
-import {Input,Dimmer,Loader,Form,Message,Card,Grid,List,Tab,Header,Flag,Icon,Container,Checkbox,Button,Segment} from 'semantic-ui-react';
+import {Input,Dimmer,Divider,Loader,Form,Message,Card,Grid,List,Tab,Header,Flag,Icon,Container,Checkbox,Button,Segment} from 'semantic-ui-react';
 import {Link,Router} from '../../routes';
 import Choices from '../../components/choices';
 import web3 from '../../ethereum/web3';
@@ -29,6 +29,7 @@ class MyBets extends Component {
           hour:splittedName[4],
           name: splittedName,
           balance: summary[1],
+          devFee: summary[2],
           bet: bet
         };
       }
@@ -636,20 +637,23 @@ renderBets(){
                 } Ether.
                 </span> 
                   <br/>
-                 <Checkbox
+                {/* <Checkbox
                  onChange={()=> {
                             this.setState({ conditionsAccepted: !this.state.conditionsAccepted });
                                 }}  
                 checked={this.state.conditionsAccepted}
-                label='Accept terms and conditions' className="label-align"/>
+                            label='Accept terms and conditions' className="label-align"/>*/}
                 <Button className="place-bet"
                 primary 
-                disabled={!this.state.conditionsAccepted}
+               // disabled={!this.state.conditionsAccepted}
                 onClick= {this.onSubmit}               
                 size='large'>
                 Place bet!
             </Button>
             </Header>
+            <br/>
+            <p style={{textAlign:'right'}}>*Service Fee: {this.props.devFee}%</p>
+            
 
     </Segment>
 </div>);  
@@ -678,7 +682,7 @@ toggle = () => this.setState({
              <Tab.Pane >
              {this.renderBets()}
              </Tab.Pane> },
-            { menuItem: 'My Bets', render: () => <Tab.Pane>{this.renderCampaigns()}</Tab.Pane> }
+            //{ menuItem: 'My Bets', render: () => <Tab.Pane>{this.renderCampaigns()}</Tab.Pane> }
           ]
         return(
             <Layout>
