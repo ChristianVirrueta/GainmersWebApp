@@ -48,10 +48,10 @@ export default ()=> {
 
                 <div>
                     <ul className="redes">
-                      <li><a href="#" className= "facebook">facebook</a></li>
+                      <li><a href="https://web.facebook.com/gainmers/" target="_blank" className= "facebook">facebook</a></li>
                       <li><a href="#" className= "messenger">messenger</a></li>
-                      <li><a href="#" className= "twitter">twitter</a></li>
-                      <li><a href="#" className= "whatsapp">whatsapp</a></li>
+                      <li><a href="https://twitter.com/GMRplatform/" target="_blank" className= "twitter">twitter</a></li>
+                      <li><a href="https://web.whatsapp.com://send?text=http://dapp.gainmers.io/" target="_blank" className= "whatsapp" data-action="share/whatsapp/share">whatsapp</a></li>
                     </ul>
 
                 </div>
