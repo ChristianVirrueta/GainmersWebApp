@@ -38,7 +38,7 @@ const { Header, Row, HeaderCell, Body, Cell } = Table;
     </Row>
 
     <Row>
-    <Cell textAlign='left'> <Flag className="Saudi-arabia" />Saudi Arabia</Cell>
+    <Cell textAlign='left'> <Flag className="Saudi-Arabia" />Saudi Arabia</Cell>
     <Cell>1</Cell>
     <Cell>0</Cell>
     <Cell>0</Cell>
@@ -89,7 +89,7 @@ const { Header, Row, HeaderCell, Body, Cell } = Table;
         <Flag className="Russia" />Russia
         </div>
         <div className="block-flags">
-        <Flag className="Saudi-arabia" />Saudi Arabia
+        <Flag className="Saudi-Arabia" />Saudi Arabia
         </div>
         </Cell>
         <Cell className="txt">     
@@ -142,7 +142,7 @@ const { Header, Row, HeaderCell, Body, Cell } = Table;
         </div>
 
         <div className="block-flags">
-        <Flag className="Saudi-arabia" />
+        <Flag className="Saudi-Arabia" />
         Saudi Arabia
         </div>
         </Cell>
@@ -178,7 +178,7 @@ const { Header, Row, HeaderCell, Body, Cell } = Table;
     <Row>
         <Cell textAlign='center'> 
         <div className="block-flags">
-        <Flag className="Saudi-arabia" />Saudi Arabia
+        <Flag className="Saudi-Arabia" />Saudi Arabia
         </div>
 
         <div className="block-flags">
