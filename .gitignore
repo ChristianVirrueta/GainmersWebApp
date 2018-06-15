@@ -1,4 +1,4 @@
 # Add any directories, files, or patterns you don't want to be tracked by version control
 .next
 node_modules
-web3.js
+ethereum/web3.js
