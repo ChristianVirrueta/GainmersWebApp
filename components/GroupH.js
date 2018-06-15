@@ -98,8 +98,10 @@ const GroupH = ()=>{
         </Cell>
         <Cell>
             <Link route={'/betting/final/0xE5B793D03001ed4D47B6dE31AD565817303FC1f2'}>
+            <a>
             <Button primary className="pool">
             Pool</Button>
+            </a>
         </Link>
             
         </Cell>
@@ -119,8 +121,10 @@ const GroupH = ()=>{
         </Cell>
         <Cell>
             <Link route={'/betting/final/0x3Ce496Ed8A4e9c474Ab992aE681180552D1b82D4'}>
+            <a>
             <Button primary className="pool">
             Pool</Button>
+            </a>
         </Link>
             
         </Cell>
@@ -140,8 +144,10 @@ const GroupH = ()=>{
         </Cell>
         <Cell>
             <Link route={'/betting/final/0x1E3542167eDd333525C1AfeAC3CeD004F66E5aD1'}>
+            <a>
             <Button primary className="pool">
             Pool</Button>
+            </a>
         </Link>
             
         </Cell>
@@ -163,8 +169,10 @@ const GroupH = ()=>{
         </Cell>
         <Cell>
             <Link route={'/betting/final/0x218b27Db2Ebf6867D1E6D765EE66BeB78a250bD7'}>
+            <a>
             <Button primary className="pool">
             Pool</Button>
+            </a>
         </Link>
             
         </Cell>
@@ -187,8 +195,10 @@ const GroupH = ()=>{
         </Cell>
         <Cell>
             <Link route={'/betting/final/0x9e0b56B359D76ed56CC6CDEd265Ed0ED7b87Dd41'}>
+            <a>
             <Button primary className="pool">
             Pool</Button>
+            </a>
         </Link>
             
         </Cell>
@@ -210,8 +220,10 @@ const GroupH = ()=>{
         </Cell>
         <Cell>
             <Link route={'/betting/final/0x60835406617E776DD55946345119A1062C4e4c0E'}>
+            <a>
             <Button primary className="pool">
             Pool</Button>
+            </a>
         </Link>
             
         </Cell>
