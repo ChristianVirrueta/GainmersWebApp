@@ -59,7 +59,7 @@ export default ()=> {
                 <Menu.Item>
                 <a className="item" style={{color:'#000000'}}>EMAIL:  </a>
                 <Link route="/">
-                   <a href="mailto:contact@gainmers.com"><span className="contact">contact@gainmers.com</span></a>
+                   <a href="mailto:contact@gainmers.io"><span className="contact">contact@gainmers.io</span></a>
                  </Link>
             </Menu.Item>
             <Menu.Item style={{color:'#000000'}}>
