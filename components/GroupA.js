@@ -1,5 +1,6 @@
 import React, {Component} from 'react';
 import {Button,Table,Flag,Icon} from 'semantic-ui-react';
+import {Link} from '../routes';
 
 class GroupA extends Component{
     render(){
@@ -129,8 +130,10 @@ const { Header, Row, HeaderCell, Body, Cell } = Table;
             <Icon style={{padding: '0 10px'}}name='clock' />13:00 GMT-5
         </Cell>
         <Cell>
+        <Link route={'/betting/final/0x6B2Ac6d958c948AbB6E75B043BF99eF78D15b74a'}>
             <Button primary className="pool">
             Pool</Button>
+        </Link>
         </Cell>
     </Row>
     <Row>
@@ -149,8 +152,10 @@ const { Header, Row, HeaderCell, Body, Cell } = Table;
             <Icon style={{padding: '0 10px'}}name='clock' />10:00 GMT-5
         </Cell>
         <Cell>
+            <Link route={'/betting/final/0x1e1C28fD5230d7aa9AC06a0dbD50e28B900Ca75c'}>
             <Button primary className="pool">
             Pool</Button>
+        </Link>
         </Cell>
     </Row>
     <Row>
@@ -169,8 +174,10 @@ const { Header, Row, HeaderCell, Body, Cell } = Table;
             <Icon style={{padding: '0 10px'}}name='clock' />09:00 GMT-5
         </Cell>
         <Cell>
+            <Link route={'/betting/final/0x2b3730cB546C1056e8755064378AdFBe41aEa515'}>
             <Button primary className="pool">
             Pool</Button>
+        </Link>
         </Cell>
     </Row>
     <Row>
@@ -189,8 +196,10 @@ const { Header, Row, HeaderCell, Body, Cell } = Table;
             <Icon style={{padding: '0 10px'}}name='clock' />09:00 GMT-5
         </Cell>
         <Cell>
+            <Link route={'/betting/final/0x50829dD8CE357D343BF0a25b88647328df4A976d'}>
             <Button primary className="pool">
             Pool</Button>
+        </Link>
         </Cell>
     </Row>
     

@@ -1,6 +1,7 @@
 import React, {Component} from 'react';
 import {Button,Table,Flag, Icon} from 'semantic-ui-react';
 const { Header, Row, HeaderCell, Body, Cell } = Table;
+import {Link} from '../routes';
 
 const GroupE = ()=>{
 
@@ -96,8 +97,10 @@ const GroupE = ()=>{
             <Icon style={{padding: '0 10px'}}name='clock' />07:00 GMT-5
         </Cell>
         <Cell>
+            <Link route={'/betting/final/0xbD25967942Ad720836458BFE64d0c11CA8fbD87E'}>
             <Button primary className="pool">
             Pool</Button>
+        </Link>
             
         </Cell>
     </Row>
@@ -115,8 +118,10 @@ const GroupE = ()=>{
             <Icon style={{padding: '0 10px'}}name='clock' />13:00 GMT-5
         </Cell>
         <Cell>
+            <Link route={'/betting/final/0xD513da94809131d202c24053110cde4081dB61F6'}>
             <Button primary className="pool">
             Pool</Button>
+        </Link>
             
         </Cell>
     </Row>
@@ -134,8 +139,10 @@ const GroupE = ()=>{
             <Icon style={{padding: '0 10px'}}name='clock' />07:00 GMT-5
         </Cell>
         <Cell>
+           <Link route={'/betting/final/0x72A28a7AeDfB9Bc9352C46b548b580fd19B53EF7'}>
             <Button primary className="pool">
             Pool</Button>
+        </Link>
             
         </Cell>
     </Row>
@@ -155,8 +162,10 @@ const GroupE = ()=>{
             <Icon style={{padding: '0 10px'}}name='clock' />13:00 GMT-5
         </Cell>
         <Cell>
+            <Link route={'/betting/final/0x583865E2680118dC34bC0A60a4226d87Da8800EF'}>
             <Button primary className="pool">
             Pool</Button>
+        </Link>
             
         </Cell>
     </Row>
@@ -176,8 +185,10 @@ const GroupE = ()=>{
             <Icon style={{padding: '0 10px'}}name='clock' />13:00 GMT-5
         </Cell>
         <Cell>
+            <Link route={'/betting/final/0x12794642E572A08093C2805bC3923B0E059A585d'}>
             <Button primary className="pool">
             Pool</Button>
+        </Link>
             
         </Cell>
     </Row>
@@ -197,8 +208,10 @@ const GroupE = ()=>{
             <Icon style={{padding: '0 10px'}}name='clock' />13:00 GMT-5
         </Cell>
         <Cell>
+            <Link route={'/betting/final/0x41a20ec4bE11339927ee7AE9d40E03cAdde5f5D6'}>
             <Button primary className="pool">
             Pool</Button>
+        </Link>
             
         </Cell>
     </Row>

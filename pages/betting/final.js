@@ -35,10 +35,12 @@ render() {
             <Icon style={{padding: '0 10px'}}name='clock' />TBA
         </Cell>
         <Cell>
+        <Link route={''}>
         <a>
             <Button primary className="pool">
             Pool</Button>
         </a>
+        </Link>
         </Cell>
     </Row>
     

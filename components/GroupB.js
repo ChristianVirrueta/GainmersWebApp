@@ -1,6 +1,7 @@
 import React, {Component} from 'react';
 import {Button,Table,Flag, Icon} from 'semantic-ui-react';
 const { Header, Row, HeaderCell, Body, Cell } = Table;
+import {Link} from '../routes';
 
 const GroupB = ()=>{
 
@@ -25,52 +26,52 @@ const GroupB = ()=>{
 <Body>
 <Row >
     <Cell textAlign='left'> <Flag className="Portugal" />Portugal</Cell>
-    <Cell >0</Cell>
+    <Cell >1</Cell>
     <Cell>0</Cell>
-    <Cell>0</Cell>
+    <Cell>1</Cell>
     <Cell>0 </Cell>
+    <Cell>3</Cell>
+    <Cell>3</Cell>
     <Cell>0</Cell>
-    <Cell>0</Cell>
-    <Cell>0</Cell>
-    <Cell style={{background : '#18191a'}} >0</Cell>
+    <Cell style={{background : '#18191a'}} >1</Cell>
 
     </Row>
 
     <Row>
     <Cell textAlign='left'> <Flag className="Spain" />Spain</Cell>
+    <Cell>1</Cell>
     <Cell>0</Cell>
+    <Cell>1</Cell>
     <Cell>0</Cell>
+    <Cell>3</Cell>
+    <Cell>3</Cell>
     <Cell>0</Cell>
-    <Cell>0 </Cell>
-    <Cell>0</Cell>
-    <Cell>0</Cell>
-    <Cell>0</Cell>
-    <Cell style={{background : '#18191a'}}>0</Cell>
+    <Cell style={{background : '#18191a'}}>1</Cell>
 
     </Row>
 
     <Row>
     <Cell textAlign='left'> <Flag className="Morocco" />Morocco</Cell>
+    <Cell>1</Cell>
     <Cell>0</Cell>
     <Cell>0</Cell>
-    <Cell>0</Cell>
-    <Cell>0</Cell>
+    <Cell>1</Cell>
     <Cell>0 </Cell>
-    <Cell>0</Cell>
-    <Cell>0</Cell>
+    <Cell>1</Cell>
+    <Cell>-1</Cell>
     <Cell style={{background : '#18191a'}}>0</Cell>
     </Row>
 
         <Row>
     <Cell textAlign='left'> <Flag className="Iran" />Iran</Cell>
-    <Cell>0</Cell>
-    <Cell>0</Cell>
+    <Cell>1</Cell>
+    <Cell>1</Cell>
     <Cell>0</Cell>
     <Cell>0 </Cell>
+    <Cell>1</Cell>
     <Cell>0</Cell>
-    <Cell>0</Cell>
-    <Cell>0</Cell>
-    <Cell style={{background : '#18191a'}}>0</Cell>
+    <Cell>1</Cell>
+    <Cell style={{background : '#18191a'}}>3</Cell>
 
     </Row>
 </Body>
@@ -91,13 +92,10 @@ const GroupB = ()=>{
         <Flag className="Iran" />Iran
         </div>
         </Cell>
-        <Cell className="txt">
-            <Icon  name='calendar' />15 Jun 2018         
-            <Icon style={{padding: '0 10px'}}name='clock' />10:00 GMT-5
+        <Cell className="txt">        
+            <Icon style={{padding: '0 10px'}}name='clock' />Full-Time <span style={{padding:'0 5px'}}>0-1</span>
         </Cell>
         <Cell>
-            <Button primary className="pool">
-            Pool</Button>
             
         </Cell>
     </Row>
@@ -110,14 +108,10 @@ const GroupB = ()=>{
             <Flag className="Spain" />Spain
             </div>
             </Cell>
-        <Cell className="txt">
-            <Icon  name='calendar' />15 Jun 2018         
-            <Icon style={{padding: '0 10px'}}name='clock' />13:00 GMT-5
+        <Cell className="txt">  
+            <Icon style={{padding: '0 10px'}}name='clock' />Full-Time <span style={{padding:'0 5px'}}>3-3</span>
         </Cell>
         <Cell>
-            <Button primary className="pool">
-            Pool</Button>
-            
         </Cell>
     </Row>
     <Row>
@@ -134,8 +128,10 @@ const GroupB = ()=>{
             <Icon style={{padding: '0 10px'}}name='clock' />07:00 GMT-5
         </Cell>
         <Cell>
+           <Link route={'/betting/final/0x09d3cE2E9C3cA6a2289D6A2Feb7C0A9899750926'}>
             <Button primary className="pool">
             Pool</Button>
+        </Link>
             
         </Cell>
     </Row>
@@ -155,8 +151,10 @@ const GroupB = ()=>{
             <Icon style={{padding: '0 10px'}}name='clock' />13:00 GMT-5
         </Cell>
         <Cell>
+           <Link route={'/betting/final/0x9C52Eb7850B04584696b20bdB5c103A51dE01135'}>
             <Button primary className="pool">
             Pool</Button>
+        </Link>
             
         </Cell>
     </Row>
@@ -176,8 +174,10 @@ const GroupB = ()=>{
             <Icon style={{padding: '0 10px'}}name='clock' />13:00 GMT-5
         </Cell>
         <Cell>
+            <Link route={'/betting/final/0x7854d78b585041cfa6Ae792741938B93Cb7be247'}>
             <Button primary className="pool">
             Pool</Button>
+        </Link>
             
         </Cell>
     </Row>
@@ -197,8 +197,10 @@ const GroupB = ()=>{
             <Icon style={{padding: '0 10px'}}name='clock' />13:00 GMT-5
         </Cell>
         <Cell>
+            <Link route={'/betting/final/0xa3B5a394Dd1b47F4f4C76AeE66F6039be0Ad4599'}>
             <Button primary className="pool">
             Pool</Button>
+        </Link>
             
         </Cell>
     </Row>

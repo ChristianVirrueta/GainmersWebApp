@@ -53,7 +53,7 @@ class InstallMetamask extends Component{
             </a>
             </Link>
 
-            <Link href='//localhost:3000'>
+            <Link route="/">
             <a style={{position: 'relative', top: '-55px', display: 'block'}}>
             <Button primary size='huge'>
                 Continue
