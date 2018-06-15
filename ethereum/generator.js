@@ -4,6 +4,6 @@ import web3 from '../ethereum/web3'
 
 
 const instance = new web3.eth.Contract(JSON.parse(EventGenerator.interface),
-'0xf7143a7f8fd470b141ff6585c2dbf79b5cd52c90');
+'0xa2F13a9D1641211aDe896CD0E0a3716f51533cdA');
 
 export default instance;
