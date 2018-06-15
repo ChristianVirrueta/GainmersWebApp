@@ -52,26 +52,26 @@ const { Header, Row, HeaderCell, Body, Cell } = Table;
 
     <Row>
     <Cell textAlign='left'> <Flag className="Egypt" />Egypt</Cell>
+    <Cell>1</Cell>
     <Cell>0</Cell>
     <Cell>0</Cell>
-    <Cell>0</Cell>
-    <Cell>0</Cell>
+    <Cell>1</Cell>
     <Cell>0 </Cell>
-    <Cell>0</Cell>
-    <Cell>0</Cell>
+    <Cell>1</Cell>
+    <Cell>-1</Cell>
     <Cell style={{background : '#18191a'}}>0</Cell>
     </Row>
 
         <Row>
     <Cell textAlign='left'> <Flag className="Uruguay" />Uruguay</Cell>
-    <Cell>0</Cell>
-    <Cell>0</Cell>
+    <Cell>1</Cell>
+    <Cell>1</Cell>
     <Cell>0</Cell>
     <Cell>0 </Cell>
+    <Cell>1</Cell>
     <Cell>0</Cell>
-    <Cell>0</Cell>
-    <Cell>0</Cell>
-    <Cell style={{background : '#18191a'}}>0</Cell>
+    <Cell>1</Cell>
+    <Cell style={{background : '#18191a'}}>3</Cell>
 
     </Row>
 </Body>
@@ -108,13 +108,11 @@ const { Header, Row, HeaderCell, Body, Cell } = Table;
             <Flag className="Uruguay" />Uruguay
             </div>
             </Cell>
-        <Cell className="txt">
-            <Icon  name='calendar' />15 Jun 2018         
-            <Icon style={{padding: '0 10px'}}name='clock' />07:00 GMT-5
+        <Cell className="txt">    
+            <Icon style={{padding: '0 10px'}}name='clock' />Full-Time <span style={{padding:'0 5px'}}>0-1</span>
         </Cell>
         <Cell>
-            <Button primary className="pool">
-            Pool</Button>
+            
         </Cell>
     </Row>
     <Row>

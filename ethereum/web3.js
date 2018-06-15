@@ -9,7 +9,7 @@ if(typeof window !== 'undefined' && typeof window.web3 !== 'undefined') {
 }else{
     /*Sin metamask o no estamos en el browser*/
     const provider = new Web3.providers.HttpProvider(
-        'https://mainnet.infura.io/HIW4CRrLPL8Rx0ThCs5u'
+        'https://rinkeby.infura.io/HIW4CRrLPL8Rx0ThCs5u'
     );
     web3 = new Web3(provider);
 
