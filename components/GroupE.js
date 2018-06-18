@@ -26,52 +26,52 @@ const GroupE = ()=>{
 <Body>
 <Row >
     <Cell textAlign='left'> <Flag className="Brazil" />Brazil</Cell>
-    <Cell >0</Cell>
+    <Cell>1</Cell>
     <Cell>0</Cell>
-    <Cell>0</Cell>
+    <Cell>1</Cell>
     <Cell>0 </Cell>
+    <Cell>1</Cell>
+    <Cell>1</Cell>
     <Cell>0</Cell>
-    <Cell>0</Cell>
-    <Cell>0</Cell>
-    <Cell style={{background : '#18191a'}} >0</Cell>
+    <Cell style={{background : '#18191a'}} >1</Cell>
 
     </Row>
 
     <Row>
     <Cell textAlign='left'> <Flag className="Switzerland" />Switzerland</Cell>
+    <Cell>1</Cell>
     <Cell>0</Cell>
+    <Cell>1</Cell>
     <Cell>0</Cell>
+    <Cell>1</Cell>
+    <Cell>1</Cell>
     <Cell>0</Cell>
-    <Cell>0 </Cell>
-    <Cell>0</Cell>
-    <Cell>0</Cell>
-    <Cell>0</Cell>
-    <Cell style={{background : '#18191a'}}>0</Cell>
+    <Cell style={{background : '#18191a'}}>1</Cell>
 
     </Row>
 
     <Row>
     <Cell textAlign='left'> <Flag className="Costa-Rica" />Costa Rica</Cell>
+    <Cell>1</Cell>
     <Cell>0</Cell>
     <Cell>0</Cell>
+    <Cell>1</Cell>
     <Cell>0</Cell>
-    <Cell>0</Cell>
-    <Cell>0 </Cell>
-    <Cell>0</Cell>
-    <Cell>0</Cell>
+    <Cell>1</Cell>
+    <Cell>-1</Cell>
     <Cell style={{background : '#18191a'}}>0</Cell>
     </Row>
 
         <Row>
     <Cell textAlign='left'> <Flag className="Serbia" />Serbia</Cell>
+    <Cell>1</Cell>
+    <Cell>1</Cell>
     <Cell>0</Cell>
     <Cell>0</Cell>
+    <Cell>1</Cell>
     <Cell>0</Cell>
-    <Cell>0 </Cell>
-    <Cell>0</Cell>
-    <Cell>0</Cell>
-    <Cell>0</Cell>
-    <Cell style={{background : '#18191a'}}>0</Cell>
+    <Cell>1</Cell>
+    <Cell style={{background : '#18191a'}}>3</Cell>
 
     </Row>
 </Body>
@@ -92,17 +92,11 @@ const GroupE = ()=>{
         <Flag className="Serbia" />Serbia
         </div>
         </Cell>
-        <Cell className="txt">
-            <Icon  name='calendar' />17 Jun 2018         
-            <Icon style={{padding: '0 10px'}}name='clock' />07:00 GMT-5
+        <Cell className="txt">       
+            <Icon style={{padding: '0 10px'}}name='clock' />Full-Time <span style={{padding:'0 5px'}}>0-1</span>
         </Cell>
         <Cell>
-            <Link route={'/betting/final/0xbD25967942Ad720836458BFE64d0c11CA8fbD87E'}>
-            <a>
-            <Button primary className="pool">
-            Pool</Button>
-            </a>
-        </Link>
+            
             
         </Cell>
     </Row>
@@ -115,17 +109,11 @@ const GroupE = ()=>{
             <Flag className="Switzerland" />Switzerland
             </div>
             </Cell>
-        <Cell className="txt">
-            <Icon  name='calendar' />17 Jun 2018         
-            <Icon style={{padding: '0 10px'}}name='clock' />13:00 GMT-5
+        <Cell className="txt">       
+            <Icon style={{padding: '0 10px'}}name='clock' />Full-Time <span style={{padding:'0 5px'}}>1-1</span>
         </Cell>
         <Cell>
-            <Link route={'/betting/final/0xD513da94809131d202c24053110cde4081dB61F6'}>
-            <a>
-            <Button primary className="pool">
-            Pool</Button>
-            </a>
-        </Link>
+            
             
         </Cell>
     </Row>

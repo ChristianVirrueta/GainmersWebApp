@@ -26,52 +26,52 @@ const GroupC = ()=>{
 <Body>
 <Row >
     <Cell textAlign='left'> <Flag className="France" />France</Cell>
-    <Cell >0</Cell>
-    <Cell>0</Cell>
+    <Cell>1</Cell>
+    <Cell>1</Cell>
     <Cell>0</Cell>
     <Cell>0 </Cell>
-    <Cell>0</Cell>
-    <Cell>0</Cell>
-    <Cell>0</Cell>
-    <Cell style={{background : '#18191a'}} >0</Cell>
+    <Cell>2</Cell>
+    <Cell>1</Cell>
+    <Cell>1</Cell>
+    <Cell style={{background : '#18191a'}} >3</Cell>
 
     </Row>
 
     <Row>
     <Cell textAlign='left'> <Flag className="Australia" />Australia</Cell>
+    <Cell>1</Cell>
     <Cell>0</Cell>
     <Cell>0</Cell>
-    <Cell>0</Cell>
-    <Cell>0 </Cell>
-    <Cell>0</Cell>
-    <Cell>0</Cell>
-    <Cell>0</Cell>
+    <Cell>1 </Cell>
+    <Cell>1</Cell>
+    <Cell>2</Cell>
+    <Cell>-1</Cell>
     <Cell style={{background : '#18191a'}}>0</Cell>
 
     </Row>
 
     <Row>
     <Cell textAlign='left'> <Flag className="Peru" />Peru</Cell>
+    <Cell>1</Cell>
     <Cell>0</Cell>
     <Cell>0</Cell>
-    <Cell>0</Cell>
-    <Cell>0</Cell>
+    <Cell>1</Cell>
     <Cell>0 </Cell>
-    <Cell>0</Cell>
-    <Cell>0</Cell>
+    <Cell>1</Cell>
+    <Cell>-1</Cell>
     <Cell style={{background : '#18191a'}}>0</Cell>
     </Row>
 
         <Row>
     <Cell textAlign='left'> <Flag className="Denmark" />Denmark</Cell>
-    <Cell>0</Cell>
-    <Cell>0</Cell>
+    <Cell>1</Cell>
+    <Cell>1</Cell>
     <Cell>0</Cell>
     <Cell>0 </Cell>
+    <Cell>1</Cell>
     <Cell>0</Cell>
-    <Cell>0</Cell>
-    <Cell>0</Cell>
-    <Cell style={{background : '#18191a'}}>0</Cell>
+    <Cell>1</Cell>
+    <Cell style={{background : '#18191a'}}>3</Cell>
 
     </Row>
 </Body>
@@ -92,17 +92,11 @@ const GroupC = ()=>{
         <Flag className="Australia" />Australia
         </div>
         </Cell>
-        <Cell className="txt">
-            <Icon  name='calendar' />16 Jun 2018         
-            <Icon style={{padding: '0 10px'}}name='clock' />05:00 GMT-5
+        <Cell className="txt">    
+            <Icon style={{padding: '0 10px'}}name='clock' />Full-Time <span style={{padding:'0 5px'}}>2-1</span>
         </Cell>
         <Cell>
-            <Link route={'/betting/final/0x58F390633B438fa8FBDC7cEa029D97CC6419F57B'}>
-            <a>
-            <Button primary className="pool">
-            Pool</Button>
-            </a>
-        </Link>
+            
             
         </Cell>
     </Row>
@@ -115,17 +109,11 @@ const GroupC = ()=>{
             <Flag className="Denmark" />Denmark
             </div>
             </Cell>
-        <Cell className="txt">
-            <Icon  name='calendar' />16 Jun 2018         
-            <Icon style={{padding: '0 10px'}}name='clock' />11:00 GMT-5
+        <Cell className="txt"> 
+            <Icon style={{padding: '0 10px'}}name='clock' />Full-Time <span style={{padding:'0 5px'}}>0-1</span>
         </Cell>
         <Cell>
-            <Link route={'/betting/final/0x6260558445Db458ba3b4b45C1bD751c2C6544cc5'}>
-            <a>
-            <Button primary className="pool">
-            Pool</Button>
-            </a>
-        </Link>
+           
             
         </Cell>
     </Row>
