@@ -525,7 +525,7 @@ renderBets(){
                         marginRight:'5px' , fontSize:'16px'}}>
                         Another<br/>
                         result<br/>
-                        wins EGYP.  
+                        wins <span>{this.props.country1}</span>.  
                         </span>
                     </Header>
                </List.Content>               
@@ -596,7 +596,7 @@ renderBets(){
                          color:'black'}}>
                         Another<br/>
                         result <br/>
-                        wins URU.
+                        wins <span>{this.props.country2}</span>.
 
                         </span>
                     </Header>
@@ -1018,7 +1018,7 @@ toggle = () => this.setState({
                                             paddingLeft:'25px'}}>
                                             Another<br/> 
                                             result<br/> 
-                                            wins EGYP.
+                                            wins <span>{this.props.country1}</span>.
 
                                         </span>
                                        
@@ -1072,7 +1072,7 @@ toggle = () => this.setState({
                                             paddingLeft:'25px'}}>
                                             Another<br/>
                                             result<br/>
-                                            wins URU.
+                                            wins <span>{this.props.country2}</span>.
                                         </span>
                                     </Header>
                                 </Segment>
