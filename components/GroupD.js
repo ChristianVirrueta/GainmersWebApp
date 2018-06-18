@@ -122,7 +122,6 @@ const GroupD = ()=>{
         <Cell textAlign='center'> 
         <div className="block-flags">
         <Flag className="Argentina" />Argentina
-        <div className="divider"></div>
         </div>
         <div className="block-flags">
         <Flag className="Croatia" />Croatia

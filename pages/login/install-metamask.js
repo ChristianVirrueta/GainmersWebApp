@@ -55,7 +55,7 @@ class InstallMetamask extends Component{
 
             <Link route="/">
             <a style={{position: 'relative', top: '-55px', display: 'block'}}>
-            <Button primary size='huge'>
+            <Button primary size='huge' style={{marginTop:'40px'}}>
                 Continue
             
             </Button>  
