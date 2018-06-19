@@ -1,12 +1,21 @@
 import React,{Component} from 'react';
 import Router from 'next/router';
 import Web3 from 'web3';
+import Fetch from 'isomorphic-unfetch';
 
 const mockedRouter = { push: () => {} }
 Router.router = mockedRouter
 
 
 class netValidation extends Component{
+    api_call = async function(path, method){
+        //const rest = await fetch(path);
+        const rest = await fetch(path,{
+            method: method
+        });
+        const response = await rest.json();
+        return response;
+    };
 
     render(){
         var web3;// let se usa para poder reasignar la variable
@@ -45,8 +54,25 @@ class netValidation extends Component{
                         Router.pushRoute('/login/account-locked');
     
                     }else if(accountDetail==2){
-                        //Router.pushRoute('/');
-    
+                        //http://api.gainmers.io/api/users/find
+                        //http://localhost:8000/api/users/find
+                        let account = '';
+                        let current = this;
+                        let server_api = 'http://api.gainmers.io/api/users/find';
+                        web3.eth.getAccounts().then(function(value){
+                            if(value[0]){
+                                account = value[0];
+                                server_api = server_api+'?address='+account;
+                                current.api_call(server_api, 'GET').then(function(response){
+                                    if(response.length === 0 && Router.router.pathname !== '/login/sign-up'){
+                                        Router.pushRoute('/login/sign-up');
+                                    }
+                                    if(response.length === 1 && Router.router.pathname === '/login/sign-up'){
+                                        Router.pushRoute('/betting');
+                                    }
+                                });
+                            }
+                        });
                     }
                     break;
                  
