@@ -26,52 +26,52 @@ const GroupH = ()=>{
 <Body>
 <Row >
     <Cell textAlign='left'> <Flag className="Poland" />Poland</Cell>
-    <Cell >0</Cell>
+    <Cell>1</Cell>
     <Cell>0</Cell>
     <Cell>0</Cell>
-    <Cell>0 </Cell>
-    <Cell>0</Cell>
-    <Cell>0</Cell>
-    <Cell>0</Cell>
+    <Cell>1</Cell>
+    <Cell>1</Cell>
+    <Cell>2</Cell>
+    <Cell>-1</Cell>
     <Cell style={{background : '#18191a'}} >0</Cell>
 
     </Row>
 
     <Row>
     <Cell textAlign='left'> <Flag className="Senegal" />Senegal</Cell>
+    <Cell>1</Cell>
+    <Cell>1</Cell>
     <Cell>0</Cell>
     <Cell>0</Cell>
-    <Cell>0</Cell>
-    <Cell>0 </Cell>
-    <Cell>0</Cell>
-    <Cell>0</Cell>
-    <Cell>0</Cell>
-    <Cell style={{background : '#18191a'}}>0</Cell>
+    <Cell>2</Cell>
+    <Cell>1</Cell>
+    <Cell>1</Cell>
+    <Cell style={{background : '#18191a'}}>3</Cell>
 
     </Row>
 
     <Row>
     <Cell textAlign='left'> <Flag className="Colombia" />Colombia</Cell>
+    <Cell>1</Cell>
     <Cell>0</Cell>
     <Cell>0</Cell>
-    <Cell>0</Cell>
-    <Cell>0</Cell>
-    <Cell>0 </Cell>
-    <Cell>0</Cell>
-    <Cell>0</Cell>
+    <Cell>1</Cell>
+    <Cell>1</Cell>
+    <Cell>2</Cell>
+    <Cell>-1</Cell>
     <Cell style={{background : '#18191a'}}>0</Cell>
     </Row>
 
         <Row>
     <Cell textAlign='left'> <Flag className="Japan" />Japan</Cell>
+    <Cell>1</Cell>
+    <Cell>1</Cell>
     <Cell>0</Cell>
     <Cell>0</Cell>
-    <Cell>0</Cell>
-    <Cell>0 </Cell>
-    <Cell>0</Cell>
-    <Cell>0</Cell>
-    <Cell>0</Cell>
-    <Cell style={{background : '#18191a'}}>0</Cell>
+    <Cell>2</Cell>
+    <Cell>1</Cell>
+    <Cell>1</Cell>
+    <Cell style={{background : '#18191a'}}>3</Cell>
 
     </Row>
 </Body>
@@ -92,17 +92,11 @@ const GroupH = ()=>{
         <Flag className="Japan" />Japan
         </div>
         </Cell>
-        <Cell className="txt">
-            <Icon  name='calendar' />19 Jun 2018         
-            <Icon style={{padding: '0 10px'}}name='clock' />07:00 GMT-5
+        <Cell className="txt">       
+            <Icon style={{padding: '0 10px'}}name='clock' />Full-Time <span style={{padding:'0 5px'}}>1-2</span>
         </Cell>
         <Cell>
-            <Link route={'/betting/final/0xE5B793D03001ed4D47B6dE31AD565817303FC1f2'}>
-            <a>
-            <Button primary className="pool">
-            Pool</Button>
-            </a>
-        </Link>
+            
             
         </Cell>
     </Row>
@@ -115,17 +109,11 @@ const GroupH = ()=>{
             <Flag className="Senegal" />Senegal
             </div>
             </Cell>
-        <Cell className="txt">
-            <Icon  name='calendar' />19 Jun 2018         
-            <Icon style={{padding: '0 10px'}}name='clock' />10:00 GMT-5
+        <Cell className="txt">     
+            <Icon style={{padding: '0 10px'}}name='clock' />Full-Time <span style={{padding:'0 5px'}}>1-2</span>
         </Cell>
         <Cell>
-            <Link route={'/betting/final/0x3Ce496Ed8A4e9c474Ab992aE681180552D1b82D4'}>
-            <a>
-            <Button primary className="pool">
-            Pool</Button>
-            </a>
-        </Link>
+            
             
         </Cell>
     </Row>
