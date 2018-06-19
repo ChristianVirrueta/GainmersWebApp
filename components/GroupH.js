@@ -127,7 +127,7 @@ const GroupH = ()=>{
         </div>
         </Cell>
         <Cell className="txt">
-            <Icon  name='calendar' />19 Jun 2018         
+            <Icon  name='calendar' />24 Jun 2018         
             <Icon style={{padding: '0 10px'}}name='clock' />10:00 GMT-5
         </Cell>
         <Cell>
