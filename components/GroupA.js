@@ -33,7 +33,7 @@ const { Header, Row, HeaderCell, Body, Cell } = Table;
     <Cell>0</Cell>
     <Cell>8</Cell>
     <Cell>1</Cell>
-    <Cell>+7</Cell>
+    <Cell>7</Cell>
     <Cell style={{background : '#18191a'}} >6</Cell>
 
     </Row>
