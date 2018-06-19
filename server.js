@@ -1,15 +1,5 @@
 // Without express
 const {createServer} = require('http');
-const mysql = require('mysql');
-
-const connection = mysql.createConnection({
-    host: 'localhost',
-    user: 'root',
-    password: '',
-    database: 'react_sql'
-  });
-connection.connect();
-
 
 // server.js
 const next = require('next')
