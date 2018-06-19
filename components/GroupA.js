@@ -27,14 +27,14 @@ const { Header, Row, HeaderCell, Body, Cell } = Table;
 <Body>
 <Row >
     <Cell textAlign='left'> <Flag className="Russia" />Russia</Cell>
+    <Cell>2</Cell>
+    <Cell>2</Cell>
+    <Cell>0</Cell>
+    <Cell>0</Cell>
+    <Cell>8</Cell>
     <Cell>1</Cell>
-    <Cell>1</Cell>
-    <Cell>0</Cell>
-    <Cell>0</Cell>
-    <Cell>5</Cell>
-    <Cell>0</Cell>
-    <Cell>5</Cell>
-    <Cell style={{background : '#18191a'}} >3</Cell>
+    <Cell>+7</Cell>
+    <Cell style={{background : '#18191a'}} >6</Cell>
 
     </Row>
 
@@ -53,13 +53,13 @@ const { Header, Row, HeaderCell, Body, Cell } = Table;
 
     <Row>
     <Cell textAlign='left'> <Flag className="Egypt" />Egypt</Cell>
-    <Cell>1</Cell>
+    <Cell>2</Cell>
     <Cell>0</Cell>
     <Cell>0</Cell>
+    <Cell>2</Cell>
     <Cell>1</Cell>
-    <Cell>0 </Cell>
-    <Cell>1</Cell>
-    <Cell>-1</Cell>
+    <Cell>4</Cell>
+    <Cell>-3</Cell>
     <Cell style={{background : '#18191a'}}>0</Cell>
     </Row>
 
@@ -125,17 +125,11 @@ const { Header, Row, HeaderCell, Body, Cell } = Table;
         <Flag className="Egypt" />Egypt
         </div>
         </Cell>
-        <Cell className="txt">
-            <Icon  name='calendar' />19 Jun 2018         
-            <Icon style={{padding: '0 10px'}}name='clock' />13:00 GMT-5
+        <Cell className="txt">     
+            <Icon style={{padding: '0 10px'}}name='clock' />Full-Time <span style={{padding:'0 5px'}}>3-1</span>
         </Cell>
         <Cell>
-        <Link route={'/betting/final/0x6B2Ac6d958c948AbB6E75B043BF99eF78D15b74a'}>
-            <a>
-            <Button primary className="pool">
-            Pool</Button>
-            </a>
-        </Link>
+        
         </Cell>
     </Row>
     <Row>
