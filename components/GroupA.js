@@ -19,7 +19,7 @@ const { Header, Row, HeaderCell, Body, Cell } = Table;
     <HeaderCell>GF</HeaderCell>
     <HeaderCell>GA</HeaderCell>
     <HeaderCell>+/-</HeaderCell>
-    <HeaderCell >Points</HeaderCell>
+    <HeaderCell className="points" >Points</HeaderCell>
 
 
     </Row>
@@ -34,20 +34,20 @@ const { Header, Row, HeaderCell, Body, Cell } = Table;
     <Cell>8</Cell>
     <Cell>1</Cell>
     <Cell>7</Cell>
-    <Cell style={{background : '#18191a'}} >6</Cell>
+    <Cell className="points" style={{background : '#18191a'}} >6</Cell>
 
     </Row>
 
     <Row>
     <Cell textAlign='left'> <Flag className="Saudi-Arabia" />Saudi Arabia</Cell>
-    <Cell>1</Cell>
+    <Cell>2</Cell>
     <Cell>0</Cell>
     <Cell>0</Cell>
-    <Cell>1</Cell>
+    <Cell>2</Cell>
     <Cell>0</Cell>
-    <Cell>5</Cell>
-    <Cell>-5</Cell>
-    <Cell style={{background : '#18191a'}}>0</Cell>
+    <Cell>6</Cell>
+    <Cell>-6</Cell>
+    <Cell className="points" style={{background : '#18191a'}}>0</Cell>
 
     </Row>
 
@@ -60,19 +60,19 @@ const { Header, Row, HeaderCell, Body, Cell } = Table;
     <Cell>1</Cell>
     <Cell>4</Cell>
     <Cell>-3</Cell>
-    <Cell style={{background : '#18191a'}}>0</Cell>
+    <Cell className="points" style={{background : '#18191a'}}>0</Cell>
     </Row>
 
         <Row>
     <Cell textAlign='left'> <Flag className="Uruguay" />Uruguay</Cell>
-    <Cell>1</Cell>
-    <Cell>1</Cell>
+    <Cell>2</Cell>
+    <Cell>2</Cell>
     <Cell>0</Cell>
     <Cell>0 </Cell>
-    <Cell>1</Cell>
+    <Cell>2</Cell>
     <Cell>0</Cell>
-    <Cell>1</Cell>
-    <Cell style={{background : '#18191a'}}>3</Cell>
+    <Cell>2</Cell>
+    <Cell className="points" style={{background : '#18191a'}}>6</Cell>
 
     </Row>
 </Body>
@@ -143,17 +143,11 @@ const { Header, Row, HeaderCell, Body, Cell } = Table;
         Saudi Arabia
         </div>
         </Cell>
-        <Cell className="txt">
-            <Icon  name='calendar' />20 Jun 2018         
-            <Icon style={{padding: '0 10px'}}name='clock' />10:00 GMT-5
+        <Cell className="txt">    
+            <Icon style={{padding: '0 10px'}}name='clock' />Full-Time <span style={{padding:'0 5px'}}>1-0</span>
         </Cell>
         <Cell>
-            <Link route={'/betting/final/0x1e1C28fD5230d7aa9AC06a0dbD50e28B900Ca75c'}>
-            <a>
-            <Button primary className="pool">
-            Pool</Button>
-            </a>
-        </Link>
+            
         </Cell>
     </Row>
     <Row>

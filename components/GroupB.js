@@ -18,7 +18,7 @@ const GroupB = ()=>{
     <HeaderCell>GF</HeaderCell>
     <HeaderCell>GA</HeaderCell>
     <HeaderCell>+/-</HeaderCell>
-    <HeaderCell >Points</HeaderCell>
+    <HeaderCell className="points" >Points</HeaderCell>
 
 
     </Row>
@@ -26,14 +26,14 @@ const GroupB = ()=>{
 <Body>
 <Row >
     <Cell textAlign='left'> <Flag className="Portugal" />Portugal</Cell>
-    <Cell >1</Cell>
-    <Cell>0</Cell>
+    <Cell>2</Cell>
     <Cell>1</Cell>
-    <Cell>0 </Cell>
-    <Cell>3</Cell>
-    <Cell>3</Cell>
+    <Cell>1</Cell>
     <Cell>0</Cell>
-    <Cell style={{background : '#18191a'}} >1</Cell>
+    <Cell>4</Cell>
+    <Cell>3</Cell>
+    <Cell>1</Cell>
+    <Cell className="points" style={{background : '#18191a'}} >4</Cell>
 
     </Row>
 
@@ -46,20 +46,20 @@ const GroupB = ()=>{
     <Cell>3</Cell>
     <Cell>3</Cell>
     <Cell>0</Cell>
-    <Cell style={{background : '#18191a'}}>1</Cell>
+    <Cell className="points" style={{background : '#18191a'}}>1</Cell>
 
     </Row>
 
     <Row>
     <Cell textAlign='left'> <Flag className="Morocco" />Morocco</Cell>
-    <Cell>1</Cell>
+    <Cell>2</Cell>
     <Cell>0</Cell>
     <Cell>0</Cell>
-    <Cell>1</Cell>
-    <Cell>0 </Cell>
-    <Cell>1</Cell>
-    <Cell>-1</Cell>
-    <Cell style={{background : '#18191a'}}>0</Cell>
+    <Cell>2</Cell>
+    <Cell>0</Cell>
+    <Cell>2</Cell>
+    <Cell>-2</Cell>
+    <Cell className="points" style={{background : '#18191a'}}>0</Cell>
     </Row>
 
         <Row>
@@ -71,7 +71,7 @@ const GroupB = ()=>{
     <Cell>1</Cell>
     <Cell>0</Cell>
     <Cell>1</Cell>
-    <Cell style={{background : '#18191a'}}>3</Cell>
+    <Cell className="points" style={{background : '#18191a'}}>3</Cell>
 
     </Row>
 </Body>
@@ -123,17 +123,11 @@ const GroupB = ()=>{
         <Flag className="Morocco" />Morocco
         </div>
         </Cell>
-        <Cell className="txt">
-            <Icon  name='calendar' />20 Jun 2018         
-            <Icon style={{padding: '0 10px'}}name='clock' />07:00 GMT-5
+        <Cell className="txt">        
+            <Icon style={{padding: '0 10px'}}name='clock' />Full-Time <span style={{padding:'0 5px'}}>1-0</span>
         </Cell>
         <Cell>
-           <Link route={'/betting/final/0x09d3cE2E9C3cA6a2289D6A2Feb7C0A9899750926'}>
-           <a>
-            <Button primary className="pool">
-            Pool</Button>
-            </a>
-        </Link>
+           
             
         </Cell>
     </Row>

@@ -18,7 +18,7 @@ const GroupG = ()=>{
     <HeaderCell>GF</HeaderCell>
     <HeaderCell>GA</HeaderCell>
     <HeaderCell>+/-</HeaderCell>
-    <HeaderCell >Points</HeaderCell>
+    <HeaderCell className="points">Points</HeaderCell>
 
 
     </Row>
@@ -33,7 +33,7 @@ const GroupG = ()=>{
     <Cell>3</Cell>
     <Cell>0</Cell>
     <Cell>3</Cell>
-    <Cell style={{background : '#18191a'}} >3</Cell>
+    <Cell className="points" style={{background : '#18191a'}} >3</Cell>
 
     </Row>
 
@@ -46,7 +46,7 @@ const GroupG = ()=>{
     <Cell>0</Cell>
     <Cell>3</Cell>
     <Cell>-3</Cell>
-    <Cell style={{background : '#18191a'}}>0</Cell>
+    <Cell className="points" style={{background : '#18191a'}}>0</Cell>
 
     </Row>
 
@@ -59,7 +59,7 @@ const GroupG = ()=>{
     <Cell>1</Cell>
     <Cell>2</Cell>
     <Cell>-1</Cell>
-    <Cell style={{background : '#18191a'}}>0</Cell>
+    <Cell className="points" style={{background : '#18191a'}}>0</Cell>
     </Row>
 
         <Row>
@@ -71,7 +71,7 @@ const GroupG = ()=>{
     <Cell>2</Cell>
     <Cell>1</Cell>
     <Cell>1</Cell>
-    <Cell style={{background : '#18191a'}}>3</Cell>
+    <Cell className="points" style={{background : '#18191a'}}>3</Cell>
 
     </Row>
 </Body>
@@ -131,7 +131,7 @@ const GroupG = ()=>{
             <Icon style={{padding: '0 10px'}}name='clock' />07:00 GMT-5
         </Cell>
         <Cell>
-            <Link route={'/betting/final/0x8baFed95669Ae8F19e11B0dFd57e9Da15BbbbbE5'}>
+            <Link route={'/betting/final/0x0e07e442FDBCfd6dC8C1Bd03F25Cb1b5583D2241'}>
             <a>
             <Button primary className="pool">
             Pool</Button>

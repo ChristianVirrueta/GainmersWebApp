@@ -18,7 +18,7 @@ const GroupE = ()=>{
     <HeaderCell>GF</HeaderCell>
     <HeaderCell>GA</HeaderCell>
     <HeaderCell>+/-</HeaderCell>
-    <HeaderCell >Points</HeaderCell>
+    <HeaderCell className="points">Points</HeaderCell>
 
 
     </Row>
@@ -33,7 +33,7 @@ const GroupE = ()=>{
     <Cell>1</Cell>
     <Cell>1</Cell>
     <Cell>0</Cell>
-    <Cell style={{background : '#18191a'}} >1</Cell>
+    <Cell className="points" style={{background : '#18191a'}} >1</Cell>
 
     </Row>
 
@@ -46,7 +46,7 @@ const GroupE = ()=>{
     <Cell>1</Cell>
     <Cell>1</Cell>
     <Cell>0</Cell>
-    <Cell style={{background : '#18191a'}}>1</Cell>
+    <Cell className="points" style={{background : '#18191a'}}>1</Cell>
 
     </Row>
 
@@ -59,7 +59,7 @@ const GroupE = ()=>{
     <Cell>0</Cell>
     <Cell>1</Cell>
     <Cell>-1</Cell>
-    <Cell style={{background : '#18191a'}}>0</Cell>
+    <Cell className="points" style={{background : '#18191a'}}>0</Cell>
     </Row>
 
         <Row>
@@ -71,7 +71,7 @@ const GroupE = ()=>{
     <Cell>1</Cell>
     <Cell>0</Cell>
     <Cell>1</Cell>
-    <Cell style={{background : '#18191a'}}>3</Cell>
+    <Cell className="points" style={{background : '#18191a'}}>3</Cell>
 
     </Row>
 </Body>
