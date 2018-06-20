@@ -9,7 +9,7 @@ import SportEvent from '../../ethereum/sportevent.js';
 
 
 class MyBets extends Component {
-    
+
     static async getInitialProps(props){
      
         const bet = await generator.methods.getDeployedEvents().call();
@@ -744,7 +744,7 @@ toggle = () => this.setState({
                                   <div className="mieter">
                                     <span className="text-eter">Accumulated<br/> 
                                   total of betting (ETH):</span>
-                                   <span className="valor-eter"><span className="mskh">{ web3.utils.fromWei(this.props.balance, 'ether')}</span></span>
+                                   <span className="valor-eter"><span className="mskh">{web3.utils.fromWei(this.props.balance, 'ether')}</span></span>
                                   </div> 
                                 </Container>
                             </Grid.Column>

@@ -39,14 +39,14 @@ const GroupB = ()=>{
 
     <Row>
     <Cell textAlign='left'> <Flag className="Spain" />Spain</Cell>
+    <Cell>2</Cell>
+    <Cell>1</Cell>
     <Cell>1</Cell>
     <Cell>0</Cell>
+    <Cell>4</Cell>
+    <Cell>3</Cell>
     <Cell>1</Cell>
-    <Cell>0</Cell>
-    <Cell>3</Cell>
-    <Cell>3</Cell>
-    <Cell>0</Cell>
-    <Cell className="points" style={{background : '#18191a'}}>1</Cell>
+    <Cell className="points" style={{background : '#18191a'}}>4</Cell>
 
     </Row>
 
@@ -64,13 +64,13 @@ const GroupB = ()=>{
 
         <Row>
     <Cell textAlign='left'> <Flag className="Iran" />Iran</Cell>
-    <Cell>1</Cell>
-    <Cell>1</Cell>
-    <Cell>0</Cell>
-    <Cell>0 </Cell>
+    <Cell>2</Cell>
     <Cell>1</Cell>
     <Cell>0</Cell>
     <Cell>1</Cell>
+    <Cell>1</Cell>
+    <Cell>1</Cell>
+    <Cell>0</Cell>
     <Cell className="points" style={{background : '#18191a'}}>3</Cell>
 
     </Row>
@@ -142,17 +142,11 @@ const GroupB = ()=>{
         Spain
         </div>
         </Cell>
-        <Cell className="txt">
-            <Icon  name='calendar' />20 Jun 2018         
-            <Icon style={{padding: '0 10px'}}name='clock' />13:00 GMT-5
+        <Cell className="txt">       
+            <Icon style={{padding: '0 10px'}}name='clock' />Full-Time <span style={{padding:'0 5px'}}>0-1</span>
         </Cell>
         <Cell>
-           <Link route={'/betting/final/0x9C52Eb7850B04584696b20bdB5c103A51dE01135'}>
-           <a>
-            <Button primary className="pool">
-            Pool</Button>
-            </a>
-        </Link>
+          
             
         </Cell>
     </Row>
