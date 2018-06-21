@@ -57,10 +57,13 @@ export default ()=> {
                 </div>
                 </Menu.Item>
                 <Menu.Item>
-                <a className="item" style={{color:'#000000'}}>EMAIL:  </a>
-                <Link route="/">
-                   <a href="mailto:contact@gainmers.io"><span className="contact">contact@gainmers.io</span></a>
-                 </Link>
+                <a className="item" style={{color:'#000000', fontSize:'12px !important', padding:'0 !important', marginRight:'10px'}}>WATCH US:  </a>
+                <Link route={'https://www.stateofthedapps.com/dapps/gainmers/'}>
+                    <a target="_blank">
+                     <Image src='http://dapp.gainmers.io/assets/images/state-dapps.png'/>
+                     </a>
+                    </Link>
+                
             </Menu.Item>
             <Menu.Item style={{color:'#000000'}}>
               <NetValidation />

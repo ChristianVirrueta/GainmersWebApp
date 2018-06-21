@@ -34,7 +34,12 @@ class MyBets extends Component {
         };
       }
 
-      state = { 
+      state = {  
+        winnerOption: '',
+        nameEvent: '',
+        percentage:'',
+        unixTimeSC:'',
+        adminAccount: '',
         conditionsAccepted: false,
         checked1: false,
         checked2: false,
@@ -63,6 +68,55 @@ class MyBets extends Component {
         errorMessage:'',
         loading: false
     }
+onCreate = async (event) =>{
+
+        event.preventDefault();
+
+        this.setState({loading : true});
+
+        try{
+            const accounts = await web3.eth.getAccounts();
+            await generator.methods
+                  .createSportEvent(this.state.nameEvent,this.state.percentage,this.state.unixTimeSC)
+                  .send({
+                        from: accounts[0]
+                  })
+                 // Router.pushRoute('/');
+
+        }catch(err){
+            this.setState({errorMessage: err.message.split("\n")[0]});
+
+        }
+        this.setState({loading : false});
+}
+onSplit = async (event) =>{
+
+    event.preventDefault();
+
+    this.setState({loading : true});
+
+
+    try{
+       
+
+        const accounts = await web3.eth.getAccounts();
+        const sportevent = SportEvent(this.props.address);
+
+        await sportevent.methods
+              .splitWinnings(this.state.winnerOption)
+              .send({
+                    from: accounts[0]
+              })
+             // Router.pushRoute('/');
+
+    }catch(err){
+        this.setState({errorMessage: err.message.split("\n")[0]});
+
+    }
+    this.setState({loading : false});
+}
+
+
 
 onSubmit = async (event) =>{
 
@@ -120,23 +174,88 @@ onSubmit = async (event) =>{
 
      }
      
-renderCampaigns(){
+renderBet(){
+    web3.eth.getAccounts().then(e => {
+    if(e == '0x1b2a07BE84d8914526b51ce72bEDDB312656058e' ){
+        this.setState({adminAccount: 'Admin Found'});
+    }
+        else{ 
+                this.setState({adminAccount:''});
+            }    
+    });
+    if(this.state.adminAccount){
+        return this.renderAdminOptions();
+        }else{
+        return this.renderBets();
+    }
 
-        const items = this.props.bet.map( address => {
-            
-            return {
-                header: address,
-                description: (
-                <Link route={`/campaigns/${address}`}>
-                <a> Detalles del Evento</a>
-                </Link>
-                ),
-                fluid: true //para que se alargue
-            };
-        });
 
-        return <Card.Group items={items}/>;
+} 
+
+
+renderAdminOptions(){
+return (
+    <div>
+    <Segment>
+
+
+  <Form onSubmit= {this.onCreate} warning={!!this.state.errorMessage}>
+  <Dimmer active={this.state.loading} >
+     <Loader  indeterminate>Procesando Transaccion</Loader>
+  </Dimmer>
+ <Form.Field>
+     <label>"Group Stage,Russia,Egypt,19 Jun 2018,13:00 GMT-5"<br/>"4"<br/>"1529431200"</label>
+ </Form.Field>
+
+ 
+ <Form.Field>
+      <label>Event Name</label>
+      <Input 
+         placeholder='Nombre del evento'
+         value={this.state.nameEvent}
+         onChange={ event=> this.setState({
+            nameEvent : event.target.value})}
+ />
+    </Form.Field>
+    <Form.Field>
+      <label>Percentage</label>
+      <Input 
+         placeholder='Porcentaje por contrato'
+         value={this.state.percentage}
+         onChange={ event=> this.setState({
+            percentage : event.target.value})}
+ />
+    </Form.Field>
+    <Form.Field>
+      <label>UnixTime</label>
+      <Input 
+         placeholder='Tiempo en UnixTimeStamp'
+         value={this.state.unixTimeSC}
+         onChange={ event=> this.setState({
+            unixTimeSC : event.target.value})}
+ />
+    </Form.Field>
+    <Form.Button  >Create Event</Form.Button>
+</Form>
+</Segment>
+<Segment>
+
+<Form onSubmit={this.onSplit}>
+<Form.Field>
+<label>Split money to Winners:</label>
+<p>Wining Options (0-11) :</p>{this.state.winnerOption}
+ 
+</Form.Field>
+
+<Form.Button content='Split Winnings'/>
+    </Form>
+    </Segment>
+</div>
+);
+
+
 }
+
 renderBets(){
 
    return( <div>
@@ -680,13 +799,13 @@ toggle = () => this.setState({
         const panes = [
             { menuItem: 'Bet', render: () =>
              <Tab.Pane >
-             {this.renderBets()}
+             {this.renderBet()}
              </Tab.Pane> },
             //{ menuItem: 'My Bets', render: () => <Tab.Pane>{this.renderCampaigns()}</Tab.Pane> }
           ]
         return(
             <Layout>
-                <Grid>
+               <Grid>
                     <Grid.Row>
                         <div className="titulo-02">
                     <div className="titulo-number">
@@ -744,7 +863,7 @@ toggle = () => this.setState({
                                   <div className="mieter">
                                     <span className="text-eter">Accumulated<br/> 
                                   total of betting (ETH):</span>
-                                   <span className="valor-eter"><span className="mskh">{web3.utils.fromWei(this.props.balance, 'ether')}</span></span>
+                                   <span className="valor-eter"><span className="mskh">{ web3.utils.fromWei(this.props.balance, 'ether')}</span></span>
                                   </div> 
                                 </Container>
                             </Grid.Column>
@@ -762,7 +881,9 @@ toggle = () => this.setState({
                                         <Checkbox 
                                         style={{float:'right'}}
                                         onChange={()=> {
-                                            this.setState({ checked1: !this.state.checked1 });
+                                            this.setState({ checked1: !this.state.checked1,
+                                                            winnerOption: '0'
+                                             });
                                             }
                                         }  
                                         checked={this.state.checked1} />
@@ -788,7 +909,8 @@ toggle = () => this.setState({
                                         <Checkbox
                                         style={{float:'right'}}
                                         onChange={()=> {
-                                            this.setState({ checked2: !this.state.checked2 });
+                                            this.setState({ checked2: !this.state.checked2,
+                                                            winnerOption: '1'});
                                             }
                                         } 
                                         checked={this.state.checked2} />
@@ -814,7 +936,8 @@ toggle = () => this.setState({
                                         <Checkbox
                                         style={{float:'right'}} 
                                         onChange={()=> {
-                                            this.setState({ checked3: !this.state.checked3 });
+                                            this.setState({ checked3: !this.state.checked3,
+                                                            winnerOption: '2' });
                                             }
                                         } 
                                         checked={this.state.checked3} />
@@ -842,7 +965,8 @@ toggle = () => this.setState({
                                     <Checkbox 
                                     style={{float:'right'}}
                                     onChange={()=> {
-                                        this.setState({ checked4: !this.state.checked4 });
+                                        this.setState({ checked4: !this.state.checked4,
+                                                        winnerOption: '3' });
                                         }
                                     }  
                                     checked={this.state.checked4} />
@@ -868,7 +992,8 @@ toggle = () => this.setState({
                                     <Checkbox
                                     style={{float:'right'}}
                                     onChange={()=> {
-                                        this.setState({ checked5: !this.state.checked5 });
+                                        this.setState({ checked5: !this.state.checked5,
+                                                        winnerOption: '4' });
                                         }
                                     } 
                                     checked={this.state.checked5} />
@@ -894,7 +1019,8 @@ toggle = () => this.setState({
                                     <Checkbox
                                     style={{float:'right'}} 
                                     onChange={()=> {
-                                        this.setState({ checked6: !this.state.checked6 });
+                                        this.setState({ checked6: !this.state.checked6,
+                                                        winnerOption: '5' });
                                         }
                                     } 
                                     checked={this.state.checked6} />
@@ -922,7 +1048,8 @@ toggle = () => this.setState({
                                     <Checkbox 
                                     style={{float:'right'}}
                                     onChange={()=> {
-                                        this.setState({ checked7: !this.state.checked7 });
+                                        this.setState({ checked7: !this.state.checked7,
+                                                        winnerOption: '6' });
                                         }
                                     }  
                                     checked={this.state.checked7} />
@@ -948,7 +1075,8 @@ toggle = () => this.setState({
                                     <Checkbox
                                     style={{float:'right'}}
                                     onChange={()=> {
-                                        this.setState({ checked8: !this.state.checked8 });
+                                        this.setState({ checked8: !this.state.checked8,
+                                                        winnerOption: '7' });
                                         }
                                     } 
                                     checked={this.state.checked8} />
@@ -974,7 +1102,8 @@ toggle = () => this.setState({
                                     <Checkbox
                                     style={{float:'right'}} 
                                     onChange={()=> {
-                                        this.setState({ checked9: !this.state.checked9 });
+                                        this.setState({ checked9: !this.state.checked9,
+                                                        winnerOption: '8' });
                                         }
                                     } 
                                     checked={this.state.checked9} />
@@ -1002,7 +1131,8 @@ toggle = () => this.setState({
                                     <Checkbox 
                                     style={{float:'right'}}
                                     onChange={()=> {
-                                        this.setState({ checked10: !this.state.checked10 });
+                                        this.setState({ checked10: !this.state.checked10,
+                                                        winnerOption: '9' });
                                         }
                                     }  
                                     checked={this.state.checked10} />
@@ -1031,7 +1161,8 @@ toggle = () => this.setState({
                                     <Checkbox
                                     style={{float:'right'}}
                                     onChange={()=> {
-                                        this.setState({ checked11: !this.state.checked11 });
+                                        this.setState({ checked11: !this.state.checked11,
+                                                        winnerOption: '10' });
                                         }
                                     } 
                                     checked={this.state.checked11} />
@@ -1057,7 +1188,9 @@ toggle = () => this.setState({
                                     <Checkbox
                                     style={{float:'right'}} 
                                     onChange={()=> {
-                                        this.setState({ checked12: !this.state.checked12 });
+                                        this.setState({ checked12: !this.state.checked12,
+                                                        winnerOption: '11',
+                                        });
                                         }
                                     } 
                                     checked={this.state.checked12} />
@@ -1098,8 +1231,6 @@ toggle = () => this.setState({
                                panes={panes} />
 
                         </Grid.Column>
-
-
 
                     </Grid.Row>
                     
