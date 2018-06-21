@@ -187,7 +187,7 @@ const GroupH = ()=>{
             <Button primary className="pool">
             Pool</Button>
             </a>
-        </Link>
+            </Link>
             
         </Cell>
     </Row>
