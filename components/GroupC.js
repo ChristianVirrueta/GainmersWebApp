@@ -127,16 +127,11 @@ const GroupC = ()=>{
         </div>
         </Cell>
         <Cell className="txt">
-            <Icon  name='calendar' />21 Jun 2018         
-            <Icon style={{padding: '0 10px'}}name='clock' />07:00 GMT-5
+                    
+            <Icon style={{padding: '0 10px'}}name='clock' />Full-Time <span style={{padding:'0 5px'}}>1-1</span>
         </Cell>
         <Cell>
-            <Link route={'/betting/final/0xABE14F453992aa8dbFfb026806C078aA4b209A5a'}>
-            <a>
-            <Button primary className="pool">
-            Pool</Button>
-            </a>
-        </Link>
+            
             
         </Cell>
     </Row>
@@ -151,17 +146,11 @@ const GroupC = ()=>{
         Peru
         </div>
         </Cell>
-        <Cell className="txt">
-            <Icon  name='calendar' />21 Jun 2018         
-            <Icon style={{padding: '0 10px'}}name='clock' />10:00 GMT-5
+        <Cell className="txt">       
+            <Icon style={{padding: '0 10px'}}name='clock' />Full-Time <span style={{padding:'0 5px'}}>1-0</span>
         </Cell>
         <Cell>
-           <Link route={'/betting/final/0x5703B6b1B4CF40D9e888AD1F1596C0d62106bd36'}>
-           <a>
-            <Button primary className="pool">
-            Pool</Button>
-            </a>
-        </Link>
+           
             
         </Cell>
     </Row>
