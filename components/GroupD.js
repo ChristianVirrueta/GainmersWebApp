@@ -24,33 +24,7 @@ const GroupD = ()=>{
     </Row>
 </Header>
 <Body>
-<Row >
-    <Cell textAlign='left'> <Flag className="Argentina" />Argentina</Cell>
-    <Cell>2</Cell>
-    <Cell>0</Cell>
-    <Cell>1</Cell>
-    <Cell>1</Cell>
-    <Cell>1</Cell>
-    <Cell>4</Cell>
-    <Cell>-3</Cell>
-    <Cell className="points" style={{background : '#18191a'}} >1</Cell>
-
-    </Row>
-
-    <Row>
-    <Cell textAlign='left'> <Flag className="Iceland" />Iceland</Cell>
-    <Cell>1</Cell>
-    <Cell>0</Cell>
-    <Cell>1</Cell>
-    <Cell>0</Cell>
-    <Cell>1</Cell>
-    <Cell>1</Cell>
-    <Cell>0</Cell>
-    <Cell className="points" style={{background : '#18191a'}}>1</Cell>
-
-    </Row>
-
-    <Row>
+<Row>
     <Cell textAlign='left'> <Flag className="Croatia" />Croatia</Cell>
     <Cell>2</Cell>
     <Cell>2</Cell>
@@ -64,16 +38,44 @@ const GroupD = ()=>{
 
         <Row>
     <Cell textAlign='left'> <Flag className="Nigeria" />Nigeria</Cell>
-    <Cell>1</Cell>
-    <Cell>0</Cell>
-    <Cell>0</Cell>
-    <Cell>1</Cell>
-    <Cell>0</Cell>
     <Cell>2</Cell>
-    <Cell>-2</Cell>
-    <Cell className="points" style={{background : '#18191a'}}>0</Cell>
+    <Cell>1</Cell>
+    <Cell>0</Cell>
+    <Cell>1</Cell>
+    <Cell>2</Cell>
+    <Cell>2</Cell>
+    <Cell>0</Cell>
+    <Cell className="points" style={{background : '#18191a'}}>3</Cell>
 
     </Row>
+     <Row>
+    <Cell textAlign='left'> <Flag className="Iceland" />Iceland</Cell>
+    <Cell>2</Cell>
+    <Cell>0</Cell>
+    <Cell>1</Cell>
+    <Cell>1</Cell>
+    <Cell>1</Cell>
+    <Cell>3</Cell>
+    <Cell>-2</Cell>
+    <Cell className="points" style={{background : '#18191a'}}>1</Cell>
+
+    </Row>
+<Row >
+    <Cell textAlign='left'> <Flag className="Argentina" />Argentina</Cell>
+    <Cell>2</Cell>
+    <Cell>0</Cell>
+    <Cell>1</Cell>
+    <Cell>1</Cell>
+    <Cell>1</Cell>
+    <Cell>4</Cell>
+    <Cell>-3</Cell>
+    <Cell className="points" style={{background : '#18191a'}} >1</Cell>
+
+    </Row>
+
+   
+
+    
 </Body>
 
 </Table>
@@ -148,16 +150,11 @@ const GroupD = ()=>{
         </div>
         </Cell>
         <Cell className="txt">
-            <Icon  name='calendar' />22 Jun 2018         
-            <Icon style={{padding: '0 10px'}}name='clock' />10:00 GMT-5
+                    
+            <Icon style={{padding: '0 10px'}}name='clock' />Full-Time <span style={{padding:'0 5px'}}>2-0</span>
         </Cell>
         <Cell>
-            <Link route={'/betting/final/0xB7Fa244D33A2120878ECC591a7968F8811b638F0'}>
-            <a>
-            <Button primary className="pool">
-            Pool</Button>
-            </a>
-        </Link>
+    
             
         </Cell>
     </Row>

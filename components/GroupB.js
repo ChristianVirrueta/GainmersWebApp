@@ -24,20 +24,7 @@ const GroupB = ()=>{
     </Row>
 </Header>
 <Body>
-<Row >
-    <Cell textAlign='left'> <Flag className="Portugal" />Portugal</Cell>
-    <Cell>2</Cell>
-    <Cell>1</Cell>
-    <Cell>1</Cell>
-    <Cell>0</Cell>
-    <Cell>4</Cell>
-    <Cell>3</Cell>
-    <Cell>1</Cell>
-    <Cell className="points" style={{background : '#18191a'}} >4</Cell>
-
-    </Row>
-
-    <Row>
+ <Row>
     <Cell textAlign='left'> <Flag className="Spain" />Spain</Cell>
     <Cell>2</Cell>
     <Cell>1</Cell>
@@ -49,17 +36,17 @@ const GroupB = ()=>{
     <Cell className="points" style={{background : '#18191a'}}>4</Cell>
 
     </Row>
+<Row >
+    <Cell textAlign='left'> <Flag className="Portugal" />Portugal</Cell>
+    <Cell>2</Cell>
+    <Cell>1</Cell>
+    <Cell>1</Cell>
+    <Cell>0</Cell>
+    <Cell>4</Cell>
+    <Cell>3</Cell>
+    <Cell>1</Cell>
+    <Cell className="points" style={{background : '#18191a'}} >4</Cell>
 
-    <Row>
-    <Cell textAlign='left'> <Flag className="Morocco" />Morocco</Cell>
-    <Cell>2</Cell>
-    <Cell>0</Cell>
-    <Cell>0</Cell>
-    <Cell>2</Cell>
-    <Cell>0</Cell>
-    <Cell>2</Cell>
-    <Cell>-2</Cell>
-    <Cell className="points" style={{background : '#18191a'}}>0</Cell>
     </Row>
 
         <Row>
@@ -74,6 +61,20 @@ const GroupB = ()=>{
     <Cell className="points" style={{background : '#18191a'}}>3</Cell>
 
     </Row>
+
+
+    <Row>
+    <Cell textAlign='left'> <Flag className="Morocco" />Morocco</Cell>
+    <Cell>2</Cell>
+    <Cell>0</Cell>
+    <Cell>0</Cell>
+    <Cell>2</Cell>
+    <Cell>0</Cell>
+    <Cell>2</Cell>
+    <Cell>-2</Cell>
+    <Cell className="points" style={{background : '#18191a'}}>0</Cell>
+    </Row>
+
 </Body>
 
 </Table>

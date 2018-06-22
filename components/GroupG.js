@@ -34,19 +34,18 @@ const GroupG = ()=>{
     <Cell>0</Cell>
     <Cell>3</Cell>
     <Cell className="points" style={{background : '#18191a'}} >3</Cell>
-
     </Row>
 
-    <Row>
-    <Cell textAlign='left'> <Flag className="Panama" />Panama</Cell>
+          <Row>
+    <Cell textAlign='left'> <Flag className="England" />England</Cell>
+    <Cell>1</Cell>
     <Cell>1</Cell>
     <Cell>0</Cell>
-    <Cell>0</Cell>
+    <Cell>0 </Cell>
+    <Cell>2</Cell>
     <Cell>1</Cell>
-    <Cell>0</Cell>
-    <Cell>3</Cell>
-    <Cell>-3</Cell>
-    <Cell className="points" style={{background : '#18191a'}}>0</Cell>
+    <Cell>1</Cell>
+    <Cell className="points" style={{background : '#18191a'}}>3</Cell>
 
     </Row>
 
@@ -62,18 +61,20 @@ const GroupG = ()=>{
     <Cell className="points" style={{background : '#18191a'}}>0</Cell>
     </Row>
 
-        <Row>
-    <Cell textAlign='left'> <Flag className="England" />England</Cell>
-    <Cell>1</Cell>
+       <Row>
+    <Cell textAlign='left'> <Flag className="Panama" />Panama</Cell>
     <Cell>1</Cell>
     <Cell>0</Cell>
-    <Cell>0 </Cell>
-    <Cell>2</Cell>
+    <Cell>0</Cell>
     <Cell>1</Cell>
-    <Cell>1</Cell>
-    <Cell className="points" style={{background : '#18191a'}}>3</Cell>
+    <Cell>0</Cell>
+    <Cell>3</Cell>
+    <Cell>-3</Cell>
+    <Cell className="points" style={{background : '#18191a'}}>0</Cell>
 
     </Row>
+
+  
 </Body>
 
 </Table>

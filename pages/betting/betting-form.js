@@ -35,6 +35,7 @@ class MyBets extends Component {
       }
 
       state = {  
+        lastAddress:'',
         winnerOption: '',
         nameEvent: '',
         percentage:'',
@@ -87,6 +88,9 @@ onCreate = async (event) =>{
             this.setState({errorMessage: err.message.split("\n")[0]});
 
         }
+        const getdeployedevents = await generator.methods
+                                        .getDeployedEvents().call();
+        this.setState({lastAddress: getdeployedevents[getdeployedevents.length-1]})
         this.setState({loading : false});
 }
 onSplit = async (event) =>{
@@ -204,12 +208,12 @@ return (
      <Loader  indeterminate>Procesando Transaccion</Loader>
   </Dimmer>
  <Form.Field>
-     <label>"Group Stage,Russia,Egypt,19 Jun 2018,13:00 GMT-5"<br/>"4"<br/>"1529431200"</label>
+     <label><span className='tit-group'>"Group Stage, Russia - Egypt, 19 Jun 2018,13:00 GMT-5"<span className='number-group'>"4"</span><span className='cod-group'>"1529431200"</span></span></label>
  </Form.Field>
 
  
  <Form.Field>
-      <label>Event Name</label>
+      <label className='tit-group'>Event Name</label>
       <Input 
          placeholder='Nombre del evento'
          value={this.state.nameEvent}
@@ -218,7 +222,7 @@ return (
  />
     </Form.Field>
     <Form.Field>
-      <label>Percentage</label>
+      <label className='tit-group'>Percentage</label>
       <Input 
          placeholder='Porcentaje por contrato'
          value={this.state.percentage}
@@ -227,7 +231,7 @@ return (
  />
     </Form.Field>
     <Form.Field>
-      <label>UnixTime</label>
+      <label className='tit-group'>UnixTime</label>
       <Input 
          placeholder='Tiempo en UnixTimeStamp'
          value={this.state.unixTimeSC}
@@ -235,7 +239,9 @@ return (
             unixTimeSC : event.target.value})}
  />
     </Form.Field>
-    <Form.Button  >Create Event</Form.Button>
+    <Form.Button className="mi-Button">Create Event</Form.Button>
+        <p>Last Contract Address: {this.state.lastAddress}</p>
+
 </Form>
 </Segment>
 <Segment>
@@ -247,7 +253,7 @@ return (
  
 </Form.Field>
 
-<Form.Button content='Split Winnings'/>
+<Form.Button className="mi-Button" content='Split Winnings'/>
     </Form>
     </Segment>
 </div>

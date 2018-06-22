@@ -37,6 +37,19 @@ const GroupC = ()=>{
 
     </Row>
 
+          <Row>
+    <Cell textAlign='left'> <Flag className="Denmark" />Denmark</Cell>
+    <Cell>2</Cell>
+    <Cell>1</Cell>
+    <Cell>1</Cell>
+    <Cell>0 </Cell>
+    <Cell>2</Cell>
+    <Cell>1</Cell>
+    <Cell>1</Cell>
+    <Cell className="points" style={{background : '#18191a'}}>4</Cell>
+
+    </Row>
+
     <Row>
     <Cell textAlign='left'> <Flag className="Australia" />Australia</Cell>
     <Cell>2</Cell>
@@ -62,18 +75,7 @@ const GroupC = ()=>{
     <Cell className="points" style={{background : '#18191a'}}>0</Cell>
     </Row>
 
-        <Row>
-    <Cell textAlign='left'> <Flag className="Denmark" />Denmark</Cell>
-    <Cell>2</Cell>
-    <Cell>1</Cell>
-    <Cell>1</Cell>
-    <Cell>0 </Cell>
-    <Cell>2</Cell>
-    <Cell>1</Cell>
-    <Cell>1</Cell>
-    <Cell className="points" style={{background : '#18191a'}}>4</Cell>
-
-    </Row>
+  
 </Body>
 
 </Table>

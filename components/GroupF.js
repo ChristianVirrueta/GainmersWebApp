@@ -24,6 +24,31 @@ const GroupF = ()=>{
     </Row>
 </Header>
 <Body>
+ <Row>
+    <Cell textAlign='left'> <Flag className="Sweden" />Sweden</Cell>
+    <Cell>1</Cell>
+    <Cell>1</Cell>
+    <Cell>0</Cell>
+    <Cell>0</Cell>
+    <Cell>1</Cell>
+    <Cell>0</Cell>
+    <Cell>1</Cell>
+    <Cell className="points" style={{background : '#18191a'}}>3</Cell>
+    </Row>
+<Row>
+    <Cell textAlign='left'> <Flag className="Mexico" />Mexico</Cell>
+    <Cell>1</Cell>
+    <Cell>1</Cell>
+    <Cell>0</Cell>
+    <Cell>0</Cell>
+    <Cell>1</Cell>
+    <Cell>0</Cell>
+    <Cell>1</Cell>
+    <Cell className="points" style={{background : '#18191a'}}>3</Cell>
+
+    </Row>
+
+
 <Row >
     <Cell textAlign='left'> <Flag className="Germany" />Germany</Cell>
     <Cell>1</Cell>
@@ -37,30 +62,7 @@ const GroupF = ()=>{
 
     </Row>
 
-    <Row>
-    <Cell textAlign='left'> <Flag className="Mexico" />Mexico</Cell>
-    <Cell>1</Cell>
-    <Cell>1</Cell>
-    <Cell>0</Cell>
-    <Cell>0</Cell>
-    <Cell>1</Cell>
-    <Cell>0</Cell>
-    <Cell>1</Cell>
-    <Cell className="points" style={{background : '#18191a'}}>3</Cell>
-
-    </Row>
-
-    <Row>
-    <Cell textAlign='left'> <Flag className="Sweden" />Sweden</Cell>
-    <Cell>1</Cell>
-    <Cell>1</Cell>
-    <Cell>0</Cell>
-    <Cell>0</Cell>
-    <Cell>1</Cell>
-    <Cell>0</Cell>
-    <Cell>1</Cell>
-    <Cell className="points" style={{background : '#18191a'}}>3</Cell>
-    </Row>
+    
 
         <Row>
     <Cell textAlign='left'> <Flag className="Korea" />Korea</Cell>

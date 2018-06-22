@@ -24,16 +24,16 @@ const GroupH = ()=>{
     </Row>
 </Header>
 <Body>
-<Row >
-    <Cell textAlign='left'> <Flag className="Poland" />Poland</Cell>
+    <Row>
+    <Cell textAlign='left'> <Flag className="Japan" />Japan</Cell>
+    <Cell>1</Cell>
     <Cell>1</Cell>
     <Cell>0</Cell>
     <Cell>0</Cell>
-    <Cell>1</Cell>
-    <Cell>1</Cell>
     <Cell>2</Cell>
-    <Cell>-1</Cell>
-    <Cell className="points" style={{background : '#18191a'}} >0</Cell>
+    <Cell>1</Cell>
+    <Cell>1</Cell>
+    <Cell className="points" style={{background : '#18191a'}}>3</Cell>
 
     </Row>
 
@@ -49,6 +49,20 @@ const GroupH = ()=>{
     <Cell className="points" style={{background : '#18191a'}}>3</Cell>
 
     </Row>
+<Row >
+    <Cell textAlign='left'> <Flag className="Poland" />Poland</Cell>
+    <Cell>1</Cell>
+    <Cell>0</Cell>
+    <Cell>0</Cell>
+    <Cell>1</Cell>
+    <Cell>1</Cell>
+    <Cell>2</Cell>
+    <Cell>-1</Cell>
+    <Cell className="points" style={{background : '#18191a'}} >0</Cell>
+
+    </Row>
+
+    
 
     <Row>
     <Cell textAlign='left'> <Flag className="Colombia" />Colombia</Cell>
@@ -62,18 +76,7 @@ const GroupH = ()=>{
     <Cell className="points" style={{background : '#18191a'}}>0</Cell>
     </Row>
 
-        <Row>
-    <Cell textAlign='left'> <Flag className="Japan" />Japan</Cell>
-    <Cell>1</Cell>
-    <Cell>1</Cell>
-    <Cell>0</Cell>
-    <Cell>0</Cell>
-    <Cell>2</Cell>
-    <Cell>1</Cell>
-    <Cell>1</Cell>
-    <Cell className="points" style={{background : '#18191a'}}>3</Cell>
-
-    </Row>
+    
 </Body>
 
 </Table>

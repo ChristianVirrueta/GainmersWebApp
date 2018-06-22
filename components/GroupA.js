@@ -35,7 +35,29 @@ const { Header, Row, HeaderCell, Body, Cell } = Table;
     <Cell>1</Cell>
     <Cell>7</Cell>
     <Cell className="points" style={{background : '#18191a'}} >6</Cell>
+    </Row>
+         <Row>
+    <Cell textAlign='left'> <Flag className="Uruguay" />Uruguay</Cell>
+    <Cell>2</Cell>
+    <Cell>2</Cell>
+    <Cell>0</Cell>
+    <Cell>0 </Cell>
+    <Cell>2</Cell>
+    <Cell>0</Cell>
+    <Cell>2</Cell>
+    <Cell className="points" style={{background : '#18191a'}}>6</Cell>
 
+    </Row>
+     <Row>
+    <Cell textAlign='left'> <Flag className="Egypt" />Egypt</Cell>
+    <Cell>2</Cell>
+    <Cell>0</Cell>
+    <Cell>0</Cell>
+    <Cell>2</Cell>
+    <Cell>1</Cell>
+    <Cell>4</Cell>
+    <Cell>-3</Cell>
+    <Cell className="points" style={{background : '#18191a'}}>0</Cell>
     </Row>
 
     <Row>
@@ -51,30 +73,7 @@ const { Header, Row, HeaderCell, Body, Cell } = Table;
 
     </Row>
 
-    <Row>
-    <Cell textAlign='left'> <Flag className="Egypt" />Egypt</Cell>
-    <Cell>2</Cell>
-    <Cell>0</Cell>
-    <Cell>0</Cell>
-    <Cell>2</Cell>
-    <Cell>1</Cell>
-    <Cell>4</Cell>
-    <Cell>-3</Cell>
-    <Cell className="points" style={{background : '#18191a'}}>0</Cell>
-    </Row>
-
-        <Row>
-    <Cell textAlign='left'> <Flag className="Uruguay" />Uruguay</Cell>
-    <Cell>2</Cell>
-    <Cell>2</Cell>
-    <Cell>0</Cell>
-    <Cell>0 </Cell>
-    <Cell>2</Cell>
-    <Cell>0</Cell>
-    <Cell>2</Cell>
-    <Cell className="points" style={{background : '#18191a'}}>6</Cell>
-
-    </Row>
+   
 </Body>
 
 </Table>
