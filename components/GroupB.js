@@ -26,26 +26,26 @@ const GroupB = ()=>{
 <Body>
  <Row>
     <Cell textAlign='left'> <Flag className="Spain" />Spain</Cell>
-    <Cell>2</Cell>
-    <Cell>1</Cell>
-    <Cell>1</Cell>
-    <Cell>0</Cell>
-    <Cell>4</Cell>
     <Cell>3</Cell>
     <Cell>1</Cell>
-    <Cell className="points" style={{background : '#18191a'}}>4</Cell>
+    <Cell>2</Cell>
+    <Cell>0</Cell>
+    <Cell>6</Cell>
+    <Cell>5</Cell>
+    <Cell>1</Cell>
+    <Cell className="points" style={{background : '#18191a'}}>5</Cell>
 
     </Row>
 <Row >
     <Cell textAlign='left'> <Flag className="Portugal" />Portugal</Cell>
-    <Cell>2</Cell>
-    <Cell>1</Cell>
-    <Cell>1</Cell>
-    <Cell>0</Cell>
-    <Cell>4</Cell>
     <Cell>3</Cell>
     <Cell>1</Cell>
-    <Cell className="points" style={{background : '#18191a'}} >4</Cell>
+    <Cell>2</Cell>
+    <Cell>0</Cell>
+    <Cell>5</Cell>
+    <Cell>4</Cell>
+    <Cell>1</Cell>
+    <Cell className="points" style={{background : '#18191a'}} >5</Cell>
 
     </Row>
 
@@ -58,7 +58,7 @@ const GroupB = ()=>{
     <Cell>1</Cell>
     <Cell>1</Cell>
     <Cell>0</Cell>
-    <Cell className="points" style={{background : '#18191a'}}>3</Cell>
+    <Cell className="points" style={{background : '#18191a'}}>4</Cell>
 
     </Row>
 
@@ -72,7 +72,7 @@ const GroupB = ()=>{
     <Cell>0</Cell>
     <Cell>2</Cell>
     <Cell>-2</Cell>
-    <Cell className="points" style={{background : '#18191a'}}>0</Cell>
+    <Cell className="points" style={{background : '#18191a'}}>1</Cell>
     </Row>
 
 </Body>
@@ -162,17 +162,11 @@ const GroupB = ()=>{
         Morocco
         </div>
         </Cell>
-        <Cell className="txt">
-            <Icon  name='calendar' />25 Jun 2018         
-            <Icon style={{padding: '0 10px'}}name='clock' />13:00 GMT-5
+        <Cell className="txt">      
+            <Icon style={{padding: '0 10px'}}name='clock' />Full-Time <span style={{padding:'0 5px'}}>2-2</span>
         </Cell>
         <Cell>
-            <Link route={'/betting/final/0x7854d78b585041cfa6Ae792741938B93Cb7be247'}>
-            <a>
-            <Button primary className="pool">
-            Pool</Button>
-            </a>
-        </Link>
+            
             
         </Cell>
     </Row>
@@ -187,17 +181,11 @@ const GroupB = ()=>{
         Portugal
         </div>
         </Cell>
-        <Cell className="txt">
-            <Icon  name='calendar' />25 Jun 2018         
-            <Icon style={{padding: '0 10px'}}name='clock' />13:00 GMT-5
+        <Cell className="txt"> 
+            <Icon style={{padding: '0 10px'}}name='clock' />Full-Time <span style={{padding:'0 5px'}}>1-1</span>
         </Cell>
         <Cell>
-            <Link route={'/betting/final/0xa3B5a394Dd1b47F4f4C76AeE66F6039be0Ad4599'}>
-            <a>
-            <Button primary className="pool">
-            Pool</Button>
-            </a>
-        </Link>
+            
             
         </Cell>
     </Row>
