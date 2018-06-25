@@ -25,55 +25,54 @@ const { Header, Row, HeaderCell, Body, Cell } = Table;
     </Row>
 </Header>
 <Body>
+      <Row>
+    <Cell textAlign='left'> <Flag className="Uruguay" />Uruguay</Cell>
+    <Cell>3</Cell>
+    <Cell>3</Cell>
+    <Cell>0</Cell>
+    <Cell>0</Cell>
+    <Cell>5</Cell>
+    <Cell>0</Cell>
+    <Cell>5</Cell>
+    <Cell className="points" style={{background : '#18191a'}}>9</Cell>
+
+    </Row>
 <Row >
     <Cell textAlign='left'> <Flag className="Russia" />Russia</Cell>
-    <Cell>2</Cell>
+    <Cell>3</Cell>
     <Cell>2</Cell>
     <Cell>0</Cell>
-    <Cell>0</Cell>
-    <Cell>8</Cell>
     <Cell>1</Cell>
-    <Cell>7</Cell>
+    <Cell>8</Cell>
+    <Cell>4</Cell>
+    <Cell>4</Cell>
     <Cell className="points" style={{background : '#18191a'}} >6</Cell>
     </Row>
-         <Row>
-    <Cell textAlign='left'> <Flag className="Uruguay" />Uruguay</Cell>
-    <Cell>2</Cell>
-    <Cell>2</Cell>
-    <Cell>0</Cell>
-    <Cell>0 </Cell>
-    <Cell>2</Cell>
+
+      <Row>
+    <Cell textAlign='left'> <Flag className="Saudi-Arabia" />Saudi Arabia</Cell>
+    <Cell>3</Cell>
+    <Cell>1</Cell>
     <Cell>0</Cell>
     <Cell>2</Cell>
-    <Cell className="points" style={{background : '#18191a'}}>6</Cell>
+    <Cell>2</Cell>
+    <Cell>7</Cell>
+    <Cell>-5</Cell>
+    <Cell className="points" style={{background : '#18191a'}}>3</Cell>
 
     </Row>
+   
      <Row>
     <Cell textAlign='left'> <Flag className="Egypt" />Egypt</Cell>
+    <Cell>3</Cell>
+    <Cell>0</Cell>
+    <Cell>0</Cell>
+    <Cell>3</Cell>
     <Cell>2</Cell>
-    <Cell>0</Cell>
-    <Cell>0</Cell>
-    <Cell>2</Cell>
-    <Cell>1</Cell>
-    <Cell>4</Cell>
-    <Cell>-3</Cell>
-    <Cell className="points" style={{background : '#18191a'}}>0</Cell>
-    </Row>
-
-    <Row>
-    <Cell textAlign='left'> <Flag className="Saudi-Arabia" />Saudi Arabia</Cell>
-    <Cell>2</Cell>
-    <Cell>0</Cell>
-    <Cell>0</Cell>
-    <Cell>2</Cell>
-    <Cell>0</Cell>
     <Cell>6</Cell>
-    <Cell>-6</Cell>
+    <Cell>-4</Cell>
     <Cell className="points" style={{background : '#18191a'}}>0</Cell>
-
     </Row>
-
-   
 </Body>
 
 </Table>
@@ -161,16 +160,11 @@ const { Header, Row, HeaderCell, Body, Cell } = Table;
         </div>
         </Cell>
         <Cell className="txt">
-            <Icon  name='calendar' />25 Jun 2018         
-            <Icon style={{padding: '0 10px'}}name='clock' />09:00 GMT-5
+                   
+            <Icon style={{padding: '0 10px'}}name='clock' />Full-Time <span style={{padding:'0 5px'}}>3-0</span>
         </Cell>
         <Cell>
-            <Link route={'/betting/final/0x2b3730cB546C1056e8755064378AdFBe41aEa515'}>
-            <a>
-            <Button primary className="pool">
-            Pool</Button>
-            </a>
-        </Link>
+            
         </Cell>
     </Row>
     <Row>
@@ -185,16 +179,11 @@ const { Header, Row, HeaderCell, Body, Cell } = Table;
         </div>
         </Cell>
         <Cell className="txt">
-            <Icon  name='calendar' />25 Jun 2018         
-            <Icon style={{padding: '0 10px'}}name='clock' />09:00 GMT-5
+                    
+            <Icon style={{padding: '0 10px'}}name='clock' />Full-Time <span style={{padding:'0 5px'}}>2-1</span>
         </Cell>
         <Cell>
-            <Link route={'/betting/final/0x50829dD8CE357D343BF0a25b88647328df4A976d'}>
-            <a>
-            <Button primary className="pool">
-            Pool</Button>
-            </a>
-        </Link>
+            
         </Cell>
     </Row>
     

@@ -24,55 +24,51 @@ const GroupF = ()=>{
     </Row>
 </Header>
 <Body>
- <Row>
-    <Cell textAlign='left'> <Flag className="Sweden" />Sweden</Cell>
-    <Cell>1</Cell>
-    <Cell>1</Cell>
-    <Cell>0</Cell>
-    <Cell>0</Cell>
-    <Cell>1</Cell>
-    <Cell>0</Cell>
-    <Cell>1</Cell>
-    <Cell className="points" style={{background : '#18191a'}}>3</Cell>
-    </Row>
 <Row>
     <Cell textAlign='left'> <Flag className="Mexico" />Mexico</Cell>
-    <Cell>1</Cell>
-    <Cell>1</Cell>
+    <Cell>2</Cell>
+    <Cell>2</Cell>
     <Cell>0</Cell>
     <Cell>0</Cell>
+    <Cell>3</Cell>
     <Cell>1</Cell>
-    <Cell>0</Cell>
-    <Cell>1</Cell>
-    <Cell className="points" style={{background : '#18191a'}}>3</Cell>
+    <Cell>2</Cell>
+    <Cell className="points" style={{background : '#18191a'}}>6</Cell>
 
     </Row>
-
-
-<Row >
+    <Row >
     <Cell textAlign='left'> <Flag className="Germany" />Germany</Cell>
+    <Cell>2</Cell>
     <Cell>1</Cell>
     <Cell>0</Cell>
-    <Cell>0</Cell>
-    <Cell>1 </Cell>
-    <Cell>0</Cell>
     <Cell>1</Cell>
-    <Cell>-1</Cell>
-    <Cell className="points" style={{background : '#18191a'}} >0</Cell>
+    <Cell>2</Cell>
+    <Cell>2</Cell>
+    <Cell>0</Cell>
+    <Cell className="points" style={{background : '#18191a'}} >3</Cell>
 
     </Row>
-
-    
+ <Row>
+    <Cell textAlign='left'> <Flag className="Sweden" />Sweden</Cell>
+    <Cell>2</Cell>
+    <Cell>1</Cell>
+    <Cell>0</Cell>
+    <Cell>1</Cell>
+    <Cell>2</Cell>
+    <Cell>2</Cell>
+    <Cell>0</Cell>
+    <Cell className="points" style={{background : '#18191a'}}>3</Cell>
+    </Row>
 
         <Row>
     <Cell textAlign='left'> <Flag className="Korea" />Korea</Cell>
-    <Cell>1</Cell>
+    <Cell>2</Cell>
     <Cell>0</Cell>
     <Cell>0</Cell>
+    <Cell>2</Cell>
     <Cell>1</Cell>
-    <Cell>0</Cell>
-    <Cell>1</Cell>
-    <Cell>-1</Cell>
+    <Cell>3</Cell>
+    <Cell>-2</Cell>
     <Cell className="points" style={{background : '#18191a'}}>0</Cell>
 
     </Row>
@@ -130,16 +126,10 @@ const GroupF = ()=>{
         </div>
         </Cell>
         <Cell className="txt">
-            <Icon  name='calendar' />23 Jun 2018         
-            <Icon style={{padding: '0 10px'}}name='clock' />10:00 GMT-5
+            <Icon style={{padding: '0 10px'}}name='clock' />Full-Time <span style={{padding:'0 5px'}}>1-2</span>
         </Cell>
         <Cell>
-            <Link route={'/betting/final/0xD548cf4bEEb29ed3877B5937DD5219A707e96422'}>
-            <a>
-            <Button primary className="pool">
-            Pool</Button>
-            </a>
-        </Link>
+            
             
         </Cell>
     </Row>
@@ -154,17 +144,11 @@ const GroupF = ()=>{
         Sweden
         </div>
         </Cell>
-        <Cell className="txt">
-            <Icon  name='calendar' />23 Jun 2018         
-            <Icon style={{padding: '0 10px'}}name='clock' />13:00 GMT-5
+        <Cell className="txt">         
+            <Icon style={{padding: '0 10px'}}name='clock' />Full-Time <span style={{padding:'0 5px'}}>2-1</span>
         </Cell>
         <Cell>
-            <Link route={'/betting/final/0x35e6bDedA7C1709d6a14212F0f3563Fadd7BF3f3'}>
-            <a>
-            <Button primary className="pool">
-            Pool</Button>
-            </a>
-        </Link>
+            
             
         </Cell>
     </Row>

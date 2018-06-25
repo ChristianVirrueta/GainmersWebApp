@@ -24,52 +24,51 @@ const GroupG = ()=>{
     </Row>
 </Header>
 <Body>
+       <Row>
+    <Cell textAlign='left'> <Flag className="England" />England</Cell>
+    <Cell>2</Cell>
+    <Cell>2</Cell>
+    <Cell>0</Cell>
+    <Cell>0</Cell>
+    <Cell>8</Cell>
+    <Cell>2</Cell>
+    <Cell>6</Cell>
+    <Cell className="points" style={{background : '#18191a'}}>6</Cell>
+
+    </Row>
 <Row >
     <Cell textAlign='left'> <Flag className="Belgium" />Belgium</Cell>
-    <Cell>1</Cell>
-    <Cell>1</Cell>
-    <Cell>0</Cell>
-    <Cell>0</Cell>
-    <Cell>3</Cell>
-    <Cell>0</Cell>
-    <Cell>3</Cell>
-    <Cell className="points" style={{background : '#18191a'}} >3</Cell>
-    </Row>
-
-          <Row>
-    <Cell textAlign='left'> <Flag className="England" />England</Cell>
-    <Cell>1</Cell>
-    <Cell>1</Cell>
-    <Cell>0</Cell>
-    <Cell>0 </Cell>
     <Cell>2</Cell>
-    <Cell>1</Cell>
-    <Cell>1</Cell>
-    <Cell className="points" style={{background : '#18191a'}}>3</Cell>
-
+    <Cell>2</Cell>
+    <Cell>0</Cell>
+    <Cell>0</Cell>
+    <Cell>8</Cell>
+    <Cell>2</Cell>
+    <Cell>6</Cell>
+    <Cell className="points" style={{background : '#18191a'}} >6</Cell>
     </Row>
 
     <Row>
     <Cell textAlign='left'> <Flag className="Tunisia" />Tunisia</Cell>
-    <Cell>1</Cell>
-    <Cell>0</Cell>
-    <Cell>0</Cell>
-    <Cell>1</Cell>
-    <Cell>1</Cell>
     <Cell>2</Cell>
-    <Cell>-1</Cell>
+    <Cell>0</Cell>
+    <Cell>0</Cell>
+    <Cell>2</Cell>
+    <Cell>3</Cell>
+    <Cell>7</Cell>
+    <Cell>-4</Cell>
     <Cell className="points" style={{background : '#18191a'}}>0</Cell>
     </Row>
 
        <Row>
     <Cell textAlign='left'> <Flag className="Panama" />Panama</Cell>
+    <Cell>2</Cell>
+    <Cell>0</Cell>
+    <Cell>0</Cell>
+    <Cell>2</Cell>
     <Cell>1</Cell>
-    <Cell>0</Cell>
-    <Cell>0</Cell>
-    <Cell>1</Cell>
-    <Cell>0</Cell>
-    <Cell>3</Cell>
-    <Cell>-3</Cell>
+    <Cell>9</Cell>
+    <Cell>-8</Cell>
     <Cell className="points" style={{background : '#18191a'}}>0</Cell>
 
     </Row>
@@ -127,17 +126,11 @@ const GroupG = ()=>{
         <Flag className="Tunisia" />Tunisia
         </div>
         </Cell>
-        <Cell className="txt">
-            <Icon  name='calendar' />23 Jun 2018         
-            <Icon style={{padding: '0 10px'}}name='clock' />07:00 GMT-5
+        <Cell className="txt">     
+            <Icon style={{padding: '0 10px'}}name='clock' />Full-Time <span style={{padding:'0 5px'}}>5-2</span>
         </Cell>
         <Cell>
-            <Link route={'/betting/final/0x0e07e442FDBCfd6dC8C1Bd03F25Cb1b5583D2241'}>
-            <a>
-            <Button primary className="pool">
-            Pool</Button>
-            </a>
-        </Link>
+            
             
         </Cell>
     </Row>
@@ -152,17 +145,11 @@ const GroupG = ()=>{
         Panama
         </div>
         </Cell>
-        <Cell className="txt">
-            <Icon  name='calendar' />24 Jun 2018         
-            <Icon style={{padding: '0 10px'}}name='clock' />07:00 GMT-5
+        <Cell className="txt">       
+            <Icon style={{padding: '0 10px'}}name='clock' />Full-Time <span style={{padding:'0 5px'}}>6-1</span>
         </Cell>
         <Cell>
-            <Link route={'/betting/final/0xE4C320b912558e7ab48059d3C6b81998109081B1'}>
-            <a>
-            <Button primary className="pool">
-            Pool</Button>
-            </a>
-        </Link>
+            
             
         </Cell>
     </Row>
