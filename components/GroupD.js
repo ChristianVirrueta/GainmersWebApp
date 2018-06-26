@@ -26,14 +26,27 @@ const GroupD = ()=>{
 <Body>
 <Row>
     <Cell textAlign='left'> <Flag className="Croatia" />Croatia</Cell>
-    <Cell>2</Cell>
-    <Cell>2</Cell>
+    <Cell>3</Cell>
+    <Cell>3</Cell>
     <Cell>0</Cell>
     <Cell>0</Cell>
+    <Cell>7</Cell>
+    <Cell>1</Cell>
+    <Cell>6</Cell>
+    <Cell className="points" style={{background : '#18191a'}}>9</Cell>
+    </Row>
+
+    <Row >
+    <Cell textAlign='left'> <Flag className="Argentina" />Argentina</Cell>
+    <Cell>3</Cell>
+    <Cell>1</Cell>
+    <Cell>1</Cell>
+    <Cell>1</Cell>
+    <Cell>3</Cell>
     <Cell>5</Cell>
-    <Cell>0</Cell>
-    <Cell>5</Cell>
-    <Cell className="points" style={{background : '#18191a'}}>6</Cell>
+    <Cell>-2</Cell>
+    <Cell className="points" style={{background : '#18191a'}} >4</Cell>
+
     </Row>
 
         <Row>
@@ -60,18 +73,7 @@ const GroupD = ()=>{
     <Cell className="points" style={{background : '#18191a'}}>1</Cell>
 
     </Row>
-<Row >
-    <Cell textAlign='left'> <Flag className="Argentina" />Argentina</Cell>
-    <Cell>2</Cell>
-    <Cell>0</Cell>
-    <Cell>1</Cell>
-    <Cell>1</Cell>
-    <Cell>1</Cell>
-    <Cell>4</Cell>
-    <Cell>-3</Cell>
-    <Cell className="points" style={{background : '#18191a'}} >1</Cell>
 
-    </Row>
 
    
 
@@ -169,17 +171,10 @@ const GroupD = ()=>{
         Argentina
         </div>
         </Cell>
-        <Cell className="txt">
-            <Icon  name='calendar' />26 Jun 2018         
-            <Icon style={{padding: '0 10px'}}name='clock' />13:00 GMT-5
+        <Cell className="txt">    
+            <Icon style={{padding: '0 10px'}}name='clock' />Full-Time <span style={{padding:'0 5px'}}>1-2</span>
         </Cell>
         <Cell>
-            <Link route={'/betting/final/0x8092aE3B1F14A6bD899914057E968165f7B787f5'}>
-            <a>
-            <Button primary className="pool">
-            Pool</Button>
-            </a>
-        </Link>
             
         </Cell>
     </Row>
@@ -194,17 +189,11 @@ const GroupD = ()=>{
         Croatia
         </div>
         </Cell>
-        <Cell className="txt">
-            <Icon  name='calendar' />26 Jun 2018         
-            <Icon style={{padding: '0 10px'}}name='clock' />13:00 GMT-5
+        <Cell className="txt">     
+            <Icon style={{padding: '0 10px'}}name='clock' />Full-Time <span style={{padding:'0 5px'}}>1-2</span>
         </Cell>
         <Cell>
-            <Link route={'/betting/final/0x050f4BEA1F723c0490b42DfC9425d28ef0b8E3f4'}>
-            <a>
-            <Button primary className="pool">
-            Pool</Button>
-            </a>
-        </Link>
+            
             
         </Cell>
     </Row>
