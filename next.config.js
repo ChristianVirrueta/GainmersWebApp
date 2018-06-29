@@ -17,6 +17,14 @@ module.exports = {
 				loader: 'babel-loader!raw-loader!sass-loader'
 			}
 		)
+		/*
+        config.plugins.push(
+            new webpack.ProvidePlugin({
+                '$': 'jquery',
+                'jQuery': 'jquery',
+            })
+		)
+		*/
 		return config
 	}, 
 	exportPathMap() {

@@ -1,195 +1,139 @@
-import React,{Component} from 'react';
-import Layout from '../../components/layout1';
-import{Link} from '../../routes';
-import web3 from '../../ethereum/web3';
-import {Text,Grid, Form, Message, Image, Header,Button, Embed, Icon, Segment, Divider, Menu} from 'semantic-ui-react';
-import Router from 'next/router';
+import Layout from '../../client/layouts/layoutMain'
+import Router from 'next/router'
+import Auth from '../../client/session/authSession'
+import $ from 'jquery'
+import { validateEmail } from '../../client/utils/Functions'
+import { currentUserLogin, validEthNet, renderizeRoutes } from '../../client/actions/authActions'
+import { API_URL } from '../../client/actions/types'
+import {Grid, Form, Message, Header, Button, Segment} from 'semantic-ui-react';
 
-let firstAcc = " ";
-function validate(name, email) {
-  // true means invalid, so our conditions got reversed
-  return {
-    name: name.length === 0,
-    email: email.length === 0,
-  };
-};
+class SignUp extends Auth{
 
-class SignUp extends Component{
-  constructor(props) {
-    super(props);
-    this.state = {
-        name:'',
-        email:'', 
-        address:'', 
-        touched: {
-          name: false,
-          email: false,
-        }
-    };
-  };
-  api_call = async function(path, method){
-    const rest = await fetch(path,{
-        method: method
-    });
-    const response = await rest.json();
-    return response;
-  };
-  handleChange = (e) => {
-    this.setState({
-        [e.target.name]: e.target.value
-    })
-  };
-  handleBlur = (field) => (evt) => {
-    this.setState({
-      touched: { ...this.state.touched, [field]: true },
-    });
-  };
-  canBeSubmitted() {
-    const errors = validate(this.state.name, this.state.email);
-    const isDisabled = Object.keys(errors).some(x => errors[x]);
-    return !isDisabled;
-  };
   componentDidMount(){
+    const current = this
+    current.sessionValidate(Router)
 
-    let current = this;
-    let server_api = 'http://api.gainmers.io/api/users/find';
+    $('button[name="submit-form"]').attr('disabled', 'disabled')
 
-    web3.eth.getAccounts().then(e => {
-      firstAcc=e;
-      //document.querySelector(".sign-up-account").innerHTML=firstAcc;
-      current.setState({
-        address: firstAcc[0]
-      });
+    $(document).on('keyup', 'form input', function(e){
+      var $input = $(this);
+      var $field = $input.parent().parent()
+      var $button = $('button[name="submit-form"]')
+      var $user = $('input[name="user"]')
+      var $email = $('input[name="email"]')
 
-      server_api = server_api+'?address='+firstAcc[0];
-      current.api_call(server_api, 'GET').then(function(response){
-          if(response.length === 1){
-            current.setState({
-              name: response[0].name,
-              email: response[0].email
-            });
-          }
-      });
+      $button.attr('disabled', 'disabled')
 
-    });
-  };
-  sign_up = (event) =>{
-    event.preventDefault();
-    event.stopPropagation();
-    /*
-    if(this.state.name === '' || this.state.email === ''){
-      console.log("empty!");
-      return false;
-    }
-    */
-    if (!this.canBeSubmitted()) {
-      return;
-    }
-    let form = {
-      name: this.state.name,
-      email: this.state.email,
-      password: 'password',
-      address: this.state.address
-    };
-
-    //http://api.gainmers.io/api/users.json
-    //http://localhost:8000/api/users.json
-    fetch('http://api.gainmers.io/api/users.json', {
-      method: 'POST',
-      headers: {
-        Accept: 'application/json',
-        'Content-Type': 'application/json',
-      },
-      body: JSON.stringify(form)
-    })
-    .then((response) => response.json())
-    .then((responseJson) => {
-      if(responseJson.id){
-        alert("Successfully!");
-        Router.pushRoute('/betting');
+      if($(this).val() === ''){
+        $field.addClass('error')
+        $input.addClass('error')
       }else{
-        alert("Please, try later");
-        //Router.pushRoute('/login/sign-up');
+        $field.removeClass('error')
+        $input.removeClass('error')
+
+        if($(this).attr('name') === 'email'){
+          if(!validateEmail($(this).val())){
+            $field.addClass('error')
+            $input.addClass('error')
+          }else{
+            $field.removeClass('error')
+            $input.removeClass('error')
+          }
+        }
       }
-    });
-  };
 
+      if((!$user.hasClass('error') && !$email.hasClass('error'))
+      && ($user.val()!=='' && $email.val()!=='')){
+        $button.removeAttr('disabled')
+      }
+    })
 
-    render() {
+    $(document).on('click', 'button[name="submit-form"]', function(e){
+      e.preventDefault()
+      $('.form-message').remove();
 
-      const errors = validate(this.state.name, this.state.email);
-      const isDisabled = Object.keys(errors).some(x => errors[x]);
-      const shouldMarkError = (field) => {
-        const hasError = errors[field];
-        const shouldShow = this.state.touched[field];
-        
-        return hasError ? shouldShow : false;
-      };
+      var $button = $(this)
+      var $user = $('input[name="user"]')
+      var $email = $('input[name="email"]')
+      var $address = $('input[name="address"]')
 
-        return (
-            <Layout>
-          <div className='login-form'>
+      $button.attr('disabled', 'disabled')
+      $button.text('Loading...')
 
-    
-    <Grid
-      textAlign='center'
-      style={{ height: '100%', 
-                padding:'60px' }}
-      verticalAlign='middle'
-    >
-    
-      <Grid.Column style={{ maxWidth: 900 }}>
-        <Header  color='teal' textAlign='center'>
-        <h1>You’re almost done</h1>
-        </Header>
-        
-        <Form size='large'>
-          <Segment stacked>
-            <Message>
-            ETH Account: <a className='sign-up-account' >{this.state.address}</a>
-            </Message>
-            <h4 style={{textAlign:'left', paddingLeft:'20px'}}> E-mail</h4>
-            <Form.Input
-              fluid
-              icon='mail'
-              iconPosition='left'
-              placeholder='meetliquid@hotmail.com' 
-              name='email' 
-              value={this.state.email} 
-              onChange={e => this.handleChange(e)} 
-              onBlur={this.handleBlur('email')} 
-              className={shouldMarkError('email') ? "error" : ""}
-            />
-            <h4 style={{textAlign:'left' , paddingLeft:'20px'}}> Username</h4>
-            <Form.Input
-              fluid
-              icon='user'
-              iconPosition='left'
-              placeholder='Developer10' 
-              name='name' 
-              value={this.state.name} 
-              onChange={e => this.handleChange(e)} 
-              onBlur={this.handleBlur('name')} 
-              className={shouldMarkError('name') ? "error" : ""}
-            />
-            <Button 
-                color='teal' 
-                fluid 
-                size='large' 
-                onClick={(e) => this.sign_up(e)} 
-                disabled={isDisabled}
-                > 
-                Finish
-            </Button>
-          </Segment>
-        </Form>
-        
-      </Grid.Column>
-    </Grid>
-  </div>
+      setTimeout(function(){
+        if($address.val() === ''){
+          $button.text('Finish')
+          $button.before('<h4 class="form-message" style="color: #9f3a38;">Haven\'t account selected</h4>')
+          return false
+        }
+        if($user.val() === '' || $email.val() === ''){
+          $button.text('Finish')
+          $button.before('<h4 class="form-message" style="color: #9f3a38;">Please complete all fields</h4>')
+          return false
+        }
 
-             </Layout>
-        );
-    }       
+        var data_post = {
+          name: $user.val(),
+          email: $email.val(),
+          password: 'password',
+          address: $address.val()
+        }
+        $.post(API_URL+'/api/users.json', data_post, function(res){
+          $button.text('Finish')
+          if(res && res.id){
+            $button.before('<h4 class="form-message">Thanks for register</h4>')
+            $button.attr('disabled', 'disabled')
+
+            current.setState({ email: res.email, user: res.name })
+            currentUserLogin(res.id, current.state)
+
+            const UsrJSON = validEthNet(999, 1)
+            current.setState({ netRoute: UsrJSON.netRoute })
+            renderizeRoutes(Router, current.state)
+          }else{
+            $button.before('<h4 class="form-message" style="color: #9f3a38;">An error has occurred, please try later</h4>')
+          }
+        })
+
+      }, 2000)
+
+    })
+  }
+  render() {
+    return (
+      <Layout {...this.props} style={'default'} navbar={true} footer={false} session={this.state}>
+        <div className='login-form'>
+          <Grid textAlign='center' style={{ height: '100%', padding:'60px' }} verticalAlign='middle'>
+            <Grid.Column style={{ maxWidth: 900 }}>
+              <Header  color='teal' textAlign='center'><h1>You’re almost done</h1></Header>
+              <Form size='large'>
+                <Segment stacked>
+                  <Message>ETH Account: <a className='sign-up-account' >{this.state.account}</a></Message>
+                  <input type="hidden" name="address" value={this.state.account} />
+                  <h4 style={{textAlign:'left', paddingLeft:'20px'}}> E-mail</h4>
+                  <Form.Input
+                    fluid
+                    icon='mail'
+                    iconPosition='left'
+                    placeholder='meetliquid@hotmail.com' 
+                    name='email'
+                  />
+                  <h4 style={{textAlign:'left' , paddingLeft:'20px'}}> Username</h4>
+                  <Form.Input
+                    fluid
+                    icon='user'
+                    iconPosition='left'
+                    placeholder='Developer10' 
+                    name='user'
+                  />
+                  <Button color='teal' fluid size='large' name="submit-form">Finish</Button>
+                </Segment>
+              </Form>
+            </Grid.Column>
+          </Grid>
+        </div>
+      </Layout>
+    );
+  }
 }
-export default  SignUp;
+export default SignUp;
