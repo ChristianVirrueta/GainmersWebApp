@@ -1,10 +1,10 @@
-import { API_URL, SET_CURRENT_TOKEN } from './types';
-import axios from 'axios';
-import config from '../../server/config';
-import jwtDecode from 'jwt-decode';
-import jwt from 'jsonwebtoken';
-import setAuthorizationToken from '../utils/setAuthorizationToken';
-import Web3 from 'web3';
+import { API_URL, SET_CURRENT_TOKEN } from './types'
+import axios from 'axios'
+import config from '../../server/config'
+import jwtDecode from 'jwt-decode'
+import jwt from 'jsonwebtoken'
+import setAuthorizationToken from '../utils/setAuthorizationToken'
+import Web3 from 'web3'
 
 export function currentEthValid(window) {
     const web3 = new Web3(window.web3.currentProvider)
@@ -83,14 +83,17 @@ export function getCurrentToken(token) {
 
 export function renderizeRoutes(Router, EthRed, rules = null){
     console.log(Router.router.pathname+' - '+EthRed.netRoute)
+    let redirect = true
     if(Router.router.pathname !== EthRed.netRoute){
         if(!rules){
             Router.pushRoute(EthRed.netRoute)
             return false
         }
-        if(rules && !rules.onSession){
+        if(rules && (rules.onSession || rules.onDefault)){
+            redirect = false
+        }
+        if(redirect){
             Router.pushRoute(EthRed.netRoute)
-            return false
         }
     }
 }

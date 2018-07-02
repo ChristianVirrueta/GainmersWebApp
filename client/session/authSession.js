@@ -27,10 +27,11 @@ export default class extends React.Component {
         }
     }
 
-    static async getInitialProps({req}) {
+    static async getInitialProps(props) {
         return {
             session: null,
-            lang: 'en'
+            lang: 'en', 
+            query: props.query
         }
     }
 

@@ -81,7 +81,7 @@ class SignUp extends Auth{
         $.post(API_URL+'/api/users.json', data_post, function(res){
           $button.text('Finish')
           if(res && res.id){
-            $button.before('<h4 class="form-message">Thanks for register</h4>')
+            $button.before('<h4 class="form-message">Thanks for register. Wait for redirect.</h4>')
             $button.attr('disabled', 'disabled')
 
             current.setState({ email: res.email, user: res.name })

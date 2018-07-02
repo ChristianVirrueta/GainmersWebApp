@@ -107,17 +107,30 @@ h1 {
     position: relative;
 }
 
-.primary {
+.group-categories .ui.primary.button {
     width: 160px;
     height: 55px;
-    border-radius: 10px !important;
-    font-family: 'pluto-sans-regular' !important;
-    font-weight: normal !important;
-    font-size: 13px !important;
-    background: #ffffff !important;
-    color: #000000 !important;
-    text-transform: uppercase !important;
-    margin: 0 15px 15px 0 !important;
+    border-radius: 10px;
+    font-family: 'pluto-sans-regular';
+    font-weight: normal;
+    font-size: 13px;
+    background: #ffffff;
+    color: #000000;
+    text-transform: uppercase;
+    margin: 0 15px 15px 0;
+}
+
+.group-categories .ui.primary.button:hover{
+    background: #e0e1e2;
+}
+
+.group-categories .ui.primary.button.category-active{
+    background: #000;
+    color: #fff;
+}
+
+.group-categories #container-group-categories .ui.primary.button{
+    margin-bottom: 10px;
 }
 
 
@@ -144,6 +157,10 @@ i.icon.add.circle:before {
     height: 42px;
     display: block;
     background: url(../static/images/icono-acordion.png) no-repeat !important;
+}
+
+.accordion .title.active i.icon.add.circle:before {
+    background: url(../static/images/icono-acordion-active.png) no-repeat !important;
 }
 
 .accordion .content {

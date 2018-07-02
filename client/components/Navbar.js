@@ -1,7 +1,7 @@
 import { Menu, Dropdown, Image, Icon } from 'semantic-ui-react';
 import{ Link } from '../../routes';
 
-export function renderStyles(props){
+export function renderNavbar(props){
     if(props.style === 'session'){
         const options = [
             {
@@ -78,6 +78,6 @@ export function renderStyles(props){
 
 export default (props)=> {
     return (
-        renderStyles(props)
+        renderNavbar(props)
     );
 }

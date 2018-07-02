@@ -2,22 +2,17 @@ import Layout from '../../client/layouts/layoutMain'
 import Router from 'next/router'
 import Auth from '../../client/session/authSession'
 import $ from 'jquery'
-
-//import React, {Component} from 'react';
-import {Grid,Image} from 'semantic-ui-react';
-//import {Link} from '../../routes'
-//import Layout from '../../components/layout';
-import Choices from '../../components/choices';
+import { Grid, Image } from 'semantic-ui-react';
+import Choices from '../../client/components/Choices';
 
 class Betting extends Auth {
 
     componentDidMount(){
-        this.sessionValidate(Router, { onSession: true })
+        const current = this
+        current.sessionValidate(Router, { onSession: true })
     }
 
     render() {
-        const {Row,Column} = Grid;
-
         return (
             <Layout {...this.props} style={'session'} navbar={true} footer={true} session={this.state}>
                 <Grid container stackable verticalAlign='middle' textAlign='center'>
@@ -29,9 +24,9 @@ class Betting extends Auth {
                             <div className="titulo-content">Live  the  World  Cup  Russia   2018:</div>
                         </div>
                     </div>
-                    <Row><Image src='../../static/images/banner-rusia.jpg' size='large'/></Row>
+                    <Grid.Row><Image src='../../static/images/banner-rusia.jpg' size='large'/></Grid.Row>
                     <div style={{width: '560px !important'}} >
-                        <Row className="ancho-fijo"><Choices/></Row>
+                        <Grid.Row className="ancho-fijo"><Choices query={this.props.query} session={this.state}/></Grid.Row>
                     </div>
                 </Grid>
                 <style>{`
