@@ -20,7 +20,9 @@ class Betting extends Auth {
     }
 
     componentWillMount(){
-        this.fn_categories_init_load(this)
+        if(this.state.category_item.length === 0){
+            this.fn_categories_init_load(this)
+        }
     }
 
     componentWillUpdate(nextProps, nextState){
@@ -46,6 +48,7 @@ class Betting extends Auth {
                 current.fn_subcategories_load(current, current.props, res1.data)
             }
         }).catch(function(error){
+            console.log("Error fn_categories_init_load")
             console.log(error)
         })
     }
@@ -62,7 +65,7 @@ class Betting extends Auth {
                     if(res2.data.length > 0){
                         current_parent.childs = res2.data
                         
-                        if(!current.state.active){
+                        if(!current.state.tabs.active){
                             let array_childs = []
                             $.each(res2.data, function(i, child){
                                 if($.inArray(child.ct_id, array_childs) === -1){
@@ -75,6 +78,7 @@ class Betting extends Auth {
                     current.setState({ current_category: current_parent })
                     current.fn_matches_load(current, current_parent)
                 }).catch(function(error){
+                    console.log("Error fn_subcategories_load")
                     console.log(error)
                 })
             }
@@ -92,6 +96,9 @@ class Betting extends Auth {
             if(res.data.length > 0){
                 current.setState({ group_matches: res.data })
             }
+        }).catch(function(error){
+            console.log("Error fn_matches_load")
+            console.log(error)
         })
     }
 
