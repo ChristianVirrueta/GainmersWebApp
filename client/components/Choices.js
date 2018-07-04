@@ -1,48 +1,34 @@
-import Auth from '../session/authSession'
-import $ from 'jquery'
-import { getCurrentToken } from '../actions/authActions'
-import { getCategoriesFind } from '../../server/models/categories'
+import { Button } from 'semantic-ui-react';
+import { Link } from '../../routes'
 
-class Choices extends Auth {
-    constructor(props) {
-        super(props)
-    }
-
-    componentDidMount(){
-        const current = this
-        var $container = $('#container-group-categories')
-        if(localStorage && localStorage.jwtToken){
-            $container.empty()
-
-            let local = getCurrentToken(localStorage.jwtToken)
-            const Categories = getCategoriesFind({ parent_id: 'null' })
-            Categories.then(function(res){
-                if(res.data.length > 0){
-                    $.each(res.data, function(i, category){
-                        var active = false
-                        if(current.props.query.slug){
-                            active = (current.props.query.slug === category.slug)?true:false
-                        }
-                        var $category_item = [
-                            '<a href="/betting/'+category.slug+'" data-item-id="'+category.id+'" data-item-order="'+category.order+'">', 
-                                '<button class="ui primary button '+category.slug+' '+(active?'category-active':'')+'" role="button">',
-                                    category.name,
-                                '</button>',
-                            '</a>'
-                        ]
-                        $container.append($category_item.join(''))
-                    })
-                }
-            }).catch(function(error){
-                console.log(error)
-            })
+export function renderChoices(props){
+    if(props.session.category_item.length > 0){
+        let current_slug = ''
+        if(props.query.slug){
+            current_slug = props.query.slug
         }
-    }
-
-    render() {
         return (
-            <div id="container-group-categories" className="group-categories"></div>
-        );
+            <div id="container-group-categories" className="group-categories">
+                {props.session.category_item.map((category, i) =>
+                    <Link key={i} route={`/betting/`+category.slug}>
+                        <a data-item-id={category.id} data-item-order={category.order}>
+                            <Button primary className={category.slug+' '+(current_slug===category.slug?'category-active':'')}>
+                                {category.name}
+                            </Button>
+                        </a>
+                    </Link>
+                )}
+            </div>
+        )
     }
+    
+    return (
+        <div id="container-group-categories" className="group-categories"></div>
+    )
 }
-export default Choices
+
+export default (props)=> {
+    return (
+        renderChoices(props)
+    );
+}

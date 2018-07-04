@@ -676,131 +676,163 @@ i.Default {
     background: url('../static/flags/default-flags.png') no-repeat 0 0 !important;
 }
 
-i.Argentina {
+i.Argentina, 
+.flag.ar-argentina{
     background: url('../static/flags/arg.svg') no-repeat 0 0 !important;
 }
 
-i.Australia {
+i.Australia, 
+.flag.au-australia{
     background: url('../static/flags/aus.svg') no-repeat 0 0 !important;
 }
 
-i.Belgium {
+i.Belgium, 
+.flag.be-belgium{
     background: url('../static/flags/bel.svg') no-repeat 0 0 !important;
 }
 
-i.Brazil {
+i.Brazil, 
+.flag.br-brazil{
     background: url('../static/flags/bra.svg') no-repeat 0 0 !important;
 }
 
-i.Colombia {
+i.Colombia, 
+.flag.co-colombia{
     background: url('../static/flags/col.svg') no-repeat 0 0 !important;
 }
 
-i.Costa-Rica {
+i.Costa-Rica, 
+.flag.cr-costa-rica{
     background: url('../static/flags/crc.svg') no-repeat 0 0 !important;
 }
 
-i.Croatia {
+i.Croatia, 
+.flag.hr-croatia{
     background: url('../static/flags/cro.svg') no-repeat 0 0 !important;
 }
 
-i.Denmark {
+i.Denmark, 
+.flag.dk-denmark{
     background: url('../static/flags/dnk.svg') no-repeat 0 0 !important;
 }
 
-i.Russia {
+i.Russia, 
+.flag.ru-russian-federation{
     background: url('../static/flags/rus.svg') no-repeat 0 0 !important;
 }
 
-i.Saudi-Arabia {
+i.Saudi-Arabia, 
+.flag.sa-saudi-arabia{
     background: url('../static/flags/ksa.svg') no-repeat 0 0 !important;
 }
 
-i.Egypt {
+i.Egypt, 
+.flag.eg-egypt{
     background: url('../static/flags/egy.svg') no-repeat 0 0 !important;
 }
 
-i.Uruguay {
+i.Uruguay, 
+.flag.uy-uruguay{
     background: url('../static/flags/uru.svg') no-repeat 0 0 !important;
 }
 
-i.Spain {
+i.Spain, 
+.flag.es-spain{
     background: url('../static/flags/esp.svg') no-repeat 0 0 !important;
 }
 
-i.France {
+i.France, 
+.flag.fr-france{
     background: url('../static/flags/fra.svg') no-repeat 0 0 !important;
 }
 
-i.Germany {
+i.Germany, 
+.flag.de-germany{
     background: url('../static/flags/ger.svg') no-repeat 0 0 !important;
 }
 
-i.Iran {
+i.Iran, 
+.flag.ir-iran-islamic-republic-of{
     background: url('../static/flags/iri.svg') no-repeat 0 0 !important;
 }
 
-i.Iceland {
+i.Iceland, 
+.flag.is-iceland{
     background: url('../static/flags/isl.svg') no-repeat 0 0 !important;
 }
 
-i.Japan {
+i.Japan,  
+.flag.jp-japan{
     background: url('../static/flags/jpn.svg') no-repeat 0 0 !important;
 }
 
-i.Korea {
+i.Korea, 
+.flag.kr-korea-republic-of{
     background: url('../static/flags/kor.svg') no-repeat 0 0 !important;
 }
 
-i.Portugal {
+i.Portugal, 
+.flag.pt-portugal{
     background: url('../static/flags/por.svg') no-repeat 0 0 !important;
 }
 
-i.Morocco {
+i.Morocco, 
+.flag.ma-morocco{
     background: url('../static/flags/mar.svg') no-repeat 0 0 !important;
 }
 
-i.Mexico {
+i.Mexico, 
+.flag.mx-mexico{
     background: url('../static/flags/mex.svg') no-repeat 0 0 !important;
 }
 
-i.Nigeria {
+i.Nigeria, 
+.flag.ng-nigeria{
     background: url('../static/flags/ngr.svg') no-repeat 0 0 !important;
 }
 
-i.England {
+i.England, 
+.flag.gb-united-kingdom{
     background: url('../static/flags/ing.svg') no-repeat 0 0 !important;
 }
 
-i.Peru {
+i.Peru, 
+.flag.pe-peru{
     background: url('../static/flags/per.svg') no-repeat 0 0 !important;
 }
 
-i.Poland {
+i.Poland, 
+.flag.pl-poland{
     background: url('../static/flags/pol.svg') no-repeat 0 0 !important;
 }
 
-i.Panama {
+i.Panama, 
+.flag.pa-panama{
     background: url('../static/flags/pan.svg') no-repeat 0 0 !important;
 }
 
-i.Senegal {
+i.Senegal, 
+.flag.sn-senegal{
     background: url('../static/flags/sen.svg') no-repeat 0 0 !important;
 }
 
-i.Serbia {
+i.Serbia, 
+.flag.cs-serbia-and-montenegro{
     background: url('../static/flags/srb.svg') no-repeat 0 0 !important;
 }
 
-i.Switzerland {
+i.Switzerland, 
+.flag.ch-switzerland{
     background: url('../static/flags/sui.svg') no-repeat 0 0 !important;
 }
 
-i.Sweden {
+i.Sweden, 
+.flag.se-sweden{
     background: url('../static/flags/swe.svg') no-repeat 0 0 !important;
 }
 
-i.Tunisia {
+i.Tunisia, 
+.flag.tn-tunisia{
     background: url('../static/flags/tun.svg') no-repeat 0 0 !important;
 }
 

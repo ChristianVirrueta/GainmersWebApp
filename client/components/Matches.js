@@ -1,69 +1,55 @@
-import Auth from '../session/authSession'
+import { Table, Flag, Icon } from 'semantic-ui-react'
+import { handelize } from '../utils/Functions'
 import $ from 'jquery'
-import { getCurrentToken } from '../actions/authActions'
-import { getCategoriesFind } from '../../server/models/categories'
-import { Tab } from 'semantic-ui-react'
 
-class Choices extends Auth {
-    constructor(props) {
-        super(props)
-        this.state.Category = {}
-        this.state.SubCategories = []
-    }
+export function renderMatches(props){
+    if(props.session.group_matches.length){
+        //CONTENT MATCHES
+        const { Row, Body, Cell } = Table
+        let item_matches = props.session.group_matches
 
-    componentWillMount(){
-        const current = this
-        var $container = $('#container-group-matches')
-        if(localStorage && localStorage.jwtToken){
-            $container.empty()
-
-            let local = getCurrentToken(localStorage.jwtToken)
-            const Categories = getCategoriesFind({ slug: current.props.query.slug })
-            Categories.then(function(res){
-                if(res.data.length > 0){
-
-                    const SubCategories = getCategoriesFind({ parent_id: res.data[0].id })
-                    SubCategories.then(function(res){
-                        if(res.data.length > 0){
-                            $.each(res.data, function(i, subcategory){
-                                console.log(subcategory)
-                                /*
-                                var active = false
-                                if(current.props.query.slug){
-                                    active = (current.props.query.slug === category.slug)?true:false
-                                }
-                                var $category_item = [
-                                    '<a href="/betting/'+category.slug+'" data-item-id="'+category.id+'" data-item-order="'+category.order+'">', 
-                                        '<button class="ui primary button '+category.slug+' '+(active?'category-active':'')+'" role="button">',
-                                            category.name,
-                                        '</button>',
-                                    '</a>'
-                                ]
-                                $container.append($category_item.join(''))
-                                */
-                            })
-
-                            const panes = [
-                                { menuItem: 'Group A', render: () => <Tab.Pane attached={false}>Content</Tab.Pane> }
-                            ]
-                            $container.append(
-                                '<div class="ui pointing secondary menu"><a class="item">Group A</a><a class="item">Group B</a></div><div class="ui segment tab">abc</div>'
-                            )
-                        }
-                    })
+        if(props.session.tabs.active){
+            item_matches = []
+            const category_id = props.session.tabs.category_items[props.session.tabs.key]
+            $.each(props.session.group_matches, function(i, value){
+                if(value.ct_id == category_id){
+                    item_matches.push(value)
                 }
-
-            }).catch(function(error){
-                console.log(error)
             })
-
         }
-    }
 
-    render() {
-        return (
-            <div id="container-group-matches" className="group-matches"></div>
-        );
+        return(
+            <div id="container-group-matches" className="group-matches">
+                <h3 className="titulo-match">Group Matches</h3>
+                <Table color={'black'} textAlign='center' inverted>
+                    <Body>
+                        {item_matches.map((match, i) =>
+                            <Row key={i}>
+                                <Cell textAlign='center'>
+                                    <div className="block-flags"><Flag className={handelize(match.c1_code+'-'+match.c1_name)} />{match.c1_short}</div>
+                                    <div className="block-flags"><Flag className={handelize(match.c2_code+'-'+match.c2_name)} />{match.c2_short}</div>
+                                </Cell>
+                                <Cell className="txt">     
+                                    <Icon style={{padding: '0 10px'}}name='clock' /> Full-Time <span style={{padding:'0 5px'}}>{match.gm_marker_1}-{match.gm_marker_2}</span>
+                                </Cell>
+                                <Cell></Cell>
+                            </Row>
+                        )}
+                    </Body>
+                </Table>
+            </div>
+        )
     }
+    
+    return (
+        <div id="container-group-matches" className="group-matches">
+            <h3 className="titulo-match">Group Matches</h3>
+        </div>
+    )
 }
-export default Choices
+
+export default (props)=> {
+    return (
+        renderMatches(props)
+    );
+}

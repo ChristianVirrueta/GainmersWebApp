@@ -135,7 +135,7 @@ class userConfig extends Auth {
         >
           <Grid.Column style={{ maxWidth: 900 }}>
             <Header textAlign='center' style={{ fontSize:'30px !important', fontWeight: 'bold'}}>
-              <h1 style={{background: 'transparent !important;', backgroundImage: 'none !important'}}>Your Gainmers Account</h1>
+              <h1>Your Gainmers Account</h1>
               <p style={{ fontSize:'20px'}}> Edit your account details here</p>
             </Header>
             <Form size='large'>

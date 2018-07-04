@@ -2,10 +2,27 @@ import Layout from '../../client/layouts/layoutMain'
 import Router from 'next/router'
 import Auth from '../../client/session/authSession'
 import $ from 'jquery'
-import { Grid, Image } from 'semantic-ui-react';
-import Choices from '../../client/components/Choices';
+import { Grid, Image } from 'semantic-ui-react'
+import Choices from '../../client/components/Choices'
+import { getCategoriesFind } from '../../server/models/categories'
 
 class Betting extends Auth {
+    constructor(props) {
+        super(props)
+        this.state.category_item = []
+    }
+    
+    componentWillMount(){
+        const current = this
+        const Categories = getCategoriesFind({ parent_id: 'null' })
+        Categories.then(function(res){
+            if(res.data.length > 0){
+                current.setState({ category_item: res.data })
+            }
+        }).catch(function(error){
+            console.log(error)
+        })
+    }
 
     componentDidMount(){
         const current = this
