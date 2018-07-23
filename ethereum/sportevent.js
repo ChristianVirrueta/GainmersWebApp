@@ -1,4 +1,3 @@
-
 import SportEvent from './build/sportEvent.json';
 import web3 from '../ethereum/web3'
 

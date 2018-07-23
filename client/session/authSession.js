@@ -9,6 +9,8 @@ import { currentEthValid,
         currentUserLogout, 
         getCurrentToken, 
         renderizeRoutes } from '../actions/authActions'
+import { getCurrentAccount } from '../../server/models/web3'
+import { getUserById } from '../../server/models/users'
 
 const mockedRouter = { push: () => {} }
 Router.router = mockedRouter
@@ -100,6 +102,23 @@ export default class extends React.Component {
         }else{
             renderizeRoutes(Router, current.state)
         }
+    }
+
+    sessionVerify = function (){
+        if(localStorage.jwtToken){
+            let local = getCurrentToken(localStorage.jwtToken)
+            return local.token_.id
+            /*
+            const UserAccount = await getCurrentAccount()
+            if(local.token_.account === UserAccount){
+                const user = await getUserById(local.token_.id)
+                if(user.id){
+                    return local.token_.id
+                }
+            }
+            */
+        }
+        return false
     }
 
     adminAcccessOnly() {

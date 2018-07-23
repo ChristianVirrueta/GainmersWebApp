@@ -1,6 +1,6 @@
 import React,{ReactElement,Component} from 'react';
 import { Menu, Dropdown, Image, Icon,Button,Message } from 'semantic-ui-react';
-import{ Link,Routes} from '../routes';
+import{ Link,Routes} from '../server/routes';
 import web3 from '../ethereum/web3';
 
 const options = [

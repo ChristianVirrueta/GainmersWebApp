@@ -2,7 +2,7 @@ import Layout from '../../client/layouts/layoutMain'
 import Router from 'next/router'
 import Auth from '../../client/session/authSession'
 import $ from 'jquery'
-import { Link } from '../../routes';
+import { Link } from '../../server/routes';
 import { Accordion, Header, Button, Embed, Icon, Divider, Menu} from 'semantic-ui-react';
 
 class AccountLocked extends Auth{

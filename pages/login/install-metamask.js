@@ -1,6 +1,6 @@
 import Layout from '../../client/layouts/layoutMain'
-import{Link} from '../../routes'
-import {Accordion,Header,Button, Embed, Icon, Container, Menu} from 'semantic-ui-react'
+import { Link } from '../../server/routes'
+import { Accordion, Header, Button, Embed, Icon, Container, Menu } from 'semantic-ui-react'
 import Router from 'next/router'
 import Auth from '../../client/session/authSession'
 import $ from 'jquery'

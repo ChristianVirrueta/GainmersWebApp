@@ -1,7 +1,7 @@
 import React, {Component} from 'react';
 import {Button,Table,Flag, Icon} from 'semantic-ui-react';
 const { Header, Row, HeaderCell, Body, Cell } = Table;
-import {Link} from '../routes';
+import {Link} from '../server/routes';
 
 const GroupB = ()=>{
 

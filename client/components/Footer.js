@@ -1,6 +1,6 @@
 import React from 'react';
 import { Menu, Icon, Image } from 'semantic-ui-react';
-import{ Link } from '../../routes';
+import{ Link } from '../../server/routes';
 
 export default (props)=> {
   return (

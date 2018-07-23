@@ -1,26 +1,26 @@
 import { Menu, Dropdown, Image, Icon } from 'semantic-ui-react';
-import{ Link } from '../../routes';
+import{ Link } from '../../server/routes';
 
 export function renderNavbar(props){
     if(props.style === 'session'){
         const options = [
             {
-              key: 1,
-              text: '',
-              value: 1,
-              content:  <span>
+                key: 1,
+                text: '',
+                value: 1,
+                content:  <span>
                             <Icon name='cogs' />
                             <Link route='/configuration'>
                             <a> Configuration</a>
                             </Link>
                         </span>,
             },
-            //{
-              //key: 2,
-              //text: 'Configuration123',
-              //value: 2,
-              //content:  <span><Icon name='currency' /><Link route='/mybets'><a> My Bets</a></Link></span>,
-            //}
+            {
+                key: 2,
+                text: '',
+                value: 2,
+                content:  <span><Icon name='currency' /><Link route='/mybets'><a> My Bets</a></Link></span>,
+            }
         ];
         return(
             <Menu style={{marginTop: '40px', marginBottom: '60px'}}  secondary>

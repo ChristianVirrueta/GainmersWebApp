@@ -13,20 +13,22 @@ class Betting extends Auth {
     }
     
     componentWillMount(){
+        //code move to component did mount
+    }
+
+    componentDidMount(){
         const current = this
+        current.sessionValidate(Router, { onSession: true })
+
         const Categories = getCategoriesFind({ parent_id: 'null' })
         Categories.then(function(res){
             if(res.data.length > 0){
                 current.setState({ category_item: res.data })
             }
         }).catch(function(error){
+            console.log("Error: getCategoriesFind()")
             console.log(error)
         })
-    }
-
-    componentDidMount(){
-        const current = this
-        current.sessionValidate(Router, { onSession: true })
     }
 
     render() {

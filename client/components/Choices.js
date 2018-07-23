@@ -1,11 +1,14 @@
-import { Button } from 'semantic-ui-react';
-import { Link } from '../../routes'
+import { Button } from 'semantic-ui-react'
+import { Link } from '../../server/routes'
+import { handelize } from '../utils/Functions'
 
 export function renderChoices(props){
     if(props.session.category_item.length > 0){
         let current_slug = ''
         if(props.query.slug){
             current_slug = props.query.slug
+        }else if(props.betting){
+            current_slug = handelize(props.betting.eventName)
         }
         return (
             <div id="container-group-categories" className="group-categories">

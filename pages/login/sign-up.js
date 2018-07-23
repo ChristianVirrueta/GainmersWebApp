@@ -5,7 +5,7 @@ import $ from 'jquery'
 import { validateEmail } from '../../client/utils/Functions'
 import { currentUserLogin, validEthNet, renderizeRoutes } from '../../client/actions/authActions'
 import { API_URL } from '../../client/actions/types'
-import {Grid, Form, Message, Header, Button, Segment} from 'semantic-ui-react';
+import { Grid, Form, Message, Header, Button, Segment } from 'semantic-ui-react';
 
 class SignUp extends Auth{
 

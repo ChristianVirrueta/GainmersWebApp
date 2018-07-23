@@ -20,9 +20,7 @@ class Betting extends Auth {
     }
 
     componentWillMount(){
-        if(this.state.category_item.length === 0){
-            this.fn_categories_init_load(this)
-        }
+        //code move to component did mount
     }
 
     componentWillUpdate(nextProps, nextState){
@@ -36,6 +34,7 @@ class Betting extends Auth {
 
     componentDidMount(){
         this.sessionValidate(Router, { onSession: true })
+        this.fn_categories_init_load(this)
     }
 
     handleTabSelect = (e, { activeIndex }) => this.setState({ tabs: { active: true, key: activeIndex, category_items: this.state.tabs.category_items } })
@@ -74,6 +73,8 @@ class Betting extends Auth {
                             })
                             current.setState({ tabs: { active: true, key: 0, category_items: array_childs } })
                         }
+                    }else{
+                        current.setState({ tabs: { active: false, key: 0, category_items: [] }, group_matches: [] })
                     }
                     current.setState({ current_category: current_parent })
                     current.fn_matches_load(current, current_parent)
@@ -87,7 +88,6 @@ class Betting extends Auth {
 
     fn_matches_load(current, current_category){
         let findObject = { category_id: current_category.id }
-
         if(current.state.tabs.category_items.length > 0){
             findObject = { category_id: current.state.tabs.category_items }
         }

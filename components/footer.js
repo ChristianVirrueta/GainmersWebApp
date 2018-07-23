@@ -1,7 +1,7 @@
 import React from 'react';
 import NetValidation from './netValidation';
 import { Menu, Dropdown,Input,Icon, Button,Image, Header } from 'semantic-ui-react';
-import{ Link} from '../routes';
+import{ Link} from '../server/routes';
 const trigger = (
     <span>
       <Icon name='user' /> CapitanGafio

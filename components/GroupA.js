@@ -1,6 +1,6 @@
 import React, {Component} from 'react';
 import {Button,Table,Flag,Icon} from 'semantic-ui-react';
-import {Link} from '../routes';
+import {Link} from '../server/routes';
 
 class GroupA extends Component{
     render(){
