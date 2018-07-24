@@ -1,5 +1,340 @@
-<!DOCTYPE html><html><head><link rel="preload" href="/_next/3dab7b8f-9df2-4a77-93c3-c9474e0e6c93/page/index.js" as="script"/><link rel="preload" href="/_next/3dab7b8f-9df2-4a77-93c3-c9474e0e6c93/page/_error/index.js" as="script"/><link rel="preload" href="/_next/219fff6da409f072dddf1ef0bf0408a9/app.js" as="script"/><meta charSet="utf-8" class="next-head"/><link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.12/semantic.min.css" class="next-head"/><link rel="stylesheet" href="http://dapp.gainmers.io/assets/style/styles.css" class="next-head"/></head><body><div><div id="__next"><div data-reactroot=""><div class="ui segment"><div style="text-align:center !important" class="ui container"><div style="margin-top:30px;margin-bottom:60px" class="ui secondary menu"><a class="item" href="/"><img src="http://dapp.gainmers.io/assets/images/logo.png" class="ui small image"/></a><div class="right menu"><span class="item">Share : </span><ul class="redes-top item"><li><a href="https://web.facebook.com/gainmers/" target="_blank" class="facebook">facebook</a></li><li><a href="#" class="messenger">messenger</a></li><li><a href="https://twitter.com/GMRplatform/" target="_blank" class="twitter">twitter</a></li><li><a href="https://web.whatsapp.com://send?text=http://dapp.gainmers.io/" target="_blank" class="whatsapp">whatsapp</a></li></ul><div class="item"><div role="listbox" aria-expanded="false" class="ui item dropdown" tabindex="0"><div class="text" role="alert" aria-live="polite">Language</div><i aria-hidden="true" class="dropdown icon"></i><div class="menu transition"><div role="option" class="item">English</div></div></div></div><div class="item"><a href="/login/faqs/">FAQs</a></div><div class="item"><a target="_blank" href="https://medium.com/@gainmers1/">Blog</a></div></div></div><h1 style="width:100%;text-align:center">Welcome to Gainmers</h1><p class="Identificador-red" style="color:#43eee4;text-align:center"></p></div></div></div></div><div id="__next-error"></div></div><div><script>
-          __NEXT_DATA__ = {"props":{},"pathname":"/","query":{},"buildId":"3dab7b8f-9df2-4a77-93c3-c9474e0e6c93","buildStats":{"app.js":{"hash":"219fff6da409f072dddf1ef0bf0408a9"}},"assetPrefix":"","nextExport":true,"err":null,"chunks":[]}
+<!DOCTYPE html><html><head><link rel="preload" href="/_next/6e4a2b1f-1bae-4dee-93e5-c0cc4d0a86b5/page/index.js" as="script"/><link rel="preload" href="/_next/6e4a2b1f-1bae-4dee-93e5-c0cc4d0a86b5/page/_error/index.js" as="script"/><link rel="preload" href="/_next/f3dd111c4be50aac375e9d291105fa18/app.js" as="script"/><meta charSet="utf-8" class="next-head"/><meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1" class="next-head"/><link rel="icon" type="image/png" href="../../static/images/favicon.png" class="next-head"/><title class="next-head">DApp Gainmers</title><link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.12/semantic.min.css" class="next-head"/><style class="next-head">@font-face {
+    font-family: 'heebolight';
+    src: url('../../static/fonts/heebo-light-webfont.eot');
+    src: url('../../static/fonts/heebo-light-webfont.eot?#iefix') format('embedded-opentype'),
+    url('../../static/fonts/heebo-light-webfont.woff') format('woff'),
+    url('../../static/fonts/heebo-light-webfont.ttf') format('truetype'),
+    url('../../static/fonts/heebo-light-webfont.svg#heebolight') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'pluto-sans-regular';
+    src: url('../../static/fonts/plutosansregular-webfont-webfont.eot');
+    src: url('../../static/fonts/plutosansregular-webfont-webfont.eot?#iefix') format('embedded-opentype'),
+    url('../../static/fonts/plutosansregular-webfont-webfont.woff') format('woff'),
+    url('../../static/fonts/plutosansregular-webfont-webfont.ttf') format('truetype'),
+    url('../../static/fonts/plutosansregular-webfont-webfont.svg#webfontregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'pluto-sans-bold';
+    src: url('../../static/fonts/plutosansbold-webfont-webfont.eot');
+    src: url('../../static/fonts/plutosansbold-webfont-webfont.eot?#iefix') format('embedded-opentype'),
+    url('../../static/fonts/plutosansbold-webfont-webfont.woff') format('woff'),
+    url('../../static/fonts/plutosansbold-webfont-webfont.ttf') format('truetype'),
+    url('../../static/fonts/plutosansbold-webfont-webfont.svg#webfontregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'rajdhanibold';
+    src: url('../../static/fonts/rajdhani-bold-webfont.eot');
+    src: url('../../static/fonts/rajdhani-bold-webfont.eot?#iefix') format('embedded-opentype'),
+    url('../../static/fonts/rajdhani-bold-webfont.woff') format('woff'),
+    url('../../static/fonts/rajdhani-bold-webfont.ttf') format('truetype'),
+    url('../../static/fonts/rajdhani-bold-webfont.svg#rajdhanibold') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body {
+    background: #ffffff;
+}
+
+a.item:hover {
+    background: none !important;
+}
+
+h1 {
+    font-family: 'pluto-sans-bold';
+    font-size: 67px;
+    letter-spacing: -2.5px;
+    background-image: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPjxkZWZzPjxsaW5lYXJHcmFkaWVudCBpZD0iZ3JhZGllbnQiIHgxPSIwJSIgeTE9IjAlIiB4Mj0iMCUiIHkyPSIxMDAlIj48c3RvcCBvZmZzZXQ9IjAlIiBzdHlsZT0ic3RvcC1jb2xvcjojNDdFRkU0OyIgLz48c3RvcCBvZmZzZXQ9IjEwMCUiIHN0eWxlPSJzdG9wLWNvbG9yOiMxOEUwRjY7IiAvPjwvbGluZWFyR3JhZGllbnQ+PC9kZWZzPjxyZWN0IGZpbGw9InVybCgjZ3JhZGllbnQpIiBoZWlnaHQ9IjEwMCUiIHdpZHRoPSIxMDAlIiAvPjwvc3ZnPg==);
+    background-image: -webkit-gradient(linear, left top, 90deg, color-stop(0%, #47EFE4), color-stop(100%, #18E0F6));
+    background-image: -moz-linear-gradient(90deg, #47EFE4 0%, #18E0F6 100%);
+    background-image: -webkit-linear-gradient(90deg, #47EFE4 0%, #18E0F6 100%);
+    background-image: -o-linear-gradient(90deg, #47EFE4 0%, #18E0F6 100%);
+    background-image: -ms-linear-gradient(90deg, #47EFE4 0%, #18E0F6 100%);
+    background-image: linear-gradient(90deg, #47EFE4 0%, #18E0F6 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    position: relative;
+    display: inline-block;
+}
+
+.ui.block.header {
+    color: #8e8e8e !important;
+    font-family: 'pluto-sans-regular';
+    font-size: 18px !important;
+    line-height: 35px;
+    text-align: justify;
+    background: none !important;
+    border: 8px solid #000;
+    padding: 65px 60px;
+    position: relative;
+}
+
+.primary {
+    width: 325px;
+    height: 73px;
+    border-radius: 150px !important;
+    background: rgba(72, 239, 228, 1) !important;
+    background: -moz-linear-gradient(left, rgba(72, 239, 228, 1) 0%, rgba(5, 216, 253, 1) 100%) !important;
+    background: -webkit-gradient(left top, right top, color-stop(0%, rgba(72, 239, 228, 1)), color-stop(100%, rgba(5, 216, 253, 1))) !important;
+    background: -webkit-linear-gradient(left, rgba(72, 239, 228, 1) 0%, rgba(5, 216, 253, 1) 100%) !important;
+    background: -o-linear-gradient(left, rgba(72, 239, 228, 1) 0%, rgba(5, 216, 253, 1) 100%) !important;
+    background: -ms-linear-gradient(left, rgba(72, 239, 228, 1) 0%, rgba(5, 216, 253, 1) 100%) !important;
+    background: linear-gradient(to right, rgba(72, 239, 228, 1) 0%, rgba(5, 216, 253, 1) 100%) !important;
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#48efe4', endColorstr='#05d8fd', GradientType=1) !important;
+    font-family: 'pluto-sans-regular' !important;
+    font-weight: normal !important;
+    font-size: 27px !important;
+}
+
+.accordion {
+    box-shadow: none !important;
+    margin-bottom: 80px;
+}
+
+.accordion .title {
+    border: none !important;
+    padding: .60em 1em !important;
+}
+
+.accordion .title,
+h3 {
+    font-family: 'pluto-sans-bold' !important;
+    font-size: 30px !important;
+    color: #000 !important;
+}
+
+i.icon.add.circle:before {
+    content: "" !important;
+    width: 42px;
+    height: 42px;
+    display: block;
+    background: url(../../static/images/icono-acordion.png) no-repeat !important;
+}
+
+.accordion .title.active i.icon.add.circle:before {
+    background: url(../../static/images/icono-acordion-active.png) no-repeat !important;
+}
+
+.accordion .content {
+    padding: .5em 2.5em 1.5em !important;
+}
+
+.accordion .content p {
+    text-align: justify;
+    font-family: 'pluto-sans-regular' !important;
+    font-size: 16px !important;
+    color: #8e8e8e;
+    line-height: 30px;
+}
+
+.accordion i.icon{
+    height: auto;
+    width: auto;
+}
+
+.compact {
+    position: relative;
+}
+
+.compact:before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    /*border-top: 1px solid #d8d8d8;*/
+    left: 0;
+    top: -25px;
+}
+
+.item a {
+    font-family: 'pluto-sans-regular' !important;
+    color: #000 !important;
+    font-weight: 600 !important;
+    font-size: 13px !important;
+}
+
+.redes-top {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.redes-top li {
+    display: inline-block;
+    vertical-align: middle;
+    padding: 0 18px;
+}
+
+.redes-top li:first-child {
+    padding-left: 0;
+}
+
+.redes-top li a {
+    display: block;
+    text-indent: -8000px;
+}
+
+.redes-top li a.facebook {
+    background: url('../../static/images/redes-top-black.png') no-repeat 0 -1px;
+    width: 8px;
+    height: 18px;
+}
+
+.redes-top li a.messenger {
+    background: url('../../static/images/redes-top-black.png') no-repeat -45px 0;
+    width: 19px;
+    height: 19px;
+}
+
+.redes-top li a.twitter {
+    background: url('../../static/images/redes-top-black.png') no-repeat -100px -1px;
+    width: 20px;
+    height: 18px;
+}
+
+.redes-top li a.whatsapp {
+    background: url('../../static/images/redes-top-black.png') no-repeat -153px 0;
+    width: 19px;
+    height: 19px;
+}
+
+
+
+.redes {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.redes li {
+    display: inline-block;
+    vertical-align: middle;
+    padding: 0 15px;
+}
+
+.redes li a {
+    text-indent: -8000px;
+    display: block;
+}
+
+.redes li a.facebook {
+    background: url('../../static/images/share-footer.png') no-repeat -2px -2px;
+    width: 9px;
+    height: 18px;
+}
+
+.redes li a.messenger {
+    background: url('../../static/images/share-footer.png') no-repeat -54px -2px;
+    width: 19px;
+    height: 19px;
+}
+
+.redes li a.twitter {
+    background: url('../../static/images/share-footer.png') no-repeat -113px -3px;
+    width: 21px;
+    height: 18px;
+}
+
+.redes li a.whatsapp {
+    background: url('../../static/images/share-footer.png') no-repeat -178px -2px;
+    width: 19px;
+    height: 19px;
+}
+
+.CentraFooter {
+    margin: 0 auto !important;
+    border: 0 !important;
+    box-shadow: none !important;
+}
+
+.CentraFooter>.item {
+    padding-right: 5% !important;
+}
+
+.contact {
+    font-weight: 400 !important;
+}
+
+.ui.teal.header {
+    font-family: 'pluto-sans-regular' !important;
+    font-size: 18px !important;
+    color: #8e8e8e !important;
+}
+
+.ui.large.form {
+    margin-top: 40px;
+}
+
+.ui.segment {
+    border: 0 !important;
+    box-shadow: none !important;
+}
+
+.ui.stacked.segment:after,
+.ui.stacked.segment:before,
+.ui.stacked.segments:after,
+.ui.stacked.segments:before {
+    border: 0;
+    background: none;
+}
+
+.ui.message {
+    height: 63px;
+    border-radius: 60px;
+    box-shadow: none;
+    background: #c0c0c0;
+    color: #ffffff;
+    font-family: 'pluto-sans-regular' !important;
+    font-size: 21px;
+    margin: 1.5em 0;
+}
+
+.ui.message a {
+    color: #ffffff;
+}
+
+.input {
+    margin-bottom: 30px;
+}
+
+.field input {
+    height: 63px;
+    border-radius: 60px !important;
+    font-family: 'pluto-sans-regular' !important;
+    font-size: 21px !important;
+}
+
+.ui.teal.button,
+.ui.teal.buttons .button {
+    background: rgba(72, 239, 228, 1) !important;
+    background: -moz-linear-gradient(left, rgba(72, 239, 228, 1) 0%, rgba(5, 216, 253, 1) 100%) !important;
+    background: -webkit-gradient(left top, right top, color-stop(0%, rgba(72, 239, 228, 1)), color-stop(100%, rgba(5, 216, 253, 1))) !important;
+    background: -webkit-linear-gradient(left, rgba(72, 239, 228, 1) 0%, rgba(5, 216, 253, 1) 100%) !important;
+    background: -o-linear-gradient(left, rgba(72, 239, 228, 1) 0%, rgba(5, 216, 253, 1) 100%) !important;
+    background: -ms-linear-gradient(left, rgba(72, 239, 228, 1) 0%, rgba(5, 216, 253, 1) 100%) !important;
+    background: linear-gradient(to right, rgba(72, 239, 228, 1) 0%, rgba(5, 216, 253, 1) 100%) !important;
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#48efe4', endColorstr='#05d8fd', GradientType=1) !important;
+    height: 63px;
+    border-radius: 60px !important;
+    font-family: 'pluto-sans-regular' !important;
+    font-size: 23px;
+    width: 60%;
+    margin: 0 auto;
+}
+
+.padding-top {
+    padding-top: 40px !important;
+}</style></head><body><div><div id="__next"><div data-reactroot=""><div class="ui segment"><div class="ui container"><div style="margin-top:30px;margin-bottom:60px" class="ui secondary menu"><a class="item" href="/"><img src="../../static/images/logo.png" class="ui small image"/></a><div class="right menu"><span class="item">Share : </span><ul class="redes-top item"><li><a href="https://web.facebook.com/gainmers/" target="_blank" class="facebook">facebook</a></li><li><a href="#" class="messenger">messenger</a></li><li><a href="https://twitter.com/GMRplatform/" target="_blank" class="twitter">twitter</a></li><li><a href="https://web.whatsapp.com://send?text=http://dapp.gainmers.io/" target="_blank" class="whatsapp">whatsapp</a></li></ul><div class="item"><div role="listbox" aria-expanded="false" class="ui item dropdown" tabindex="0"><div class="text" role="alert" aria-live="polite">Language</div><i aria-hidden="true" class="dropdown icon"></i><div class="menu transition"><div role="option" class="item">English</div></div></div></div><div class="item"><a href="/login/faqs/">FAQs</a></div><div class="item"><a target="_blank" href="https://medium.com/@gainmers1/">Blog</a></div></div></div><h1 style="width:100%;text-align:center">Welcome to Gainmers</h1><p class="Identificador-red" style="color:#43eee4;text-align:center"></p></div></div></div></div><div id="__next-error"></div></div><div><script>
+          __NEXT_DATA__ = {"props":{"session":null,"lang":"en","query":{}},"pathname":"/","query":{},"buildId":"6e4a2b1f-1bae-4dee-93e5-c0cc4d0a86b5","buildStats":{"app.js":{"hash":"f3dd111c4be50aac375e9d291105fa18"}},"assetPrefix":"","nextExport":true,"err":null,"chunks":[]}
           module={}
           __NEXT_LOADED_PAGES__ = []
           __NEXT_LOADED_CHUNKS__ = []
@@ -11,4 +346,4 @@
           __NEXT_REGISTER_CHUNK = function (chunkName, fn) {
             __NEXT_LOADED_CHUNKS__.push({ chunkName: chunkName, fn: fn })
           }
-        </script><script async="" id="__NEXT_PAGE__/" type="text/javascript" src="/_next/3dab7b8f-9df2-4a77-93c3-c9474e0e6c93/page/index.js"></script><script async="" id="__NEXT_PAGE__/_error" type="text/javascript" src="/_next/3dab7b8f-9df2-4a77-93c3-c9474e0e6c93/page/_error/index.js"></script><div></div><script type="text/javascript" src="/_next/219fff6da409f072dddf1ef0bf0408a9/app.js" async=""></script></div></body></html>
+        </script><script async="" id="__NEXT_PAGE__/" type="text/javascript" src="/_next/6e4a2b1f-1bae-4dee-93e5-c0cc4d0a86b5/page/index.js"></script><script async="" id="__NEXT_PAGE__/_error" type="text/javascript" src="/_next/6e4a2b1f-1bae-4dee-93e5-c0cc4d0a86b5/page/_error/index.js"></script><div></div><script type="text/javascript" src="/_next/f3dd111c4be50aac375e9d291105fa18/app.js" async=""></script></div></body></html>

@@ -1,0 +1,6 @@
+
+          window.__NEXT_REGISTER_PAGE('/', function() {
+            var comp = module.exports=webpackJsonp([14],{984:function(e,t,n){e.exports=n(985)},985:function(e,t,n){"use strict";function a(e){return e&&e.__esModule?e:{default:e}}Object.defineProperty(t,"__esModule",{value:!0});var l=n(32),u=a(l),o=n(26),r=a(o),s=n(18),d=a(s),i=n(19),f=a(i),c=n(27),p=a(c),h=n(28),m=a(h),_=n(0),y=a(_),v=n(46),x=a(v),b=n(31),k=a(b),E=n(61),M=a(E),g=function(e){function t(){return(0,d.default)(this,t),(0,p.default)(this,(t.__proto__||(0,r.default)(t)).apply(this,arguments))}return(0,m.default)(t,e),(0,f.default)(t,[{key:"componentDidMount",value:function(){this.sessionValidate(k.default)}},{key:"render",value:function(){return y.default.createElement(x.default,(0,u.default)({},this.props,{style:"default",navbar:!0,footer:!1,session:this.state}),y.default.createElement("h1",{style:{width:"100%",textAlign:"center"}},"Welcome to Gainmers"),y.default.createElement("p",{className:"Identificador-red",style:{color:"#43eee4",textAlign:"center"}},this.state.netName))}}]),t}(M.default);t.default=g}},[984]);
+            return { page: comp.default }
+          })
+        

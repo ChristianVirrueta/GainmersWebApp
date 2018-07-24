@@ -1,5 +1,5 @@
 import React from 'react'
-import Layout from '../../components/layout'
+import Layout from '../layouts/layoutMain'
 import Router from 'next/router'
 import { currentEthValid, 
         currentEthNet, 

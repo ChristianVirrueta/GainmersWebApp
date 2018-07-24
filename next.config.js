@@ -54,13 +54,7 @@ module.exports = {
 			'/login/faqs': { page: '/login/faqs'},
 			'/login/install-metamask': { page: '/login/install-metamask'},
 			'/login/sign-up': { page: '/login/sign-up'},
-			'/betting/': { page: '/betting/'}, 
-			'/betting/3-4-position': { page: '/betting/3-4-position'},
-			'/betting/final': { page: '/betting/final'},
-			'/betting/group-stage': { page: '/betting/group-stage'},
-			'/betting/octaves': { page: '/betting/octaves'},
-			'/betting/quarter-finals': { page: '/betting/quarter-finals'},
-			'/betting/semifinals': { page: '/betting/semifinals'}
+			'/betting/': { page: '/betting/'}
 		}
 	}
 }
